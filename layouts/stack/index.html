@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from every-layout.dev/layouts/stack/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <link rel="icon" href="../../images/favicon.png" type="image/png">
+  
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="The Stack">
+  <meta name="twitter:title" content="The Stack">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="../../images/card.png">
+  <meta name="twitter:image" content="../../images/card.png">
+  <meta property="og:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  <meta name="twitter:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  
+  <link rel="manifest" href="https://every-layout.dev/manifest.json">
+  
+  
+  <meta name="description" content="A composable CSS layout primitive.">
+  
+  
+  <title>The Stack: Every Layout</title>
+  
+  <script>
+    window.API_BASE = 'https://api.every-layout.dev/'; 
+  </script>
+  
+<style id="Center-40chfalsefalse">[data-i="Center-40chfalsefalse"] { max-width: 40ch; }</style><style id="Cover-.centeredvar(--s1)66.666vhtrue">[data-i="Cover-.centeredvar(--s1)66.666vhtrue"] { min-height: 66.666vh; padding: 0; } [data-i="Cover-.centeredvar(--s1)66.666vhtrue"] > * { margin-block: var(--s1); } [data-i="Cover-.centeredvar(--s1)66.666vhtrue"] > :first-child:not(.centered) { margin-block-start: 0; } [data-i="Cover-.centeredvar(--s1)66.666vhtrue"] > :last-child:not(.centered) { margin-block-end: 0; } [data-i="Cover-.centeredvar(--s1)66.666vhtrue"] > .centered { margin-block: auto; }</style><style id="Stack-var(--s1)true">[data-i="Stack-var(--s1)true"] * + * { margin-block-start: var(--s1); }</style><style id="Stack-2remfalse">[data-i="Stack-2remfalse"] > * + * { margin-block-start: 2rem; }</style><style id="Stack-0.5remfalse">[data-i="Stack-0.5remfalse"] > * + * { margin-block-start: 0.5rem; }</style><style id="Stack-var(--s1)false2">[data-i="Stack-var(--s1)false2"] > * + * { margin-block-start: var(--s1); } [data-i="Stack-var(--s1)false2"]:only-child { block-size: 100%; } [data-i="Stack-var(--s1)false2"] > :nth-child(2) { margin-block-end: auto; }</style><style id="Stack-var(--s1)false">[data-i="Stack-var(--s1)false"] > * + * { margin-block-start: var(--s1); }</style><style id="Box-var(--s1)var(--border-thin)false">[data-i="Box-var(--s1)var(--border-thin)false"] { padding: var(--s1); border: var(--border-thin) solid; } [data-i="Box-var(--s1)var(--border-thin)false"] { background-color: inherit; }</style><style id="Box-var(--s3)0false">[data-i="Box-var(--s3)0false"] { padding: var(--s3); border: 0 solid; } [data-i="Box-var(--s3)0false"] { background-color: inherit; }</style><style id="Sidebar-left66.666%var(--s1)">[data-i="Sidebar-left66.666%var(--s1)"] { gap: var(--s1); } [data-i="Sidebar-left66.666%var(--s1)"] > * { } [data-i="Sidebar-left66.666%var(--s1)"] > :last-child { flex-basis: 0; flex-grow: 999; min-inline-size: 66.666%; }</style>
+        <style id="Image-6:90none">
+          [data-i="Image-6:90none"] {
+            max-width: none;
+            min-width: 0;            
+          }
+
+          [data-i="Image-6:90none"]::after {
+            padding-top: 66.66666666666666%;
+          }
+        </style>
+        </head>
+
+<body>
+  <!--
+                              ...
+           s,                .                    .s
+            ss,              . ..               .ss
+            'SsSs,           ..  .           .sSsS'
+             sSs'sSs,        .   .        .sSs'sSs
+              sSs  'sSs,      ...      .sSs'  sSs
+               sS,    'sSs,         .sSs'    .Ss
+               'Ss       'sSs,   .sSs'       sS'
+      ...       sSs         ' .sSs'         sSs       ...
+     .           sSs       .sSs' ..,       sSs       .
+     . ..         sS,   .sSs'  .  'sSs,   .Ss        . ..
+     ..  .        'Ss .Ss'     .     'sSs. ''        ..  .
+     .   .         sSs '       .        'sSs,        .   .
+      ...      .sS.'sSs        .        .. 'sSs,      ...
+            .sSs'    sS,     .....     .Ss    'sSs,
+         .sSs'       'Ss       .       sS'       'sSs,
+      .sSs'           sSs      .      sSs           'sSs,
+   .sSs'____________________________ sSs ______________'sSs,
+.sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS'.Ss SSSSSSSSSSSSSSSSSSSSSs,
+                        ...         sS'
+                         sSs       sSs
+                          sSs     sSs
+                           sS,   .Ss
+                           'Ss   sS'
+                            sSs sSs
+                             sSsSs
+                              sSs
+                               s
+
+                     YOU ARE YOUR OWN GOD.
+             YOU HAVE THE POWER TO CHANGE THE WORLD.
+                     MAKE THE MOST OF IT.
+  -->
+  <a href="#main">Skip to content</a>
+  
+<div class="docs-page">
+  <header class="docs-header">
+  <a class="docs-logo" href="https://every-layout.dev/">
+    <svg focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#logo"></use>
+    </svg>
+    <span class="vh">Every Layout, Homepage</span>
+  </a>
+  <button class="docs-nav-toggle" aria-expanded="false">
+    <svg class="docs-icon" focusable="false" viewBox="0 0 32 32">
+      <path d="M3,3 29,3 M3,16 29,16 M3,29 29,29"></path>
+    </svg>
+    Menu
+  </button>
+  <nav class="docs-nav" aria-labelledby="nav-label">
+    <span id="nav-label" hidden="">main</span>
+    <h2>Rudiments</h2>
+<ul>
+  
+  <li>
+    <a href="../../rudiments/boxes/index.html">
+      
+      Boxes
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../rudiments/composition/index.html">
+      
+      Composition
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../rudiments/units/index.html">
+      
+      Units
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../rudiments/global-and-local-styling/index.html">
+      
+      Global and local styling
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../rudiments/modular-scale/index.html">
+      
+      Modular scale
+    </a>
+  </li>
+  
+  <li>
+    <a href="../../rudiments/axioms/index.html">
+      
+      Axioms
+    </a>
+  </li>
+  
+</ul>
+    <h2>Layouts</h2>
+    <a class="docs-index-link" href="https://every-layout.dev/layouts">
+      <svg focusable="false" class="docs-icon">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-eye"></use>
+      </svg>
+      Picture index
+    </a>
+    <ul>
+      
+<li>
+  <a href="index.html" aria-current="true">
+    
+    <svg class="docs-icon" focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-triangle-right"></use>
+    </svg>
+    
+    The Stack
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/box/">
+    
+    The Box
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/center/">
+    
+    The Center
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/cluster/">
+    
+    The Cluster
+  </a>
+</li>
+
+<li>
+  <a href="../sidebar/index.html">
+    
+    The Sidebar
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/switcher/">
+    
+    The Switcher
+  </a>
+</li>
+
+<li>
+  <a href="../cover/index.html">
+    
+    The Cover
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/grid/">
+    
+    The Grid
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/frame/">
+    
+    The Frame
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/reel/">
+    
+    The Reel
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/imposter/">
+    
+    The Imposter
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/icon/">
+    
+    The Icon
+  </a>
+</li>
+
+    </ul>
+    
+<h2>Blog</h2>
+<ul>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/sidebar-flex-basis-clamp/">
+      
+      Complex conditional width using flex-basis with clamp
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/second-edition/">
+      
+      2nd Edition: Please Mind The Gap
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/css-components/">
+      
+      Dynamic CSS Components Without JavaScript
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/your-boss-pays/">
+      
+      Why you should buy your staff a copy of Every Layout
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/multi-column-manipulation/">
+      
+      Multi-column manipulation
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/you-pay/">
+      
+      You Pay (Or Maybe You Don’t)
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/eschewing-shadow-dom/">
+      
+      Eschewing Shadow DOM
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/algorithmic-design/">
+      
+      Algorithmic Design
+    </a>
+  </li>
+  
+</ul>
+<a class="docs-feed-link" href="https://every-layout.dev/feed.xml">
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-rss"></use>
+  </svg>
+  Feed
+</a>
+
+    <a href="https://every-layout.dev/editions" class="editions-link">editions</a>
+  </nav>
+</header>
+  <div class="docs-main">
+    <main id="main" tabindex="-1">
+      <h1>The Stack</h1>
+      
+      
+        <nav class="docs-toc" aria-labelledby="toc-title">
+          <span aria-hidden="true" id="toc-title">table of contents</span>
+          <ul>
+            <li><a href="#the-problem">The problem</a></li><li><a href="#the-solution">The solution</a></li><li><a href="#use-cases">Use cases</a></li><li><a href="#the-generator">The generator</a></li><li><a href="#the-component">The component</a></li>
+          </ul>
+        </nav>
+      
+      
+      <div class="docs-section-header"><h2 id="the-problem" tabindex="-1">The problem</h2><a href="#the-problem" aria-label="link to The problem">#</a></div>
+<p>Flow elements require space (sometimes referred to as <em>white space</em>) to physically and conceptually separate them from the elements that come before and after them. This is the purpose of the <code>margin</code> property.</p>
+<p>However, design systems conceive elements and components in isolation. At the time of conception, it is not settled whether there will be surrounding content or what the nature of that content will be. One element or component is likely to appear in different contexts, and the requirement for spacing will differ.</p>
+<p>We are in the habit of styling elements, or classes of elements, directly: we make style declarations <em>belong</em> to elements. Typically, this does not produce any issues, but <code>margin</code> is really a property of the <em>relationship</em> between two proximate elements. The following code is therefore problematic:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">p</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Since the declaration is not context sensitive, any correct application of the margin is a matter of luck. If the paragraph is proceeded by another element, the effect is desirable. But a <code>:last-child</code> paragraph produces a redundant margin. Inside a padded parent element, this redundant margin combines with the parent’s padding to produce double the intended space. This is just one problem this approach produces.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/stack_padding_issue.svg" alt="The left example shows an expected space between two paragraphs. The right example shows an undesired double space between the bottom paragraph and the bottom edge/border of the containing box" loading="lazy"></p>
+</div>
+<div class="docs-section-header"><h2 id="the-solution" tabindex="-1">The solution</h2><a href="#the-solution" aria-label="link to The solution">#</a></div>
+<p>The trick is to style the context, not the individual element(s). The <strong>Stack</strong> layout primitive injects margin between elements via their common parent:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.stack &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Using the adjacent sibling combinator (<code>+</code>), <code>margin-block-start</code> is only applied where the element is preceded by another element: no “left over” margin. The universal (or <em>wildcard</em>) selector (<code>*</code>) ensures any and all elements are affected. The key <code>* + *</code> construct is known as the <a href="https://alistapart.com/article/axiomatic-css-and-lobotomized-owls">owl</a>.</p>
+<aside aria-labelledby="line-height-and-modular-scale" class="docs-note">
+  <h3 id="line-height-and-modular-scale" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      false
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+    </svg>
+    Line height and modular scale
+  </h3>
+<p>In the previous example, we used a <code>margin-block-start</code> value of <code>1.5rem</code>. We’re in the habit of using this value because it reflects our (usually preferred) body text <code>line-height</code> of <code>1.5</code>.</p>
+<p>The vertical spacing of your design should be based on your standard <code>line-height</code> because text dominates most pages’ layout, making one line of text a natural denominator.</p>
+<p>If the body text <code>line-height</code> is <code>1.5</code> (i.e. <code>1.5</code> ⨉ the <code>font-size</code>), it makes sense to use <code>1.5</code> as the ratio for your modular scale. Read the <a href="https://every-layout.dev/rudiments/modular-scale">introduction to modular scale</a>, and how it can be expressed with CSS custom properties.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/stack_multiple_exponent.svg" alt="Vertically stacked boxes. Sets of short boxes marked 1.5 are interspersed with taller boxes marked multiple or exponent of 1.5" loading="lazy"></p>
+</div>
+</aside>
+<h3 id="recursion">Recursion</h3>
+<p>In the previous example, the child combinator (<code>&gt;</code>) ensures the margins only apply to children of the <code>.stack</code> element. However, it’s possible to inject margins recursively by removing this combinator from the selector.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.stack * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> 1.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>This can be useful where you want to affect elements at any nesting level, while retaining white space regularity.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/stack_nesting.svg" alt="Two nested boxes with borders do not exhibit doubled spacing. The space is equal between each element" loading="lazy"></p>
+</div>
+<p>In the following demonstration (using the <a href="#the-component">Stack component</a> to follow) there are a set of box-shaped elements. Two of these are nested within another. Because recursion is applied, each box is evenly spaced using just one parent <strong>Stack</strong>.</p>
+<noscript>
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+  </svg>
+  This demo becomes interactive with JavaScript. If you enable JavaScript, you will be able to use the interactive functionality.
+</noscript>
+<div class="docs-demo-inline">
+<shrink-grow height="auto" label="Spacing between boxes is the same regardless of nesting" static="">
+  <center-l max="40ch" data-i="Center-40chfalsefalse">
+    <stack-l recursive="" data-i="Stack-var(--s1)true">
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      <box-l data-i="Box-var(--s1)var(--border-thin)false">
+        <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+        <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      </box-l>
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+    </stack-l>
+  </center-l>
+</shrink-grow>
+  <div class="docs-launcher">
+    <a class="cta" href="https://every-layout.dev/demos/stack-recursion" target="_blank">
+      Launch 
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-external"></use>
+      </svg>
+      <span class="vh">(opens new tab)</span>
+    </a>
+  </div>
+</div>
+<p>You’re likely to find the recursive mode affects unwanted elements. For example, generic list items that are typically not separated by margins will become unexpectedly <em>spread out</em>.</p>
+<h3 id="nested-variants">Nested variants</h3>
+<p>Recursion applies the same margin no matter the nesting depth. A more deliberate approach would be to set up alternative non-recursive <strong>Stacks</strong> with different margin values, and nest them where suitable. Consider the following.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">[class^='stack'] &gt; *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* top and bottom margins in horizontal-tb writing mode */</span></span><br><span class="highlight-line">  <span class="token property">margin-block</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.stack-large &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> 3rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.stack-small &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-end</span><span class="token punctuation">:</span> 0.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<noscript>
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+  </svg>
+  This demo becomes interactive with JavaScript. If you enable JavaScript, you will be able to use the interactive functionality.
+</noscript>
+<div class="docs-demo-inline">
+<shrink-grow height="auto" label="Spacing between boxes is different depending on the nesting level" static="">
+  <center-l max="40ch" data-i="Center-40chfalsefalse">
+    <stack-l space="2rem" data-i="Stack-2remfalse">
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      <stack-l space="0.5rem" data-i="Stack-0.5remfalse">
+        <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+        <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+        <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+        <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      </stack-l>
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+      <box-l data-i="Box-var(--s1)var(--border-thin)false"></box-l>
+    </stack-l>
+  </center-l>
+</shrink-grow>
+  <div class="docs-launcher">
+    <a class="cta" href="https://every-layout.dev/demos/stack-variants" target="_blank">
+      Launch 
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-external"></use>
+      </svg>
+      <span class="vh">(opens new tab)</span>
+    </a>
+  </div>
+</div>
+<p>The first declaration block’s selector resets the vertical margin for all <strong>Stack</strong>-like elements (by matching class values that <em>begin</em> with <code>stack</code>). Importantly, only the vertical margins are reset, because the stack only <em>affects</em> vertical margin, and we don't want it to reach outside its remit. You may not need this reset if a universal reset for <code>margin</code> is already in place (see <a href="https://every-layout.dev/rudiments/global-and-local-styling"><strong>Global and local styling</strong></a>).</p>
+<p>The following two blocks set up alternative <strong>Stacks</strong>, with different margin values. These can be nested to produce—for example—the illustrated form layout. Be aware that the <code>&lt;label&gt;</code> elements would need to have <code>display: block</code> applied to appear above the inputs, and for their margins to actually produce spaces (the vertical margin of inline elements has no effect; see <a href="https://every-layout.dev/rudiments/boxes#the-display-property"><strong>The display property</strong></a>).</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/stack_form.svg" alt="A form uses the large Stack spacing to separate whole fields, and a nested small Stack spacing to separate field labels from their inputs and errors" loading="lazy"></p>
+</div>
+<p>In <strong>Every Layout</strong>, custom elements are used to implement layout components/primitives like the <strong>Stack</strong>. In <a href="#the-component">the <strong>Stack</strong> component</a>, the <code>space</code> prop (property; attribute) is used to define the spacing value. The modified classes example above is just for illustration. See the <a href="#nested">nested example</a>.</p>
+<h3 id="exceptions">Exceptions</h3>
+<p>CSS works best as an exception-based language. You write far-reaching rules, then use the cascade to override these rules in special cases. As written in <a href="https://24ways.org/2018/managing-flow-and-rhythm-with-css-custom-properties/">Managing Flow and Rhythm with CSS Custom Properties</a>, you can create per-element exceptions within a single <strong>Stack</strong> context (i.e. at the same nesting level).</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.stack &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space, 1.5em<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.stack-exception,</span><br><span class="highlight-line">.stack-exception + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">--space</span><span class="token punctuation">:</span> 3rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Note that we are applying the increased spacing above <em>and</em> below the <code>.exception</code> element, where applicable. If you only wanted to increase the space above, you would remove <code>.exception + *</code>.</p>
+<p>This works because <code>*</code> has <em>zero</em> specificity, so <code>.stack &gt; * + *</code> and <code>.stack-exception</code> are the same specificity and <code>.stack-exception</code> overrides <code>.stack &gt; * + *</code> in the cascade (by appearing further down in the stylesheet).</p>
+<h3 id="splitting-the-stack">Splitting the stack</h3>
+<p>By making the <strong>Stack</strong> a Flexbox context, we can give it one final power: the ability to add an <code>auto</code> margin to a chosen element. This way, we can group elements to the top and bottom of the vertical space. Useful for card-like components.</p>
+<p>In the following example, we've chosen to group elements <em>after</em> the second element towards the bottom of the space.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.stack</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">justify-content</span><span class="token punctuation">:</span> flex-start<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.stack &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--space, 1.5rem<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.stack &gt; :nth-child(2)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-end</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<aside aria-labelledby="custom-property-placement" class="docs-note">
+  <h3 id="custom-property-placement" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      false
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+    </svg>
+    Custom property placement
+  </h3>
+<p>Importantly, despite now setting some properties on the parent <code>.stack</code> element, we’re still setting the <code>--space</code> value on the children, not “hoisting” it up. If the parent is where the property is set, it will get overridden if the parent becomes a child in nesting (see <a href="#nested-variants"><strong>Nested variants</strong></a>, above).</p>
+</aside>
+<p>This can be seen working in context in the following demo depicting a presentation/slides editor. The <a href="https://every-layout.dev/layouts/cover"><strong>Cover</strong></a> element on the right has a minimum height of <code>66.666vh</code>, forcing the left sidebar's height to be taller than its content. This is what produces the gap between the slide images and the <em>"Add slide"</em> button.</p>
+<noscript>
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+  </svg>
+  This demo becomes interactive with JavaScript. If you enable JavaScript, you will be able to use the interactive functionality.
+</noscript>
+<div class="docs-demo-inline">
+<p style="display:none" id="description">A slides editor interface with a sidebar. The sidebar has images towards the
+  top and an add slide button pushed down to the bottom.</p>
+<shrink-grow height="auto" unit="rem" aria-labelledby="Splitting a stack to push a button to the bottom of the screen in a slide editor layout">
+  <sidebar-l contentmin="66.666%" data-i="Sidebar-left66.666%var(--s1)">
+    <stack-l splitafter="2" data-i="Stack-var(--s1)false2">
+      <image-l ratio="6:9" aria-label="Image with 6:9 ratio" data-i="Image-6:90none" role="img"></image-l>
+      <image-l ratio="6:9" aria-label="Image with 6:9 ratio" data-i="Image-6:90none" role="img"></image-l>
+      <button>Add slide +</button>
+    </stack-l>
+    <box-l data-i="Box-var(--s1)var(--border-thin)false">
+      <cover-l centered=".centered" minheight="66.666vh" nopad="" data-i="Cover-.centeredvar(--s1)66.666vhtrue">
+        <stack-l class="centered text-align:center" data-i="Stack-var(--s1)false">
+          <h1 role="none">Title of slide</h1>
+          <text-l words="50"><p><span>consequat</span> <span>arcu</span> <span>et</span> <span>orci</span> <span>lacus</span> <span>et</span> <span>malesuada</span> <span>vulputate</span> <span>sed</span> <span>amet</span> <span>quam</span> <span>faucibus</span> <span>nec</span> <span>enim</span> <span>tempus</span> <span>arcu</span> <span>non</span> <span>in</span> <span>ante</span> <span>sit</span> <span>morbi</span> <span>tempus</span> <span>fusce</span> <span>ante</span> <span>tellus</span> <span>neque</span> <span>sed</span> <span>consequat</span> <span>bibendum</span> <span>ornare</span> <span>sapien</span> <span>orci</span> <span>tempus</span> <span>faucibus</span> <span>euismod</span> <span>ultrices</span> <span>a</span> <span>erat</span> <span>ligula</span> <span>mauris</span> <span>donec</span> <span>iaculis</span> <span>varius</span> <span>vel</span> <span>feugiat</span> <span>ipsum</span> <span>tristique</span> <span>fusce</span> <span>interdum</span> <span>ante</span></p></text-l>
+        </stack-l>
+      </cover-l>
+    </box-l>
+  </sidebar-l>
+</shrink-grow>
+  <div class="docs-launcher">
+    <a class="cta" href="https://every-layout.dev/demos/stack-split" target="_blank">
+      Launch 
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-external"></use>
+      </svg>
+      <span class="vh">(opens new tab)</span>
+    </a>
+  </div>
+</div>
+<p>Where the <strong>Stack</strong> is the only child of its parent, nothing forces it to <em>stretch</em> as in the last example/demo. A height of <code>100%</code> ensures the <strong>Stack's</strong> height <em>matches</em> the parent's and the split can occur.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.stack:only-child</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ `height` in horizontal-tb writing mode */</span></span><br><span class="highlight-line">  <span class="token property">block-size</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<div class="docs-section-header"><h2 id="use-cases" tabindex="-1">Use cases</h2><a href="#use-cases" aria-label="link to Use cases">#</a></div>
+<p>The potential remit of the <strong>Stack</strong> layout can hardly be overestimated. Anywhere elements are stacked one atop another, it is likely a <strong>Stack</strong> should be in effect. Only adjacent elements (such as grid cells) should not be subject to a <strong>Stack</strong>. The grid cells <em>are</em> likely to be <strong>Stacks</strong>, however, and the grid itself a member of a <strong>Stack</strong>.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/stack_grid.svg" alt="A 3 by 2 grid. One of the cells is marked as a Stack, and contains evenly spaced child elements" loading="lazy"></p>
+</div>
+<div class="docs-section-header"><h2 id="the-generator" tabindex="-1">The generator</h2><a href="#the-generator" aria-label="link to The generator">#</a></div>
+<noscript>
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+  </svg>
+  The code generator only works where JavaScript is available and switched on.
+</noscript>
+<p>Use this tool to help you generate basic <strong>Stack</strong> CSS and HTML.</p>
+<div role="group" aria-label="Layout generator" class="docs-generator" hidden="">
+  <form class="docs-form">
+    <div class="docs-field">
+      <label for="className">
+        <span>Class name</span>
+        <small>The class to give the component</small>
+      </label>
+      <input type="text" id="className" name="className" value="stack">
+    </div>
+    <div class="docs-field">
+      <label for="space">
+        <span>Space</span>
+        <small>The space (margin) between successive sibling elements</small>
+      </label>
+      <input type="text" id="space" name="space" value="1.5rem">
+    </div>
+    <div class="docs-field">
+      <label for="splitAfter">
+        <span>Split after</span>
+        <small>The element index after which to split the stack. Leave empty for no splitting</small>
+      </label>
+      <input type="text" id="splitAfter" name="splitAfter" value="">
+    </div>
+    <div class="docs-field">
+      <label for="recursive">
+        <input class="vh" type="checkbox" id="recursive" name="recursive">
+        <span>Recursive</span>
+        <svg class="docs-icon" focusable="false">
+          <use xlink:href="https://every-layout.dev/images/all.svg#icon-tick"></use>
+        </svg>
+        <small>Whether the spaces apply recursively (i.e. regardless of nesting level)</small>
+      </label>
+    </div>
+    <div class="docs-field">
+      <button type="submit">Generate</button>
+    </div>
+  </form>
+  <output>
+    <div class="docs-generator__switcher" role="group" aria-label="HTML or CSS view">
+      <label>
+        <input class="vh" type="radio" name="view" value="css" checked="">
+        <span><span aria-hidden="true">{</span>CSS<span aria-hidden="true">}</span></span>
+      </label>
+      <label>
+        <input class="vh" type="radio" name="view" value="html">
+        <span><span aria-hidden="true">&lt;</span>HTML<span aria-hidden="true">&gt;</span></span>
+      </label>
+    </div>
+    <pre class="docs-css-output"><code></code></pre>
+    <pre class="docs-html-output" hidden=""><code></code></pre>
+  </output>
+</div>
+<div class="docs-section-header"><h2 id="the-component" tabindex="-1">The component</h2><a href="#the-component" aria-label="link to The component">#</a></div>
+<p>A custom element implementation of the <strong>Stack</strong> is provided for download. Consult the API and examples to follow for more information.</p>
+<a class="cta cta--big" href="https://every-layout.dev/downloads/Stack.zip" download="">
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-download"></use>
+  </svg>
+  <span>Download Stack.zip</span>
+</a>
+<h3>Props API</h3>
+<p>The following props (attributes) will cause the <strong>Stack</strong> component to re-render when altered. They can be altered by hand—in browser developer tools—or as the subjects of inherited application state.</p>
+<div class="docs-props-table">
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>space</td>
+<td><code>string</code></td>
+<td><code>"var(--s1)"</code></td>
+<td>A CSS <code>margin</code> value</td>
+</tr>
+<tr>
+<td>recursive</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>Whether the spaces apply recursively (i.e. regardless of nesting level)</td>
+</tr>
+<tr>
+<td>splitAfter</td>
+<td><code>number</code></td>
+<td><code></code></td>
+<td>The element after which to <em>split</em> the stack with an auto margin</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="examples">Examples</h3>
+<h4 id="basic">Basic</h4>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- some text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>path/to/some/image.svg<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- more text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<h4 id="nested">Nested</h4>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">space</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>3rem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- heading label --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">space</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1.5rem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- body text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- body text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- body text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- heading label --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">space</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1.5rem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- body text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- body text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- body text --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<h4 id="recursive">Recursive</h4>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">recursive</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- first level child --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- first level sibling --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- second level child --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- second level sibling --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<h4 id="list-semantics">List semantics</h4>
+<p>In some cases, browsers should interpret the <strong>Stack</strong> as a list for screen reader software. You can use the following ARIA attribution to achieve this.</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>list<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>listitem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- item 1 content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>listitem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- item 2 content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>listitem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token comment">&lt;!-- item 3 content --&gt;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<script type="module">
+import { codeGenerator } from '/js/utilities/codeGenerator.js';
+
+var renderCSS = data => {
+  return `
+.${data.className} {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.${data.className}${data.recursive ? '' : ' >'} * {
+  margin-block: 0;
+} 
+
+.${data.className}${data.recursive ? '' : ' >'} * + * {
+  margin-block-start: var(--space, <span class="docs-hl">${data.space}</span>);
+}
+
+${data.splitAfter !== '' ?
+`.${data.className}:only-child {
+  block-size: 100%;
+}
+
+.${data.className} > :nth-child(${data.splitAfter}) {
+  margin-block-end: auto;
+}`
+: ''}
+  `;
+}
+
+var renderHTML = data => {
+  return `
+&lt;div class="${data.className}">
+  &lt;div>&lt;!-- child -->&lt;/div>
+  &lt;div>&lt;!-- child -->&lt;/div>
+  &lt;div>&lt;!-- etc -->&lt;/div>
+&lt;/div>
+  `; 
+}
+
+codeGenerator(
+  document.querySelector('.docs-generator'),
+  renderCSS,
+  renderHTML
+);
+</script>
+
+    </main>
+    <box-l borderwidth="0" padding="var(--s3)" data-i="Box-var(--s3)0false">
+  <footer class="text-align:center">
+    <p>
+      <small><strong>Every Layout</strong> is created by<br><a href="https://twitter.com/heydonworks">Heydon Pickering</a> &amp; <a href="https://twitter.com/piccalilli_">Andy Bell</a></small>
+    </p>
+    <p>
+      <small><a href="https://every-layout.dev/privacy-policy">Privacy Policy</a></small> - <small><a href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a></small>
+    </p>
+  </footer>
+</box-l>
+
+  </div>
+</div>
+<script src="../../js/components/premium-content-monitorb3e7.js?a0c7-72d0-059c" type="module"></script>
+
+
+  <script>
+    !function(){"use strict";class t extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Switcher-${[this.threshold,this.space,this.limit].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n          }\n\n          [data-i="${this.i}"] > * {\n            flex-basis: calc((${this.threshold} - 100%) * 999);\n          }\n\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}),\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}) ~ * {\n            flex-basis: 100%;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get threshold(){return this.getAttribute("threshold")||"var(--measure)"}set threshold(t){return this.setAttribute("threshold",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get limit(){return this.getAttribute("limit")||"5"}set limit(t){return this.setAttribute("limit",t)}static get observedAttributes(){return["threshold","space","limit"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("switcher-l",t);class e extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Center-${[this.max,this.andText,this.gutters,this.intrinsic].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            max-width: ${this.max};\n            ${this.gutters?`\n            padding-inline-start: ${this.gutters};\n            padding-inline-end: ${this.gutters};`:""}\n            ${this.andText?"text-align: center;":""}\n            ${this.intrinsic?"\n            display: flex;\n            flex-direction: column;\n            align-items: center;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get max(){return this.getAttribute("max")||"var(--measure)"}set max(t){return this.setAttribute("max",t)}get andText(){return this.hasAttribute("andText")}set andText(t){return t?this.setAttribute("andText",""):this.removeAttribute("andText")}get gutters(){return this.getAttribute("gutters")||null}set gutters(t){return this.setAttribute("gutters",t)}get intrinsic(){return this.hasAttribute("intrinsic")}set intrinsic(t){return t?this.setAttribute("intrinsic",""):this.removeAttribute("intrinsic")}static get observedAttributes(){return["max","andText","gutters","intrinsic"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("center-l",e);class i extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cover-${[this.centered,this.space,this.minHeight,this.noPad].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            min-height: ${this.minHeight};\n            padding: ${this.noPad?"0":this.space};\n          }\n      \n          [data-i="${this.i}"] > * {\n            margin-block: ${this.space};\n          }\n      \n          [data-i="${this.i}"] > :first-child:not(${this.centered}) {\n            margin-block-start: 0;\n          }\n      \n          [data-i="${this.i}"] > :last-child:not(${this.centered}) {\n            margin-block-end: 0;\n          }\n      \n          [data-i="${this.i}"] > ${this.centered} {\n            margin-block: auto;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get centered(){return this.getAttribute("centered")||"h1"}set centered(t){return this.setAttribute("centered",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get minHeight(){return this.getAttribute("minHeight")||"100vh"}set minHeight(t){return this.setAttribute("minHeight",t)}get noPad(){return this.hasAttribute("noPad")}set noPad(t){return t?this.setAttribute("noPad",""):this.removeAttribute("noPad")}static get observedAttributes(){return["centered","space","minHeight","noPad"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cover-l",i);class s extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Stack-${[this.space,this.recursive,this.splitAfter].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"]${this.recursive?"":" >"} * + * {\n            margin-block-start: ${this.space};\n          }\n      \n          ${this.splitAfter?`\n            [data-i="${this.i}"]:only-child {\n              block-size: 100%;\n            }\n      \n            [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {\n              margin-block-end: auto;\n            }`:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get recursive(){return this.hasAttribute("recursive")}set recursive(t){return this.setAttribute(t?"recursive":"")}get splitAfter(){return this.getAttribute("splitAfter")||null}set splitAfter(t){return this.setAttribute("splitAfter",t)}static get observedAttributes(){return["space","recursive","splitAfter"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("stack-l",s);class n extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Box-${[this.padding,this.borderWidth,this.invert].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            padding: ${this.padding};\n            border: ${this.borderWidth} solid;\n            ${this.invert?"background-color: var(--color-light);\n              filter: invert(100%);":""}\n          }\n      \n          [data-i="${this.i}"] {\n            background-color: inherit;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get padding(){return this.getAttribute("padding")||"var(--s1)"}set padding(t){return this.setAttribute("padding",t)}get borderWidth(){return this.getAttribute("borderWidth")||"var(--border-thin)"}set borderWidth(t){return this.setAttribute("borderWidth",t)}static get observedAttributes(){return["borderWidth","padding","invert"]}get invert(){return this.hasAttribute("invert")}set invert(t){return t?this.setAttribute("invert",""):this.removeAttribute("invert")}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("box-l",n);class r extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cluster-${[this.justify,this.align,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            justify-content: ${this.justify};\n            align-items: ${this.align};\n            gap: ${this.space};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get justify(){return this.getAttribute("justify")||"flex-start"}set justify(t){return this.setAttribute("justify",t)}get align(){return this.getAttribute("align")||"flex-start"}set align(t){return this.setAttribute("align",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["justify","align","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cluster-l",r);class a extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Grid-${[this.min,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            grid-gap: ${this.space};\n          }\n\n          @supports (width: min(${this.min}, 100%)) {\n            [data-i="${this.i}"] {\n              grid-template-columns: repeat(auto-fill, minmax(min(${this.min}, 100%), 1fr));\n            }\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get min(){return this.getAttribute("min")||"250px"}set min(t){return this.setAttribute("min",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["min","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("grid-l",a);class u extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.contentMin.includes("%")||console.warn("The value for each <sidebar-l> `contentMin` property should be a percentage. Otherwise overflow is likely to occur"),this.i=`Sidebar-${[this.side,this.sideWidth,this.contentMin,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n            ${this.noStretch?"align-items: flex-start;":""}\n          }\n      \n          [data-i="${this.i}"] > * {\n            ${this.sideWidth?`flex-basis: ${this.sideWidth};`:""}\n          }\n      \n          [data-i="${this.i}"] > ${"left"!==this.side?":first-child":":last-child"} {\n            flex-basis: 0;\n            flex-grow: 999;\n            min-inline-size: ${this.contentMin};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get side(){return this.getAttribute("side")||"left"}set side(t){return this.setAttribute("side",t)}get sideWidth(){return this.getAttribute("sideWidth")||null}set sideWidth(t){return this.setAttribute("sideWidth",t)}get contentMin(){return this.getAttribute("contentMin")||"50%"}set contentMin(t){return this.setAttribute("contentMin",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get noStretch(){return this.hasAttribute("noStretch")}set noStretch(t){t?this.setAttribute("noStretch",""):this.removeAttribute("noStretch")}static get observedAttributes(){return["side","sideWidth","contentMin","space","noStretch"]}connectedCallback(){this.render()}attributeChangedCallback(t){this.render()}}"customElements"in window&&customElements.define("sidebar-l",u);class h extends HTMLElement{constructor(){super(),this.render=(()=>{if(1!==this.children.length&&console.warn("<frame-l> elements should have just one child element"),this.i=`Frame-${[this.ratio].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=this.ratio.split(":"),e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            aspect-ratio: ${t[0]} / ${t[1]};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get ratio(){return this.getAttribute("ratio")||"16:9"}set ratio(t){return this.setAttribute("ratio",t)}static get observedAttributes(){return["ratio"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("frame-l",h);class d extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Reel-${[this.itemWidth,this.height,this.space,this.noBar].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            height: ${this.height};\n          }\n      \n          [data-i="${this.i}"] > * {\n            flex: 0 0 ${this.itemWidth};\n          }\n      \n          [data-i="${this.i}"] > img {\n            height: 100%;\n            flex-basis: auto;\n            width: auto;\n          }\n      \n          [data-i="${this.i}"] > * + * {\n            margin-inline-start: ${this.space};\n          }\n      \n          [data-i="${this.i}"].overflowing {\n            ${this.noBar?"":`padding-bottom: ${this.space}`}\n          }\n      \n          ${this.noBar?`\n          [data-i="${this.i}"] {\n            scrollbar-width: none;\n          }\n          \n          [data-i="${this.i}"]::-webkit-scrollbar {\n            display: none;\n          }\n          `:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}toggleOverflowClass(t){t.classList.toggle("overflowing",this.scrollWidth>this.clientWidth)}get itemWidth(){return this.getAttribute("itemWidth")||"auto"}set itemWidth(t){return this.setAttribute("itemWidth",t)}get height(){return this.getAttribute("height")||"auto"}set height(t){return this.setAttribute("height",t)}get space(){return this.getAttribute("space")||"var(--s0)"}set space(t){return this.setAttribute("space",t)}get noBar(){return this.hasAttribute("noBar")}set noBar(t){t?this.setAttribute("noBar",""):this.removeAttribute("noBar")}static get observedAttributes(){return["itemWidth","height","space","noBar"]}connectedCallback(){this.render(),"ResizeObserver"in window&&new ResizeObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this),"MutationObserver"in window&&new MutationObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this,{childList:!0})}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("reel-l",d);class c extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Imposter-${[this.breakout,this.fixed,this.margin].join("")}`,this.dataset.i=this.i;let t="0"===this.margin?"0px":this.margin;if(!document.getElementById(this.i)&&(!this.breakout||this.fixed)){let e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            ${this.breakout?"":`\n              max-inline-size: calc(100% - (${t} * 2));\n              max-block-size: calc(100% - (${t} * 2));\n              overflow: auto;`}\n            ${this.fixed?"\n              position: fixed;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get breakout(){return this.hasAttribute("breakout")}set breakout(t){return t?this.setAttribute("breakout",""):this.removeAttribute("breakout")}get fixed(){return this.hasAttribute("fixed")}set fixed(t){return t?this.setAttribute("fixed",""):this.removeAttribute("fixed")}get margin(){return this.getAttribute("margin")||"0px"}set margin(t){return this.setAttribute("margin",t)}static get observedAttributes(){return["breakout","margin","fixed"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("imposter-l",c);class l extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.label&&(this.setAttribute("role","img"),this.setAttribute("aria-label",this.label)),this.space&&(this.i=`Icon-${this.space}`,this.dataset.i=this.i,!document.getElementById(this.i))){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n            [data-i="${this.i}"] {\n              display: inline-flex;\n              align-items: baseline;\n            }\n\n            [data-i="${this.i}"] > svg {\n              margin-inline-end: ${this.space};\n            }\n          `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||null}set space(t){return this.setAttribute("space",t)}get label(){return this.getAttribute("label")||null}set label(t){return this.setAttribute("label",t)}static get observedAttributes(){return["space","label"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}function o(t){if(!t.includes(","))return parseInt(t);const e=t.split(",").map(t=>parseInt(t));return Math.floor(Math.random()*(e[1]-e[0]+1))+e[0]}"customElements"in window&&customElements.define("icon-l",l);class m extends HTMLElement{constructor(){super(),this.render=(()=>{const t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=1;t<=i;t++)s.push(`<span>${e[Math.floor(Math.random()*e.length)]}</span>`);return s.join(" ")}(this.words);this.innerHTML=`<p>${t}</p>`})}static get observedAttributes(){return["words"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get words(){return this.getAttribute("words")||"15,20"}set words(t){return this.setAttribute("words",t)}}"customElements"in window&&customElements.define("text-l",m);class b extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Image-${[this.ratio,this.minWidth,this.maxWidth].join("")}`,this.dataset.i=this.i,document.getElementById(this.i)||(document.head.innerHTML+=`\n        <style id="${this.i}">\n          [data-i="${this.i}"] {\n            max-width: ${this.maxWidth};\n            min-width: ${this.minWidth};            \n          }\n\n          [data-i="${this.i}"]::after {\n            padding-top: ${function(t){const e=t.split(":").map(t=>parseInt(t));return e[0]/e[1]*100}(this.ratio)+"%"};\n          }\n        </style>\n        `)})}static get observedAttributes(){return["ratio","minWidth","maxWidth"]}get ratio(){return this.getAttribute("ratio")||"6:9"}set ratio(t){return this.setAttribute("ratio",t)}get minWidth(){return this.getAttribute("minWidth")||"0"}set minWidth(t){return this.setAttribute("minWidth",t)}get maxWidth(){return this.getAttribute("maxWidth")||"none"}set maxWidth(t){return this.setAttribute("maxWidth",t)}attributeChangedCallback(){this.setAttribute("aria-label",`Image with ${this.ratio} ratio`),this.render()}connectedCallback(){this.setAttribute("role","img"),this.render()}}"customElements"in window&&customElements.define("image-l",b);class g extends HTMLElement{constructor(){super(),this.generate=(()=>{let t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=0;t<i;t++)s.push(e[Math.floor(Math.random()*e.length)]);return s}(this.count);return this.capitalize&&(t=t.map(t=>t.charAt(0).toUpperCase()+t.slice(1))),this.sentence&&(t[0]=t[0].charAt(0).toUpperCase()+t[0].slice(1),t[0].toUpperCase(),t[t.length-1]+=". "),t.join(" ")}),this.render=(()=>{this.innerHTML="";const t=this.repeat?o(this.repeat):1;for(let e=0;e<t;e++)this.innerHTML+=this.generate()})}static get observedAttributes(){return["count","sentence","capitalize","repeat"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get count(){return this.getAttribute("count")||"2,3"}set count(t){return this.setAttribute("count",t)}get sentence(){return this.hasAttribute("sentence")}set sentence(t){t?this.setAttribute("sentence",""):this.removeAttribute("sentence")}get capitalize(){return this.hasAttribute("capitalize")}set capitalize(t){t?this.setAttribute("capitalize",""):this.removeAttribute("capitalize")}get repeat(){this.getAttribute("repeat")}set repeat(t){this.setAttribute("repeat",t)}}"customElements"in window&&customElements.define("words-l",g)}();
+  </script>
+  <script src="../../js/main.js" type="module"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('../../service-worker.js');
+      });
+    }
+  </script>
+
+
+
+</body>
+<!-- Mirrored from every-layout.dev/layouts/stack/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:28 GMT -->
+</html>

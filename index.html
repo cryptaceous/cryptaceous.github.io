@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="icon" href="images/cryptaceous.png" type="image/png">
+
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Cryptaceous">
+  <meta name="twitter:title" content="Cryptaceous">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="images/cryptaceous.png">
+  <meta name="twitter:image" content="images/cryptaceous.png">
+  <meta property="og:image:alt" content="Descripción breve">
+  <meta name="twitter:image:alt" content="Descripción breve">
+  <meta name="description" content="Descripción breve">
+
+  <title>The Cryptaceous</title>
+
+  <style id="Cover-stack-lvar(--s2)66.666vhfalse">
+    [data-i="Cover-stack-lvar(--s2)66.666vhfalse"] {
+      min-height: 66.666vh;
+      padding: var(--s2);
+    }
+
+    [data-i="Cover-stack-lvar(--s2)66.666vhfalse"]>* {
+      margin-block: var(--s2);
+    }
+
+    [data-i="Cover-stack-lvar(--s2)66.666vhfalse"]> :first-child:not(stack-l) {
+      margin-block-start: 0;
+    }
+
+    [data-i="Cover-stack-lvar(--s2)66.666vhfalse"]> :last-child:not(stack-l) {
+      margin-block-end: 0;
+    }
+
+    [data-i="Cover-stack-lvar(--s2)66.666vhfalse"]>stack-l {
+      margin-block: auto;
+    }
+  </style>
+  <style id="Cover-h1var(--s2)66.666vhtrue">
+    [data-i="Cover-h1var(--s2)66.666vhtrue"] {
+      min-height: 66.666vh;
+      padding: 0;
+    }
+
+    [data-i="Cover-h1var(--s2)66.666vhtrue"]>* {
+      margin-block: var(--s2);
+    }
+
+    [data-i="Cover-h1var(--s2)66.666vhtrue"]> :first-child:not(h1) {
+      margin-block-start: 0;
+    }
+
+    [data-i="Cover-h1var(--s2)66.666vhtrue"]> :last-child:not(h1) {
+      margin-block-end: 0;
+    }
+
+    [data-i="Cover-h1var(--s2)66.666vhtrue"]>h1 {
+      margin-block: auto;
+    }
+  </style>
+  <style id="Stack-0.25remfalse">
+    [data-i="Stack-0.25remfalse"]>*+* {
+      margin-block-start: 0.25rem;
+    }
+  </style>
+  <style id="Box-var(--s3)0false">
+    [data-i="Box-var(--s3)0false"] {
+      padding: var(--s3);
+      border: 0 solid;
+    }
+
+    [data-i="Box-var(--s3)0false"] {
+      background-color: inherit;
+    }
+  </style>
+  <style id="Cluster-space-betweencentervar(--s1)">
+    [data-i="Cluster-space-betweencentervar(--s1)"] {
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--s1);
+    }
+  </style>
+  <style id="Cluster-flex-startflex-startvar(--s-1)">
+    [data-i="Cluster-flex-startflex-startvar(--s-1)"] {
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: var(--s-1);
+    }
+  </style>
+  <style id="Image-2:5100pxnone">
+    [data-i="Image-2:5100pxnone"] {
+      max-width: none;
+      min-width: 100px;
+    }
+
+    [data-i="Image-2:5100pxnone"]::after {
+      padding-top: 40%;
+    }
+  </style>
+
+ 
+</head>
+ 
+<body>
+  <!--                              
+           r,                                     .r
+            rr,                                 .rr
+            'rrrr,                           .rrrr'
+             rrr'rrr,                     .rrr'rrr
+              rrr  'rrr,               .rrr'  rrr
+               rr,    'rrr,         .rrr'    .rr
+               'rr       'rrr,   .rrr'       rr'
+                rrr         ' .rrr'         rrr        
+                 rrr       .rrr' ..,       rrr        
+                  rr,   .rrr'     'rrr,   .rr         
+                  'rr .rr'           'rrr. ''          
+                   rrr '                'rrr,           
+               .rr.'rrr                 .. 'rrr,       
+            .rrr'    rr,               .rr    'rrr,
+         .rrr'       'rr               rr'       'rrr,
+      .rrr'           rrr             rrr           'rrr,
+   .rrr'____________________________ rrr ______________'rrr,
+.rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr'.rr rrrrrrrrrrrrrrrrrrrrrr,
+                        ...         rr'
+                         rrr       rrr
+                          rrr     rrr
+                           rr,   .rr
+                           'rr   rr'
+                            rrr rrr
+                             rrrrr
+                              rrr
+                               r
+  -->
+
+
+  <div class="docs-page">
+    <!-- menu -->
+    <header class="docs-header">
+
+      <a href="index.html">
+        <img src="images/cryptaceous.png" style="max-width:83px;" tabindex="-1" />
+      </a>
+    
+      <nav class="docs-nav" aria-labelledby="nav-label">
+        <span id="nav-label" hidden="">main</span>
+        <h2>Rudiments</h2>
+    <ul>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Boxes
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Composition
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Units
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Global and local styling
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Modular scale
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Axioms
+        </a>
+      </li>
+      
+    </ul>
+        <h2>Layouts</h2>
+     
+     <ul>
+          
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Stack
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Box
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Center
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Cluster
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Sidebar
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Switcher
+      </a>
+    </li>
+    
+     
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Grid
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Frame
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Reel
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Imposter
+      </a>
+    </li>
+    
+    <li>
+      <a href="javascript:void(0)">
+        
+        The Icon
+      </a>
+    </li>
+    
+        </ul>
+        
+    <h2>Blog</h2>
+    <ul>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Complex conditional width using flex-basis with clamp
+        </a>
+      </li>
+      
+      <li>
+        <a href="hjavascript:void(0)">
+          
+          2nd Edition: Please Mind The Gap
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Dynamic CSS Components Without JavaScript
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Why you should buy your staff a copy of Every Layout
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Multi-column manipulation
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          You Pay (Or Maybe You Don’t)
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Eschewing Shadow DOM
+        </a>
+      </li>
+      
+      <li>
+        <a href="javascript:void(0)">
+          
+          Algorithmic Design
+        </a>
+      </li>
+      
+    </ul>
+     
+        <a href="javascript:void(0)" class="editions-link">editions</a>
+      </nav>
+    
+    </header>
+    <div class="docs-main">
+      <main id="main" tabindex="-1">
+
+        <canvas width="1200px" height="675px"></canvas>
+
+        <div class="headline">
+
+          <div class="section">
+            <div class="headline--text">
+              <h1>The Cryptaceous</h1>
+            </div>
+          </div>
+          <div class="section">
+            <div class="subhead--text">
+              <h3>New dawn fades</h3>
+            </div>
+          </div>
+
+          <nav class="docs-toc" aria-labelledby="toc-title">
+            <span aria-hidden="true" id="toc-title">Contenidos</span>
+            <ul>
+              <li><a href="#the-problem">The problem</a></li>
+              <li><a href="#the-solution">The solution</a></li>
+              <li><a href="#use-cases">Use cases</a></li>
+              <li><a href="#the-generator">The generator</a></li>
+              <li><a href="#the-component">The component</a></li>
+            </ul>
+          </nav>
+
+        </div>
+
+        <div class="docs-section-header">
+          <h2 id="the-problem" tabindex="-1">The problem</h2><a href="#the-problem"
+            aria-label="link to The problem">#</a>
+        </div>
+        <p>For years, there was consternation about how hard it was to horizontally and vertically center something with
+          CSS. It was used by detractors of CSS as a kind of exemplary “proof” of its shortcomings.</p>
+        <p>The truth is, there are numerous ways to center content with CSS. However, there are only so many ways you
+          can do it without fear of overflows, overlaps, or other such breakages. For example, we could use
+          <code>relative</code> positioning and a <code>transform</code> to vertically center an element within a
+          parent:</p>
+        <pre
+          class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.parent</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Give the parent the height of the viewport */</span></span><br><span class="highlight-line">  <span class="token property">block-size</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.parent &gt; .child</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Push the element down 50% of the parent */</span></span><br><span class="highlight-line">  <span class="token property">inset-block-start</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Then adjust it by 50% of its own height */</span></span><br><span class="highlight-line">  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">translateY</span><span class="token punctuation">(</span>-50%<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <p>What’s neat about this is the <code>translateY(-50%)</code> part, which compensates for the height of the
+          element itself—no matter what that height is. What’s less than neat is the top and bottom overflow produced
+          when the child element's content makes it taller than the parent. We have not, so far, designed the layout to
+          tolerate dynamic content.</p>
+        <div role="figure">
+          <p><img src="https://every-layout.dev/images/illustrations/cover_transform_problem.svg"
+              alt="On the left, the child element is shorter than the container, so fits in its vertical center. On the right, it is taller. It is still central, but breaches the top and bottom edges of the parent and overflows."
+              loading="lazy"></p>
+        </div>
+        <p>Perhaps the most robust method is to combine Flexbox’s <code>justify-content: center</code> (horizontal) and
+          <code>align-items: center</code> (vertical).</p>
+        <pre
+          class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.centered</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">justify-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <h3 id="proper-handling-of-height">Proper handling of height</h3>
+        <p>Just applying the Flexbox CSS will not, on its own, have a visible effect on vertical centering because, by
+          default, the <code>.centered</code> element’s height is determined by the height of its content (implicitly,
+          <code>block-size: auto</code>). This is something sometimes referred to as <em>intrinsic sizing</em>, and is
+          covered in more detail in the <a href="https://every-layout.dev/layouts/sidebar"><strong>Sidebar</strong>
+            layout</a> documentation.</p>
+        <p>Setting a fixed height—as in the unreliable <code>transform</code> example from before—would be foolhardy: we
+          don’t know ahead of time how much content there will be, or how much vertical space it will take up. In other
+          words, there’s nothing stopping overflow from happening.</p>
+        <div role="figure">
+          <p><img src="https://every-layout.dev/images/illustrations/cover_fixed_height.svg"
+              alt="On the left, the child element is in the vertical center of the 100vh high parent. On the right, the element is taller than 100vh and breaches the bottom edge to overflow."
+              loading="lazy"></p>
+        </div>
+        <p>Instead, we can set a <code>min-block-size</code> (<code>min-height</code> in the <code>horizontal-tb</code>
+          writing mode). This way, the element will expand vertically to accommodate the content, wherever the natural
+          (<code>auto</code>) height happens to be more than the <code>min-block-size</code>. Where this happens, the
+          provision of some vertical padding ensures the centered content does not meet the edges.</p>
+        <div role="figure">
+          <p><img src="https://every-layout.dev/images/illustrations/cover_min_height.svg"
+              alt="On the left, the child element is not as tall as the parent’s min-height, so appears in the vertical center. On the right, the parent element has grown past its min-height to accommodate a taller child."
+              loading="lazy"></p>
+        </div>
+        <aside aria-labelledby="box-sizing" class="docs-note">
+          <h3 id="box-sizing" aria-hidden="true">
+            <svg class="docs-icon" focusable="false">
+              false
+              <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+            </svg>
+            Box sizing
+          </h3>
+          <p>To ensure the parent element retains a height of <code>100vh</code>, despite the additional padding, a
+            <code>box-sizing: border-box</code> value must be applied. Where it is not, the padding is <em>added</em> to
+            the total height.</p>
+          <p>The <code>box-sizing: border-box</code> is so desirable, it is usually applied to all elements in a global
+            declaration block. The use of the <code>*</code> (universal) selector means all elements are affected.</p>
+          <pre
+            class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">*</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token comment">/* other global styles */</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        </aside>
+        <p>This is perfectly serviceable where only one centered element is in contention. But we have a habit of
+          wanting to include other elements, above and below the centered one. Perhaps it's a close button in the top
+          right, or a “read more” indicator in the bottom center. In any case, I need to handle these cases in a modular
+          fashion, and without producing breakages.</p>
+        <div class="docs-section-header">
+          <h2 id="the-solution" tabindex="-1">The solution</h2><a href="#the-solution"
+            aria-label="link to The solution">#</a>
+        </div>
+        <p>What I need is a layout component that can handle vertically centered content (under a
+          <code>min-block-size</code> threshold) and can accommodate top/header and bottom/footer elements. To make the
+          component truly <em>composable</em> I should be able to add and remove these elements in the HTML without
+          having to <em>also</em> adapt the CSS. It should be modular, and therefore not a coding imposition on content
+          editors.</p>
+        <p>The <strong>Cover</strong> component is a Flexbox context with <code>flex-direction: column</code>. This
+          declaration means child elements are laid out vertically rather than horizontally. In other words, the 'flow
+          direction' of the Flexbox formatting context is returned to that of a standard block element.</p>
+        <pre
+          class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.cover</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <p>The <strong>Cover</strong> has one <em>principal</em> element that should always gravitate towards the
+          center. In addition, it can have one top/header element and/or one bottom/footer element.</p>
+        <div role="figure">
+          <p><img src="https://every-layout.dev/images/illustrations/cover_configurations.svg"
+              alt="Each of the four possible configurations. In each case, the principal element is in the center."
+              loading="lazy"></p>
+        </div>
+        <p>How do we manage all these cases without having to adapt the CSS? First, we give the centered element
+          (<code>h1</code> in the example, but it can be any element) <code>auto</code> margins. This can be done in one
+          declaration using <code>margin-block</code>:</p>
+        <pre
+          class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.cover</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">flex-direction</span><span class="token punctuation">:</span> column<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.cover &gt; h1</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <p>These <em>push</em> the element away from anything above and below it, moving it into the center of the
+          available space. Critically, it will <em>push off</em> the inside edge of a parent <em>or</em> the top/bottom
+          edge of a sibling element.</p>
+        <div role="figure">
+          <p><img src="https://every-layout.dev/images/illustrations/cover_auto_margins.svg"
+              alt="On the left, vertical auto margins place the child element in the exact vertical center. On the right, a header element is in place. The centered element is in the vertical center of the available space"
+              loading="lazy"></p>
+          <div class="figcaption"><span class="vh">Image caption: </span>Note that, in the right-hand configuration, the
+            centered element is in the vertical center of the <em>available</em> space.</div>
+        </div>
+        <p>All that remains is to ensure there is space between the (up to) three child elements where the
+          <code>min-block-size</code> threshold has been breached.</p>
+        <div role="figure">
+          <p><img src="https://every-layout.dev/images/illustrations/cover_min_space.svg"
+              alt="The header and footer elements have small margins. As the principal (centered) element grows, these margins keep the elements apart."
+              loading="lazy"></p>
+        </div>
+        <p>Currently, the <code>auto</code> margins simply collapse down to nothing. Since we can’t enter
+          <code>auto</code> into a <code>calc()</code> function to adapt the margin (<code>calc(auto + 1rem)</code> is
+          invalid), the best we can do is to add <code>margin</code> to the header and footer elements contextually.</p>
+        <pre
+          class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.cover &gt; *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.cover &gt; h1</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.cover &gt; :first-child:not(h1)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.cover &gt; :last-child:not(h1)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-block-end</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <p>Note, the use of <a href="https://piccalil.li/tutorial/css-specifity-and-the-cascade/">the cascade,
+            specificity</a> and negation to target the correct elements. First, we apply top and bottom margins to all
+          the children, using a universal child selector. We then override this for the to-be-centered (<code>h1</code>)
+          element to achieve the <code>auto</code> margins. Finally, we use the <code>:not()</code> function to remove
+          extraneous margin from the top and bottom elements <em>only</em> if they are <em>not</em> the centered
+          element. If there is a centered element and a footer element, but no header element, the centered element will
+          be the <code>:first-child</code> and must retain <code>margin-block-start: auto</code>.</p>
+        <aside aria-labelledby="shorthands" class="docs-note--warning">
+          <h3 id="shorthands" aria-hidden="true">
+            <svg class="docs-icon" focusable="false">
+              <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+              false
+            </svg>
+            Shorthands
+          </h3>
+          <p>Notice how we use <code>margin-block: 1rem</code> and not <code>margin: 1rem 0</code>. The reason is that
+            <em>this component</em> only cares about the vertical margins to achieve its layout. By making the inline
+            (horizontal in the default writing mode) margins <code>0</code>, we might be unduly undoing styles applied
+            or inherited by an ancestor component.</p>
+          <p>Only set what you need to set.</p>
+        </aside>
+        <noscript>
+          <svg class="docs-icon" focusable="false">
+            <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+          </svg>
+          This demo becomes interactive with JavaScript. If you enable JavaScript, you will be able to use the
+          interactive functionality.
+        </noscript>
+        <div class="docs-demo-inline">
+          <shrink-grow height="auto" unit="rem" label="A cover for an HTML book">
+            <cover-l minheight="66.666vh" centered="stack-l" space="var(--s2)"
+              data-i="Cover-stack-lvar(--s2)66.666vhfalse">
+              <stack-l space="0.25rem" data-i="Stack-0.25remfalse">
+                <h1 role="none">How To Create A Book Cover</h1>
+                <p class="font-size:1"><strong>With Flexbox &amp; Love</strong></p>
+              </stack-l>
+              <p>By Heydon Pickering</p>
+            </cover-l>
+          </shrink-grow>
+          <div class="docs-launcher">
+            <a class="cta" href="https://every-layout.dev/demos/cover-html-book" target="_blank">
+              Launch
+              <svg class="docs-icon" focusable="false">
+                <use xlink:href="https://every-layout.dev/images/all.svg#icon-external"></use>
+              </svg>
+              <span class="vh">(opens new tab)</span>
+            </a>
+          </div>
+        </div>
+        <p>Now it is safe to add spacing around the inside of the <strong>Cover</strong> container using
+          <code>padding</code>. Whether there are one, two or three elements present, spacing now remains
+          <em>symmetrical</em>, and our component modular without styling intervention.</p>
+        <pre
+          class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.cover</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">padding</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">min-block-size</span><span class="token punctuation">:</span> 100vh<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <p>The <code>min-block-size</code> is set to <code>100vh</code>, so that the element <em>covers</em> 100% of the
+          viewport's height (hence the name). However, there's no reason why the <code>min-block-size</code> cannot be
+          set to another value. <code>100vh</code> is considered a <em>sensible default</em>, and is the default value
+          for the <code>minHeight</code> prop in the <a href="#the-component">custom element implementation</a> to come.
+        </p>
+        <h3 id="horizontal-centering">Horizontal centering</h3>
+        <p>So far I've not tackled horizontal centering, and that's quite deliberate. Layout components should try to
+          solve just one problem—and the modular centering problem is a peculiar one. The <a
+            href="https://every-layout.dev/layouts/center"><strong>Center</strong> layout</a> handles horizontal
+          centering and can be used in composition with the <strong>Cover</strong>. You might wrap the
+          <strong>Cover</strong> in a <strong>Center</strong> or make a <strong>Center</strong> one or more of its
+          children. It's all about <a href="https://every-layout.dev/rudiments/composition"><em>composition</em></a>.
+        </p>
+        <div class="docs-section-header">
+          <h2 id="use-cases" tabindex="-1">Use cases</h2><a href="#use-cases" aria-label="link to Use cases">#</a>
+        </div>
+        <p>A typical use for the <strong>Cover</strong> would be to create the “above the fold” introductory content for
+          a web page. In the following demo, a nested <a
+            href="https://every-layout.dev/layouts/cluster"><strong>Cluster</strong> element</a> is used to lay out the
+          logo and navigation menu. In this case, a utility class (<code>.text-align\:center</code>) is used to
+          horizontally center the <code>&lt;h1&gt;</code> and footer elements.</p>
+        <noscript>
+          <svg class="docs-icon" focusable="false">
+            <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+          </svg>
+          This demo becomes interactive with JavaScript. If you enable JavaScript, you will be able to use the
+          interactive functionality.
+        </noscript>
+        <div class="docs-demo-inline">
+          <shrink-grow height="auto" unit="rem"
+            label="A web page preamble with navigation and centralized main heading">
+            <cover-l minheight="66.666vh" space="var(--s2)" nopad="" data-i="Cover-h1var(--s2)66.666vhtrue">
+              <cluster-l justify="space-between" align="center" data-i="Cluster-space-betweencentervar(--s1)">
+                <image-l ratio="2:5" minwidth="100px" aria-label="Image with 2:5 ratio" data-i="Image-2:5100pxnone"
+                  role="img"></image-l>
+                <cluster-l role="list" justify="flex-start" space="var(--s-1)"
+                  data-i="Cluster-flex-startflex-startvar(--s-1)">
+                  <div role="listitem"><a href="#">About</a></div>
+                  <div role="listitem"><a href="#">Blog</a></div>
+                  <div role="listitem"><a href="#">Shop</a></div>
+                  <div role="listitem"><a href="#">Contact</a></div>
+                  <div role="listitem"><a href="#">Accessibility</a></div>
+                </cluster-l>
+              </cluster-l>
+              <h1 class="text-align:center" role="none">Welcome To My Site, Visitor!</h1>
+              <p class="text-align:center">
+                What I do
+                <svg focusable="false" class="docs-icon">
+                  <use xlink:href="https://every-layout.dev/images/all.svg#icon-arrow-down"></use>
+                </svg>
+              </p>
+            </cover-l>
+          </shrink-grow>
+          <div class="docs-launcher">
+            <a class="cta" href="https://every-layout.dev/demos/cover-page-intro" target="_blank">
+              Launch
+              <svg class="docs-icon" focusable="false">
+                <use xlink:href="https://every-layout.dev/images/all.svg#icon-external"></use>
+              </svg>
+              <span class="vh">(opens new tab)</span>
+            </a>
+          </div>
+        </div>
+        <p>It might be that you treat each section of the page as a <strong>Cover</strong>, and use the Intersection
+          Observer API to animate aspects of the cover as it comes into view. A simple implementation is provided below
+          (where the <code>data-visible</code> attribute is added as the element comes into view).</p>
+        <pre
+          class="language-js"><code class="language-js"><span class="highlight-line"><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token string">'IntersectionObserver'</span> <span class="token keyword">in</span> window<span class="token punctuation">)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token keyword">const</span> targets <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token keyword">from</span><span class="token punctuation">(</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'cover-l'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">  targets<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>t <span class="token operator">=&gt;</span> t<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'data-observe'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token keyword">const</span> <span class="token function-variable function">callback</span> <span class="token operator">=</span> <span class="token punctuation">(</span>entries<span class="token punctuation">,</span> observer<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    entries<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>entry <span class="token operator">=&gt;</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">      entry<span class="token punctuation">.</span>target<span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'data-visible'</span><span class="token punctuation">,</span> entry<span class="token punctuation">.</span>isIntersecting<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span><span class="token punctuation">;</span></span><br><span class="highlight-line"></span><br><span class="highlight-line">  <span class="token keyword">const</span> observer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">IntersectionObserver</span><span class="token punctuation">(</span>callback<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">  targets<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>t <span class="token operator">=&gt;</span> observer<span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+        <div class="docs-section-header">
+          <h2 id="the-generator" tabindex="-1">The generator</h2><a href="#the-generator"
+            aria-label="link to The generator">#</a>
+        </div>
+        <p>Use this tool to generate basic <strong>Cover</strong> CSS and HTML.</p>
+        <noscript>
+          <svg class="docs-icon" focusable="false">
+            <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+          </svg>
+          The code generator only works where JavaScript is available and switched on.
+        </noscript>
+        <div role="group" aria-label="Layout generator" class="docs-generator" hidden="">
+          <form class="docs-form">
+            <div class="docs-field">
+              <label for="className">
+                <span>Class name</span>
+                <small>The class to give the component</small>
+              </label>
+              <input type="text" id="className" name="className" value="cover">
+            </div>
+            <div class="docs-field">
+              <label for="centered">
+                <span>Centered element selector</span>
+                <small>The element that should be towards the vertical center of the space. Identify with a simple
+                  selector like <code>h2</code> (classes etc not supported in this generator)</small>
+              </label>
+              <input type="text" id="centered" name="centered" value="h1">
+            </div>
+            <div class="docs-field">
+              <label for="minHeight">
+                <span>Minimum height</span>
+                <small>The minimum height (<code>block-size</code>) of the parent element, before it grows to
+                  accommodate its content</small>
+              </label>
+              <input type="text" id="minHeight" name="minHeight" value="100vh">
+            </div>
+            <div class="docs-field">
+              <label for="space">
+                <span>Space</span>
+                <small>The minimum space between and around the child elements</small>
+              </label>
+              <input type="text" id="space" name="space" value="1rem">
+            </div>
+            <div class="docs-field">
+              <label for="noPad">
+                <input class="vh" type="checkbox" id="noPad" name="noPad">
+                <span>No padding</span>
+                <svg class="docs-icon" focusable="false">
+                  <use xlink:href="https://every-layout.dev/images/all.svg#icon-tick"></use>
+                </svg>
+                <small>Whether to remove the padding from the parent element</small>
+              </label>
+            </div>
+            <div class="docs-field">
+              <button type="submit">Generate</button>
+            </div>
+          </form>
+          <output>
+            <div class="docs-generator__switcher" role="group" aria-label="HTML or CSS view">
+              <label>
+                <input class="vh" type="radio" name="view" value="css" checked="">
+                <span><span aria-hidden="true">{</span>CSS<span aria-hidden="true">}</span></span>
+              </label>
+              <label>
+                <input class="vh" type="radio" name="view" value="html">
+                <span><span aria-hidden="true">&lt;</span>HTML<span aria-hidden="true">&gt;</span></span>
+              </label>
+            </div>
+            <pre class="docs-css-output"><code></code></pre>
+            <pre class="docs-html-output" hidden=""><code></code></pre>
+          </output>
+        </div>
+        <div class="docs-section-header">
+          <h2 id="the-component" tabindex="-1">The component</h2><a href="#the-component"
+            aria-label="link to The component">#</a>
+        </div>
+        <p>A custom element implementation of the <strong>Cover</strong> is provided for download. Consult the API and
+          examples to follow for more information.</p>
+        <a class="cta cta--big" href="https://every-layout.dev/downloads/Cover.zip" download="">
+          <svg class="docs-icon" focusable="false">
+            <use xlink:href="https://every-layout.dev/images/all.svg#icon-download"></use>
+          </svg>
+          <span>Download Cover.zip</span>
+        </a>
+        <h3>Props API</h3>
+        <p>The following props (attributes) will cause the <strong>Cover</strong> component to re-render when altered.
+          They can be altered by hand—in browser developer tools—or as the subjects of inherited application state.</p>
+        <div class="docs-props-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>centered</td>
+                <td><code>string</code></td>
+                <td><code>"h1"</code></td>
+                <td>A simple selector such an element or class selector, representing the centered (main) element in the
+                  cover</td>
+              </tr>
+              <tr>
+                <td>space</td>
+                <td><code>string</code></td>
+                <td><code>"var(--s1)"</code></td>
+                <td>The minimum space between and around all of the child elements</td>
+              </tr>
+              <tr>
+                <td>minHeight</td>
+                <td><code>string</code></td>
+                <td><code>"100vh"</code></td>
+                <td>The minimum height (block-size) for the <strong>Cover</strong></td>
+              </tr>
+              <tr>
+                <td>noPad</td>
+                <td><code>boolean</code></td>
+                <td><code>false</code></td>
+                <td>Whether the spacing is also applied as padding to the container element</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3 id="examples">Examples</h3>
+        <h4 id="basic">Basic</h4>
+        <p>Just a centered element (an <code>&lt;h1&gt;</code>) with no header or footer companions. The context/parent
+          adopts the default <code>min-height</code> of <code>100vh</code>.</p>
+        <pre
+          class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cover-l</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Welcome!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>cover-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+        <aside aria-labelledby="one-lesscodegreaterandlth1greaterlesscodegreater-per-page" class="docs-note--warning">
+          <h3 id="one-lesscodegreaterandlth1greaterlesscodegreater-per-page" aria-hidden="true">
+            <svg class="docs-icon" focusable="false">
+              <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+              false
+            </svg>
+            One <code>&lt;h1&gt;</code> per page
+          </h3>
+          <p>For reasons of accessible document structure, there should only be one <code>&lt;h1&gt;</code> element per
+            page. This is the page’s main heading to screen reader users. If you add several successive
+            <code>&lt;cover-l&gt;</code>s, all but the first should have an <code>&lt;h2&gt;</code> to indicate it is a
+            <em>subsection</em> in the document structure.</p>
+        </aside>
+
+      </main>
+      <box-l borderwidth="0" padding="var(--s3)" data-i="Box-var(--s3)0false">
+        <footer class="text-align:center">
+          <p>
+            <small><strong>Every Layout</strong> is created by<br><a href="https://twitter.com/heydonworks">Heydon
+                Pickering</a> &amp; <a href="https://twitter.com/piccalilli_">Andy Bell</a></small>
+          </p>
+          <p>
+            <small><a href="https://every-layout.dev/privacy-policy">Privacy Policy</a></small> - <small><a
+                href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a></small>
+          </p>
+        </footer>
+      </box-l>
+
+    </div>
+  </div>
+
+  <script src="js/main.js" type="module"></script>
+ 
+  <script>
+    includeHTML();
+    </script>
+
+  <script src="js/maincover.js" type="JavaScript"></script>
+
+</body>
+
+</html>

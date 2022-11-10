@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from every-layout.dev/rudiments/axioms/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <link rel="icon" href="../../images/favicon.png" type="image/png">
+  
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Axioms">
+  <meta name="twitter:title" content="Axioms">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="../../images/card.png">
+  <meta name="twitter:image" content="../../images/card.png">
+  <meta property="og:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  <meta name="twitter:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  
+  <link rel="manifest" href="https://every-layout.dev/manifest.json">
+  
+  
+  
+  <meta name="description" content="Relearn CSS layout">
+  
+  <title>Axioms: Every Layout</title>
+  
+  <script>
+    window.API_BASE = 'https://api.every-layout.dev/'; 
+  </script>
+  
+<style id="Box-var(--s3)0false">[data-i="Box-var(--s3)0false"] { padding: var(--s3); border: 0 solid; } [data-i="Box-var(--s3)0false"] { background-color: inherit; }</style></head>
+
+<body>
+  <!--
+                              ...
+           s,                .                    .s
+            ss,              . ..               .ss
+            'SsSs,           ..  .           .sSsS'
+             sSs'sSs,        .   .        .sSs'sSs
+              sSs  'sSs,      ...      .sSs'  sSs
+               sS,    'sSs,         .sSs'    .Ss
+               'Ss       'sSs,   .sSs'       sS'
+      ...       sSs         ' .sSs'         sSs       ...
+     .           sSs       .sSs' ..,       sSs       .
+     . ..         sS,   .sSs'  .  'sSs,   .Ss        . ..
+     ..  .        'Ss .Ss'     .     'sSs. ''        ..  .
+     .   .         sSs '       .        'sSs,        .   .
+      ...      .sS.'sSs        .        .. 'sSs,      ...
+            .sSs'    sS,     .....     .Ss    'sSs,
+         .sSs'       'Ss       .       sS'       'sSs,
+      .sSs'           sSs      .      sSs           'sSs,
+   .sSs'____________________________ sSs ______________'sSs,
+.sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS'.Ss SSSSSSSSSSSSSSSSSSSSSs,
+                        ...         sS'
+                         sSs       sSs
+                          sSs     sSs
+                           sS,   .Ss
+                           'Ss   sS'
+                            sSs sSs
+                             sSsSs
+                              sSs
+                               s
+
+                     YOU ARE YOUR OWN GOD.
+             YOU HAVE THE POWER TO CHANGE THE WORLD.
+                     MAKE THE MOST OF IT.
+  -->
+  <a href="#main">Skip to content</a>
+  
+<div class="docs-page">
+  <header class="docs-header">
+  <a class="docs-logo" href="https://every-layout.dev/">
+    <svg focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#logo"></use>
+    </svg>
+    <span class="vh">Every Layout, Homepage</span>
+  </a>
+  <button class="docs-nav-toggle" aria-expanded="false">
+    <svg class="docs-icon" focusable="false" viewBox="0 0 32 32">
+      <path d="M3,3 29,3 M3,16 29,16 M3,29 29,29"></path>
+    </svg>
+    Menu
+  </button>
+  <nav class="docs-nav" aria-labelledby="nav-label">
+    <span id="nav-label" hidden="">main</span>
+    <h2>Rudiments</h2>
+<ul>
+  
+  <li>
+    <a href="../boxes/index.html">
+      
+      Boxes
+    </a>
+  </li>
+  
+  <li>
+    <a href="../composition/index.html">
+      
+      Composition
+    </a>
+  </li>
+  
+  <li>
+    <a href="../units/index.html">
+      
+      Units
+    </a>
+  </li>
+  
+  <li>
+    <a href="../global-and-local-styling/index.html">
+      
+      Global and local styling
+    </a>
+  </li>
+  
+  <li>
+    <a href="../modular-scale/index.html">
+      
+      Modular scale
+    </a>
+  </li>
+  
+  <li>
+    <a href="index.html" aria-current="true">
+      
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-triangle-right"></use>
+      </svg>
+      
+      Axioms
+    </a>
+  </li>
+  
+</ul>
+    <h2>Layouts</h2>
+    <a class="docs-index-link" href="https://every-layout.dev/layouts">
+      <svg focusable="false" class="docs-icon">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-eye"></use>
+      </svg>
+      Picture index
+    </a>
+    <ul>
+      
+<li>
+  <a href="../../layouts/stack/index.html">
+    
+    The Stack
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/box/">
+    
+    The Box
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/center/">
+    
+    The Center
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/cluster/">
+    
+    The Cluster
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/sidebar/index.html">
+    
+    The Sidebar
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/switcher/">
+    
+    The Switcher
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/cover/index.html">
+    
+    The Cover
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/grid/">
+    
+    The Grid
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/frame/">
+    
+    The Frame
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/reel/">
+    
+    The Reel
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/imposter/">
+    
+    The Imposter
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/icon/">
+    
+    The Icon
+  </a>
+</li>
+
+    </ul>
+    
+<h2>Blog</h2>
+<ul>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/sidebar-flex-basis-clamp/">
+      
+      Complex conditional width using flex-basis with clamp
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/second-edition/">
+      
+      2nd Edition: Please Mind The Gap
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/css-components/">
+      
+      Dynamic CSS Components Without JavaScript
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/your-boss-pays/">
+      
+      Why you should buy your staff a copy of Every Layout
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/multi-column-manipulation/">
+      
+      Multi-column manipulation
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/you-pay/">
+      
+      You Pay (Or Maybe You Don’t)
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/eschewing-shadow-dom/">
+      
+      Eschewing Shadow DOM
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/algorithmic-design/">
+      
+      Algorithmic Design
+    </a>
+  </li>
+  
+</ul>
+<a class="docs-feed-link" href="https://every-layout.dev/feed.xml">
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-rss"></use>
+  </svg>
+  Feed
+</a>
+
+    <a href="https://every-layout.dev/editions" class="editions-link">editions</a>
+  </nav>
+</header>
+  <div class="docs-main">
+    <main id="main" tabindex="-1">
+      <h1>Axioms</h1>
+      <p>As <a href="http://mathworld.wolfram.com/EuclidsPostulates.html">the mathematician Euclid was aware</a>, even the most complex geometries are founded on simple, irreducible axioms (or <em>postulates</em>). Unless your design is founded on axioms, your output will be inconsistent and malformed. The subject of this section is how to honor a design axiom system-wide, using <em>typographic measure</em> as an exemplar.</p>
+<h2 id="measure">Measure</h2>
+<p>The width of a line of text, in characters, is known as its <a href="https://en.wikipedia.org/wiki/Line_length">measure</a>. Choosing a <em>reasonable</em> measure is critical for the comfortable scanning of successive lines. <a href="http://webtypography.net/2.1.2">The Elements Of Typographic Style</a> considers any value between 45 and 75 reasonable.</p>
+<p>Setting a measure for print media is relatively straightforward. It is simply the width of the paper artefact divided by the number of text columns placed within it — minus <a href="https://en.wikipedia.org/wiki/Column_(typography)">margins and gutters</a>, of course.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/measure_print_layout.svg" alt="A full-spread magazine layout divided into three columns of text" loading="lazy"></p>
+</div>
+<p>The web is not static or predictable like print. Each word is separated by a breaking space (<a href="https://www.fileformat.info/info/unicode/char/0020/index.htm">unicode point U+0020</a>), freeing runs of text to wrap dynamically according to available space. The amount of available space is determined by a number of interrelated factors including device size and orientation, text size, and zoom level.</p>
+<p>As designers, we seek to control the users’ experience. But, as John Allsopp wrote in 2000’s <a href="https://alistapart.com/article/dao/">The Dao Of Web Design</a>, attempting <em>direct</em> control over the way users consume content on the web is foolhardy. Enforcing a specific measure would mean setting a fixed width. Many users would experience horizontal scrolling and broken zoom functionality.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/measure_scroll.svg" alt="When the viewport is narrowed, the text stays the same width and becomes obscured. A horizontal scroll bar appears" loading="lazy"></p>
+</div>
+<p>To design “adaptable pages” (Allsopp’s term), we must relinquish control to the algorithms (like text wrapping) browsers use to lay out web pages automatically. But that’s not to say there’s no place for <em>influencing</em> layout. Think of yourself as the browser’s mentor, rather than its micro-manager.</p>
+<h2 id="the-measure-axiom">The measure axiom</h2>
+<p>It’s good practice to try and set out a design axiom in a short phrase or sentence. In this case that statement might be, <em>“the measure should never exceed 60ch”</em>.</p>
+<p>The measure of what? And where? There’s no reason why <em>any</em> line of text should become too lengthy. This axiom, like all axioms, should pervade the design without qualifications or exceptions. The real question is: how? In <a href="https://every-layout.dev/rudiments/global-and-local-styling"><strong>Global and local styling</strong></a> we set out three main tiers of styling:</p>
+<ol>
+<li>Universal (including inherited) styles</li>
+<li>Layout primitives</li>
+<li>Utility classes</li>
+</ol>
+<p>The measure axiom should be seeded as pervasively as possible in the universal styles, but also made available to layout primitives (see <a href="https://every-layout.dev/rudiments/composition"><strong>Composition</strong></a>) and <a href="https://every-layout.dev/rudiments/global-and-local-styling#utility-classes">utility classes</a>. But first, which property and which value should inscribe the rule?</p>
+<h2 id="the-declaration">The declaration</h2>
+<p>Fixed widths (and heights!) are anathema to responsive design, as we established in <a href="https://every-layout.dev/rudiments/boxes"><strong>Boxes</strong></a> and again here. Instead, we should deal in <em>tolerances</em>. The <code>max-inline-size</code> property, for example, tolerates any length of text, in any writing mode, <em>up to</em> a certain value.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">p</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> 700px<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>That’s the property covered. However, the <code>px</code> unit is problematic. We may be able to judge, by eye, that <code>700px</code> creates a reasonable measure for the given <code>font-size</code>. But the given <code>font-size</code> is really just the <code>font-size</code> our screen happens to be displaying at the time — it’s our parochial view of our own design.</p>
+<p>Changing <code>font-size</code> for paragraphs, or adjusting the default system font size, will create a different (maximum) measure. Because there is no <em>relationship</em> between character length and pixel width, we do not have an algorithm that can guarantee the correct maximum measure value.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/measure_px.svg" alt="A pixel based measure creates equal width columns of text regardless of measure" loading="lazy"></p>
+</div>
+<p>Fortunately, CSS includes the <code>ch</code> unit. The value of <code>1ch</code> is based on the width of the font’s <code>0</code> character. Importantly, this means changing the <code>font-size</code> changes the value of <code>1ch</code>, thereby adapting the measure. Using <code>ch</code> units is an innately algorithmic approach to measure, because the outcome is predicated on a calculation you permit the browser to make for you.</p>
+<p>Using <code>ch</code> enables us to enforce the axiom independent of <code>font-size</code>, allowing it to be highly pervasive and in no danger of “going wrong”. Where <em>"the measure should never exceed 60ch"</em> might have been a note in some documentation, it can instead be a quality directly coded into the design’s character.</p>
+<aside aria-labelledby="designing-without-seeing" class="docs-note">
+  <h3 id="designing-without-seeing" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      false
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+    </svg>
+    Designing without seeing
+  </h3>
+<p>Designing by axiom requires something of a mental shift. Axioms do not directly create visual artefacts, only the characteristics of artefacts that might emerge.</p>
+<p>Sometimes the resulting artefacts look and behave in ways that you might not have foreseen. For example, in a container which is wider than the agreed measure as applied to the base font size, elements with different font sizes will take up different proportions of that container's width. This is because <code>1ch</code> is wider for a larger font size.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/measure_different_sizes.svg" alt="A stack of text elements. Elements with a greater font-size are wider" loading="lazy"></p>
+</div>
+<p>At the time of conceiving the axiom, you may not have pictured this specific visual effect. But that’s not to say it isn’t sound or desirable. In fact, it’s your CSS doing exactly as you intended: maintaining a reasonable measure irrespective of the context.</p>
+<p>Fundamentally, designing for the web is designing <em>without seeing</em>. You simply can’t anticipate all of the visual combinations produced by</p>
+<ol>
+<li>The modular placement of your layout components</li>
+<li>The circumstances and settings of each end user’s setup</li>
+</ol>
+<p>Instead of thinking of designing for the web as creating visual artefacts, think of it as writing <em>programs</em> for <em>generating</em> visual artefacts. Axioms are the rules that influence how those artefacts are created by the browser, and the better thought out they are the better the browser can accommodate the user.</p>
+</aside>
+<h2 id="global-defaults">Global defaults</h2>
+<p>To realize the axiom, we need to ensure all applicable elements are subject to it. This is a question of selectors. We could create a class selector…</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.measure-cap</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> 60ch<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>…but it’s a mistake to think in terms of (utility) classes too early. It would mean applying the style manually, to individual elements in the HTML, wherever we felt it was applicable. Manual intervention is laborious, prone to error (missing elements out), and will lead to bloated markup.</p>
+<p>Instead, we should ask ourselves which <em>types</em> of elements the rule might apply to. Certainly flow elements designed for text. Inline elements like <code>&lt;em&gt;</code> and <code>&lt;small&gt;</code> would not need to be included, since they would take up only a part of their parent flow elements’ total measure.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">p,</span><br><span class="highlight-line">h1,</span><br><span class="highlight-line">h2,</span><br><span class="highlight-line">h3,</span><br><span class="highlight-line">h4,</span><br><span class="highlight-line">h5,</span><br><span class="highlight-line">h6,</span><br><span class="highlight-line">li,</span><br><span class="highlight-line">figcaption</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> 60ch<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<h3 id="exception-based-styling">Exception-based styling</h3>
+<p>It’s difficult to know if we’ve remembered everything here. An exception based approach is smarter, since we only have to remember which elements should <em>not</em> be subject to the rule. Note that inline elements <em>would</em> be included in the following example but, since they would take up an equal or lesser horizontal space than their parents, no ill effects would emerge.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">*</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> 60ch<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">html,</span><br><span class="highlight-line">body,</span><br><span class="highlight-line">div,</span><br><span class="highlight-line">header,</span><br><span class="highlight-line">nav,</span><br><span class="highlight-line">main,</span><br><span class="highlight-line">footer</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>The <code>&lt;div&gt;</code> element particularly tends to be used as a generic container/wrapper. It’s likely some of these elements will contain multiple adjacent <a href="https://every-layout.dev/layouts/box">boxes</a>, with one or more of each wishing to take up the full <code>60ch</code>. This makes their parents logical exceptions.</p>
+<p>An exception-based approach to CSS lets us do <em>most</em> of our styling with the <em>least</em> of our code. If you are not taking an exception-based approach, it may be because making exceptions feels like <em>correcting mistakes</em>. But this is far from the case. CSS, with its <a href="https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/">cascade and other features</a>, is designed for this. In Harry Roberts’ <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS (Inverted Triangle CSS)</a> thesis, specificity (how specific selectors are) is inversely proportional to reach (how many elements they should affect).</p>
+<h3 id="a-universal-value">A universal value</h3>
+<p>Before we start using the measure value everywhere, we’d best define it as a custom property. That way, any change to the value will be propagated throughout the design.</p>
+<p>Note that not all custom properties have to be global, but in this case we want our elements, props, and utility classes to agree. Therefore, we place the custom property on the <code>:root</code> element.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">:root</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">--measure</span><span class="token punctuation">:</span> 60ch<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>This is passed into our universal block…</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">*</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--measure<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">html,</span><br><span class="highlight-line">body,</span><br><span class="highlight-line">div,</span><br><span class="highlight-line">header,</span><br><span class="highlight-line">nav,</span><br><span class="highlight-line">main,</span><br><span class="highlight-line">footer</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>…and to any utility classes we may find we need.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.max-inline-size\:measure</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--measure<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.max-inline-size\:measure\/2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--measure<span class="token punctuation">)</span> / 2<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<aside aria-labelledby="escaping" class="docs-note">
+  <h3 id="escaping" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      false
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+    </svg>
+    Escaping
+  </h3>
+<p>The backslashes are required in the previous example to escape the special forward slash and colon characters.</p>
+</aside>
+<h2 id="measure-in-composite-layouts">Measure in composite layouts</h2>
+<p>Certain <a href="https://every-layout.dev/rudiments/composition#layout-primitives">layout primitives</a> inevitably accept measure-related props, and some set default values for those props using <code>var(--measure)</code>. The <a href="https://every-layout.dev/layouts/switcher"><strong>Switcher</strong></a> has a <code>threshold</code> prop that defines the container width at which the layout switches between a horizontal and vertical configuration:</p>
+<pre class="language-js"><code class="language-js"><span class="highlight-line"><span class="token keyword">get</span> <span class="token function">threshold</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'threshold'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">'var(--measure)'</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token keyword">set</span> <span class="token function">threshold</span><span class="token punctuation">(</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setAttribute</span><span class="token punctuation">(</span><span class="token string">'threshold'</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>This is a sensible default, but can easily be overridden with any string value:</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>switcher-l</span> <span class="token attr-name">threshold</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>20rem<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>switcher-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<p>If we pass an illegitimate value to <code>threshold</code>, the declaration will be dropped, and the <strong>Switcher’s</strong> fallback stylesheet will apply the default value anyway. Here’s what that stylesheet looks like:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">switcher-l</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">flex-wrap</span><span class="token punctuation">:</span> wrap<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">switcher-l &gt; *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">flex-basis</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--measure<span class="token punctuation">)</span> - 100%<span class="token punctuation">)</span> * 999<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">flex-grow</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Our approach to measure is one where we assume control, but a tempered kind of control that's deferential towards the way browsers work and users operate them. Many of the 'axioms' that govern your design, like <em>"the body font will be Font X"</em> or <em>"headings will be dark blue"</em> will not have an impact on layout as such, making them much simpler to apply just with <a href="https://every-layout.dev/rudiments/global-and-local-styling">global styles</a>. When layout comes into the equation, be wary of differing configurations and orientations. Choose properties, values, and units that enable the browser to calculate the most suitable layout on your behalf.</p>
+
+    </main>
+    <box-l borderwidth="0" padding="var(--s3)" data-i="Box-var(--s3)0false">
+  <footer class="text-align:center">
+    <p>
+      <small><strong>Every Layout</strong> is created by<br><a href="https://twitter.com/heydonworks">Heydon Pickering</a> &amp; <a href="https://twitter.com/piccalilli_">Andy Bell</a></small>
+    </p>
+    <p>
+      <small><a href="https://every-layout.dev/privacy-policy">Privacy Policy</a></small> - <small><a href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a></small>
+    </p>
+  </footer>
+</box-l>
+
+  </div>
+</div>
+  <script>
+    !function(){"use strict";class t extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Switcher-${[this.threshold,this.space,this.limit].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n          }\n\n          [data-i="${this.i}"] > * {\n            flex-basis: calc((${this.threshold} - 100%) * 999);\n          }\n\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}),\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}) ~ * {\n            flex-basis: 100%;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get threshold(){return this.getAttribute("threshold")||"var(--measure)"}set threshold(t){return this.setAttribute("threshold",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get limit(){return this.getAttribute("limit")||"5"}set limit(t){return this.setAttribute("limit",t)}static get observedAttributes(){return["threshold","space","limit"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("switcher-l",t);class e extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Center-${[this.max,this.andText,this.gutters,this.intrinsic].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            max-width: ${this.max};\n            ${this.gutters?`\n            padding-inline-start: ${this.gutters};\n            padding-inline-end: ${this.gutters};`:""}\n            ${this.andText?"text-align: center;":""}\n            ${this.intrinsic?"\n            display: flex;\n            flex-direction: column;\n            align-items: center;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get max(){return this.getAttribute("max")||"var(--measure)"}set max(t){return this.setAttribute("max",t)}get andText(){return this.hasAttribute("andText")}set andText(t){return t?this.setAttribute("andText",""):this.removeAttribute("andText")}get gutters(){return this.getAttribute("gutters")||null}set gutters(t){return this.setAttribute("gutters",t)}get intrinsic(){return this.hasAttribute("intrinsic")}set intrinsic(t){return t?this.setAttribute("intrinsic",""):this.removeAttribute("intrinsic")}static get observedAttributes(){return["max","andText","gutters","intrinsic"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("center-l",e);class i extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cover-${[this.centered,this.space,this.minHeight,this.noPad].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            min-height: ${this.minHeight};\n            padding: ${this.noPad?"0":this.space};\n          }\n      \n          [data-i="${this.i}"] > * {\n            margin-block: ${this.space};\n          }\n      \n          [data-i="${this.i}"] > :first-child:not(${this.centered}) {\n            margin-block-start: 0;\n          }\n      \n          [data-i="${this.i}"] > :last-child:not(${this.centered}) {\n            margin-block-end: 0;\n          }\n      \n          [data-i="${this.i}"] > ${this.centered} {\n            margin-block: auto;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get centered(){return this.getAttribute("centered")||"h1"}set centered(t){return this.setAttribute("centered",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get minHeight(){return this.getAttribute("minHeight")||"100vh"}set minHeight(t){return this.setAttribute("minHeight",t)}get noPad(){return this.hasAttribute("noPad")}set noPad(t){return t?this.setAttribute("noPad",""):this.removeAttribute("noPad")}static get observedAttributes(){return["centered","space","minHeight","noPad"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cover-l",i);class s extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Stack-${[this.space,this.recursive,this.splitAfter].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"]${this.recursive?"":" >"} * + * {\n            margin-block-start: ${this.space};\n          }\n      \n          ${this.splitAfter?`\n            [data-i="${this.i}"]:only-child {\n              block-size: 100%;\n            }\n      \n            [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {\n              margin-block-end: auto;\n            }`:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get recursive(){return this.hasAttribute("recursive")}set recursive(t){return this.setAttribute(t?"recursive":"")}get splitAfter(){return this.getAttribute("splitAfter")||null}set splitAfter(t){return this.setAttribute("splitAfter",t)}static get observedAttributes(){return["space","recursive","splitAfter"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("stack-l",s);class n extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Box-${[this.padding,this.borderWidth,this.invert].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            padding: ${this.padding};\n            border: ${this.borderWidth} solid;\n            ${this.invert?"background-color: var(--color-light);\n              filter: invert(100%);":""}\n          }\n      \n          [data-i="${this.i}"] {\n            background-color: inherit;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get padding(){return this.getAttribute("padding")||"var(--s1)"}set padding(t){return this.setAttribute("padding",t)}get borderWidth(){return this.getAttribute("borderWidth")||"var(--border-thin)"}set borderWidth(t){return this.setAttribute("borderWidth",t)}static get observedAttributes(){return["borderWidth","padding","invert"]}get invert(){return this.hasAttribute("invert")}set invert(t){return t?this.setAttribute("invert",""):this.removeAttribute("invert")}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("box-l",n);class r extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cluster-${[this.justify,this.align,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            justify-content: ${this.justify};\n            align-items: ${this.align};\n            gap: ${this.space};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get justify(){return this.getAttribute("justify")||"flex-start"}set justify(t){return this.setAttribute("justify",t)}get align(){return this.getAttribute("align")||"flex-start"}set align(t){return this.setAttribute("align",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["justify","align","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cluster-l",r);class a extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Grid-${[this.min,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            grid-gap: ${this.space};\n          }\n\n          @supports (width: min(${this.min}, 100%)) {\n            [data-i="${this.i}"] {\n              grid-template-columns: repeat(auto-fill, minmax(min(${this.min}, 100%), 1fr));\n            }\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get min(){return this.getAttribute("min")||"250px"}set min(t){return this.setAttribute("min",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["min","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("grid-l",a);class u extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.contentMin.includes("%")||console.warn("The value for each <sidebar-l> `contentMin` property should be a percentage. Otherwise overflow is likely to occur"),this.i=`Sidebar-${[this.side,this.sideWidth,this.contentMin,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n            ${this.noStretch?"align-items: flex-start;":""}\n          }\n      \n          [data-i="${this.i}"] > * {\n            ${this.sideWidth?`flex-basis: ${this.sideWidth};`:""}\n          }\n      \n          [data-i="${this.i}"] > ${"left"!==this.side?":first-child":":last-child"} {\n            flex-basis: 0;\n            flex-grow: 999;\n            min-inline-size: ${this.contentMin};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get side(){return this.getAttribute("side")||"left"}set side(t){return this.setAttribute("side",t)}get sideWidth(){return this.getAttribute("sideWidth")||null}set sideWidth(t){return this.setAttribute("sideWidth",t)}get contentMin(){return this.getAttribute("contentMin")||"50%"}set contentMin(t){return this.setAttribute("contentMin",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get noStretch(){return this.hasAttribute("noStretch")}set noStretch(t){t?this.setAttribute("noStretch",""):this.removeAttribute("noStretch")}static get observedAttributes(){return["side","sideWidth","contentMin","space","noStretch"]}connectedCallback(){this.render()}attributeChangedCallback(t){this.render()}}"customElements"in window&&customElements.define("sidebar-l",u);class h extends HTMLElement{constructor(){super(),this.render=(()=>{if(1!==this.children.length&&console.warn("<frame-l> elements should have just one child element"),this.i=`Frame-${[this.ratio].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=this.ratio.split(":"),e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            aspect-ratio: ${t[0]} / ${t[1]};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get ratio(){return this.getAttribute("ratio")||"16:9"}set ratio(t){return this.setAttribute("ratio",t)}static get observedAttributes(){return["ratio"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("frame-l",h);class d extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Reel-${[this.itemWidth,this.height,this.space,this.noBar].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            height: ${this.height};\n          }\n      \n          [data-i="${this.i}"] > * {\n            flex: 0 0 ${this.itemWidth};\n          }\n      \n          [data-i="${this.i}"] > img {\n            height: 100%;\n            flex-basis: auto;\n            width: auto;\n          }\n      \n          [data-i="${this.i}"] > * + * {\n            margin-inline-start: ${this.space};\n          }\n      \n          [data-i="${this.i}"].overflowing {\n            ${this.noBar?"":`padding-bottom: ${this.space}`}\n          }\n      \n          ${this.noBar?`\n          [data-i="${this.i}"] {\n            scrollbar-width: none;\n          }\n          \n          [data-i="${this.i}"]::-webkit-scrollbar {\n            display: none;\n          }\n          `:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}toggleOverflowClass(t){t.classList.toggle("overflowing",this.scrollWidth>this.clientWidth)}get itemWidth(){return this.getAttribute("itemWidth")||"auto"}set itemWidth(t){return this.setAttribute("itemWidth",t)}get height(){return this.getAttribute("height")||"auto"}set height(t){return this.setAttribute("height",t)}get space(){return this.getAttribute("space")||"var(--s0)"}set space(t){return this.setAttribute("space",t)}get noBar(){return this.hasAttribute("noBar")}set noBar(t){t?this.setAttribute("noBar",""):this.removeAttribute("noBar")}static get observedAttributes(){return["itemWidth","height","space","noBar"]}connectedCallback(){this.render(),"ResizeObserver"in window&&new ResizeObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this),"MutationObserver"in window&&new MutationObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this,{childList:!0})}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("reel-l",d);class c extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Imposter-${[this.breakout,this.fixed,this.margin].join("")}`,this.dataset.i=this.i;let t="0"===this.margin?"0px":this.margin;if(!document.getElementById(this.i)&&(!this.breakout||this.fixed)){let e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            ${this.breakout?"":`\n              max-inline-size: calc(100% - (${t} * 2));\n              max-block-size: calc(100% - (${t} * 2));\n              overflow: auto;`}\n            ${this.fixed?"\n              position: fixed;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get breakout(){return this.hasAttribute("breakout")}set breakout(t){return t?this.setAttribute("breakout",""):this.removeAttribute("breakout")}get fixed(){return this.hasAttribute("fixed")}set fixed(t){return t?this.setAttribute("fixed",""):this.removeAttribute("fixed")}get margin(){return this.getAttribute("margin")||"0px"}set margin(t){return this.setAttribute("margin",t)}static get observedAttributes(){return["breakout","margin","fixed"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("imposter-l",c);class l extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.label&&(this.setAttribute("role","img"),this.setAttribute("aria-label",this.label)),this.space&&(this.i=`Icon-${this.space}`,this.dataset.i=this.i,!document.getElementById(this.i))){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n            [data-i="${this.i}"] {\n              display: inline-flex;\n              align-items: baseline;\n            }\n\n            [data-i="${this.i}"] > svg {\n              margin-inline-end: ${this.space};\n            }\n          `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||null}set space(t){return this.setAttribute("space",t)}get label(){return this.getAttribute("label")||null}set label(t){return this.setAttribute("label",t)}static get observedAttributes(){return["space","label"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}function o(t){if(!t.includes(","))return parseInt(t);const e=t.split(",").map(t=>parseInt(t));return Math.floor(Math.random()*(e[1]-e[0]+1))+e[0]}"customElements"in window&&customElements.define("icon-l",l);class m extends HTMLElement{constructor(){super(),this.render=(()=>{const t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=1;t<=i;t++)s.push(`<span>${e[Math.floor(Math.random()*e.length)]}</span>`);return s.join(" ")}(this.words);this.innerHTML=`<p>${t}</p>`})}static get observedAttributes(){return["words"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get words(){return this.getAttribute("words")||"15,20"}set words(t){return this.setAttribute("words",t)}}"customElements"in window&&customElements.define("text-l",m);class b extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Image-${[this.ratio,this.minWidth,this.maxWidth].join("")}`,this.dataset.i=this.i,document.getElementById(this.i)||(document.head.innerHTML+=`\n        <style id="${this.i}">\n          [data-i="${this.i}"] {\n            max-width: ${this.maxWidth};\n            min-width: ${this.minWidth};            \n          }\n\n          [data-i="${this.i}"]::after {\n            padding-top: ${function(t){const e=t.split(":").map(t=>parseInt(t));return e[0]/e[1]*100}(this.ratio)+"%"};\n          }\n        </style>\n        `)})}static get observedAttributes(){return["ratio","minWidth","maxWidth"]}get ratio(){return this.getAttribute("ratio")||"6:9"}set ratio(t){return this.setAttribute("ratio",t)}get minWidth(){return this.getAttribute("minWidth")||"0"}set minWidth(t){return this.setAttribute("minWidth",t)}get maxWidth(){return this.getAttribute("maxWidth")||"none"}set maxWidth(t){return this.setAttribute("maxWidth",t)}attributeChangedCallback(){this.setAttribute("aria-label",`Image with ${this.ratio} ratio`),this.render()}connectedCallback(){this.setAttribute("role","img"),this.render()}}"customElements"in window&&customElements.define("image-l",b);class g extends HTMLElement{constructor(){super(),this.generate=(()=>{let t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=0;t<i;t++)s.push(e[Math.floor(Math.random()*e.length)]);return s}(this.count);return this.capitalize&&(t=t.map(t=>t.charAt(0).toUpperCase()+t.slice(1))),this.sentence&&(t[0]=t[0].charAt(0).toUpperCase()+t[0].slice(1),t[0].toUpperCase(),t[t.length-1]+=". "),t.join(" ")}),this.render=(()=>{this.innerHTML="";const t=this.repeat?o(this.repeat):1;for(let e=0;e<t;e++)this.innerHTML+=this.generate()})}static get observedAttributes(){return["count","sentence","capitalize","repeat"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get count(){return this.getAttribute("count")||"2,3"}set count(t){return this.setAttribute("count",t)}get sentence(){return this.hasAttribute("sentence")}set sentence(t){t?this.setAttribute("sentence",""):this.removeAttribute("sentence")}get capitalize(){return this.hasAttribute("capitalize")}set capitalize(t){t?this.setAttribute("capitalize",""):this.removeAttribute("capitalize")}get repeat(){this.getAttribute("repeat")}set repeat(t){this.setAttribute("repeat",t)}}"customElements"in window&&customElements.define("words-l",g)}();
+  </script>
+  <script src="../../js/main.js" type="module"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('../../service-worker.js');
+      });
+    }
+  </script>
+
+
+
+</body>
+<!-- Mirrored from every-layout.dev/rudiments/axioms/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+</html>

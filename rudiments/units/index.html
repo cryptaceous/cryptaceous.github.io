@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from every-layout.dev/rudiments/units/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <link rel="icon" href="../../images/favicon.png" type="image/png">
+  
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Units">
+  <meta name="twitter:title" content="Units">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="../../images/card.png">
+  <meta name="twitter:image" content="../../images/card.png">
+  <meta property="og:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  <meta name="twitter:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  
+  <link rel="manifest" href="https://every-layout.dev/manifest.json">
+  
+  
+  
+  <meta name="description" content="Relearn CSS layout">
+  
+  <title>Units: Every Layout</title>
+  
+  <script>
+    window.API_BASE = 'https://api.every-layout.dev/'; 
+  </script>
+  
+<style id="Box-var(--s3)0false">[data-i="Box-var(--s3)0false"] { padding: var(--s3); border: 0 solid; } [data-i="Box-var(--s3)0false"] { background-color: inherit; }</style></head>
+
+<body>
+  <!--
+                              ...
+           s,                .                    .s
+            ss,              . ..               .ss
+            'SsSs,           ..  .           .sSsS'
+             sSs'sSs,        .   .        .sSs'sSs
+              sSs  'sSs,      ...      .sSs'  sSs
+               sS,    'sSs,         .sSs'    .Ss
+               'Ss       'sSs,   .sSs'       sS'
+      ...       sSs         ' .sSs'         sSs       ...
+     .           sSs       .sSs' ..,       sSs       .
+     . ..         sS,   .sSs'  .  'sSs,   .Ss        . ..
+     ..  .        'Ss .Ss'     .     'sSs. ''        ..  .
+     .   .         sSs '       .        'sSs,        .   .
+      ...      .sS.'sSs        .        .. 'sSs,      ...
+            .sSs'    sS,     .....     .Ss    'sSs,
+         .sSs'       'Ss       .       sS'       'sSs,
+      .sSs'           sSs      .      sSs           'sSs,
+   .sSs'____________________________ sSs ______________'sSs,
+.sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS'.Ss SSSSSSSSSSSSSSSSSSSSSs,
+                        ...         sS'
+                         sSs       sSs
+                          sSs     sSs
+                           sS,   .Ss
+                           'Ss   sS'
+                            sSs sSs
+                             sSsSs
+                              sSs
+                               s
+
+                     YOU ARE YOUR OWN GOD.
+             YOU HAVE THE POWER TO CHANGE THE WORLD.
+                     MAKE THE MOST OF IT.
+  -->
+  <a href="#main">Skip to content</a>
+  
+<div class="docs-page">
+  <header class="docs-header">
+  <a class="docs-logo" href="https://every-layout.dev/">
+    <svg focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#logo"></use>
+    </svg>
+    <span class="vh">Every Layout, Homepage</span>
+  </a>
+  <button class="docs-nav-toggle" aria-expanded="false">
+    <svg class="docs-icon" focusable="false" viewBox="0 0 32 32">
+      <path d="M3,3 29,3 M3,16 29,16 M3,29 29,29"></path>
+    </svg>
+    Menu
+  </button>
+  <nav class="docs-nav" aria-labelledby="nav-label">
+    <span id="nav-label" hidden="">main</span>
+    <h2>Rudiments</h2>
+<ul>
+  
+  <li>
+    <a href="../boxes/index.html">
+      
+      Boxes
+    </a>
+  </li>
+  
+  <li>
+    <a href="../composition/index.html">
+      
+      Composition
+    </a>
+  </li>
+  
+  <li>
+    <a href="index.html" aria-current="true">
+      
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-triangle-right"></use>
+      </svg>
+      
+      Units
+    </a>
+  </li>
+  
+  <li>
+    <a href="../global-and-local-styling/index.html">
+      
+      Global and local styling
+    </a>
+  </li>
+  
+  <li>
+    <a href="../modular-scale/index.html">
+      
+      Modular scale
+    </a>
+  </li>
+  
+  <li>
+    <a href="../axioms/index.html">
+      
+      Axioms
+    </a>
+  </li>
+  
+</ul>
+    <h2>Layouts</h2>
+    <a class="docs-index-link" href="https://every-layout.dev/layouts">
+      <svg focusable="false" class="docs-icon">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-eye"></use>
+      </svg>
+      Picture index
+    </a>
+    <ul>
+      
+<li>
+  <a href="../../layouts/stack/index.html">
+    
+    The Stack
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/box/">
+    
+    The Box
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/center/">
+    
+    The Center
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/cluster/">
+    
+    The Cluster
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/sidebar/index.html">
+    
+    The Sidebar
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/switcher/">
+    
+    The Switcher
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/cover/index.html">
+    
+    The Cover
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/grid/">
+    
+    The Grid
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/frame/">
+    
+    The Frame
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/reel/">
+    
+    The Reel
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/imposter/">
+    
+    The Imposter
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/icon/">
+    
+    The Icon
+  </a>
+</li>
+
+    </ul>
+    
+<h2>Blog</h2>
+<ul>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/sidebar-flex-basis-clamp/">
+      
+      Complex conditional width using flex-basis with clamp
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/second-edition/">
+      
+      2nd Edition: Please Mind The Gap
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/css-components/">
+      
+      Dynamic CSS Components Without JavaScript
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/your-boss-pays/">
+      
+      Why you should buy your staff a copy of Every Layout
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/multi-column-manipulation/">
+      
+      Multi-column manipulation
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/you-pay/">
+      
+      You Pay (Or Maybe You Don’t)
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/eschewing-shadow-dom/">
+      
+      Eschewing Shadow DOM
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/algorithmic-design/">
+      
+      Algorithmic Design
+    </a>
+  </li>
+  
+</ul>
+<a class="docs-feed-link" href="https://every-layout.dev/feed.xml">
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-rss"></use>
+  </svg>
+  Feed
+</a>
+
+    <a href="https://every-layout.dev/editions" class="editions-link">editions</a>
+  </nav>
+</header>
+  <div class="docs-main">
+    <main id="main" tabindex="-1">
+      <h1>Units</h1>
+      <p>Everything you see on the web is composed out of the little dots of light that make up your device’s screen: <em>pixels</em>. So, when measuring out the artefacts that make up our interfaces, thinking in terms of pixels, and using the CSS <code>px</code> unit, makes sense. Or does it?</p>
+<p>Screens’ <a href="https://geometrian.com/programming/reference/subpixelzoo/index.php">pixel geometries vary wildly</a>, and most modern displays employ sub-pixel rendering, which is the manipulation of the color components of individual pixels, to smooth jagged edges and produce a higher <em>perceived</em> resolution. The notion of <code>1px</code> is fuzzier than how it’s often portrayed.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/units_subpixels.svg" alt="Two pixels next to each other. They are each made up of three subpixels, but the arrangement of the subpixel oblongs differ between the two" loading="lazy"></p>
+  <div class="figcaption"><span class="vh">Image caption: </span>The Samsung Galaxy Tab S 10.5 alternates the arrangement of subpixels between pixels. Every other pixel is composed differently.</div>
+</div>
+<p>Screen resolutions—how many pixels screens pack—also differ. Consequently, while one “CSS pixel” (<code>1px</code> in CSS) may approximate one “device” or “hardware” pixel on a lower resolution screen, a high resolution screen may proffer <em>multiple</em> device pixels for each <code>1px</code> of CSS. So there are pixels, and then there are pixels <em>of</em> pixels.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/units_pixel-pixel.svg" alt="A grid of 9 equally sized boxes. The grid itself is labeled as a pixel, and so is one of the boxes it is composed from" loading="lazy"></p>
+</div>
+<p>Suffice it to say that, while screens are indeed made up of pixels, pixels are not regular, immutable, or constant. A <code>400px</code> box viewed by a user browsing <em>zoomed in</em> is simply not <code>400px</code> in CSS pixels. It may not have been <code>400px</code> in <em>device pixels</em> even before they activated zoom.</p>
+<p>Working with the <code>px</code> unit in CSS is not <em>incorrect</em> as such; you won’t see any error messages. But it encourages us to labour under a false premise: that <a href="https://kelliekowalski.com/articles/the-myth-of-pixel-perfection/">pixel perfection</a> is both attainable and desirable.</p>
+<h2 id="scaling-and-accessibility">Scaling and accessibility</h2>
+<p>Designing using the <code>px</code> unit doesn’t only encourage us to adopt the wrong mindset: there are manifest limitations as well. For one, when you set your fonts using <code>px</code>, browsers assume you want to <em>fix</em> the fonts at that size. Accordingly, the font size chosen by the user in their browser settings is disregarded.</p>
+<p>With modern browsers now supporting <a href="https://support.google.com/chrome/answer/96810?hl=en-GB">full page zoom</a> (where everything, including text is zoomed proportionately), this is often blown off as a solved problem. However, as <a href="https://medium.com/@vamptvo/pixels-vs-ems-users-do-change-font-size-5cfb20831773">Evan Minto discovered</a>, there are more users who adjust their default font size in browser settings than there are users of the browsers Edge or Internet Explorer. That is: disregarding users who adjust their default font size is as impactful as disregarding whole browsers.</p>
+<p>The units <code>em</code>, <code>rem</code>, <code>ch</code>, and <code>ex</code> present no such problem because they are all units <em>relative</em> to the user’s default font size, as set in their operating system and/or browser. Browsers translate values using these units into pixels, of course, but in such a way that’s sensitive to context and configuration. Relative units are arbitrators.</p>
+<h2 id="relativity">Relativity</h2>
+<p>Browsers and operating systems typically only afford users the ability to adapt the <em>base</em> or <em>body</em> font size. This can be expressed as <code>1rem</code>: exactly one times the root font size. Your paragraph elements should always be <code>1rem</code>, because they represent body text. You don’t need to set <code>1rem</code> explicitly, because it’s the default value.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">:root</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ redundant */</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">p</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ also redundant */</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Elements, like headings, should be set <em>relatively</em> larger — otherwise hierarchy will be lost. My <code>&lt;h2&gt;</code> might be <code>2.5rem</code>, for example.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ 2.5 × the root font-size */</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>While the units <code>em</code>, <code>rem</code>, <code>ch</code>, and <code>ex</code> are all measurements of text, they can of course be applied to the <code>margin</code>, <code>padding</code>, and <code>border</code> properties (among others). It’s just that text is the basis of the web medium, and these units are a convenient and constant reminder of this fact. Learn to extrapolate your layouts from your text’s intrinsic dimensions and your designs will be beautiful.</p>
+<aside aria-labelledby="needless-conversion" class="docs-note--warning">
+  <h3 id="needless-conversion" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+      false
+    </svg>
+    Needless conversion
+  </h3>
+<p>A lot of folks busy themselves converting between <code>rem</code> and <code>px</code>, making sure each <code>rem</code> value they use equates to a whole pixel value. For example, if the base size is <code>16px</code>, <code>2.4375rem</code> would be <code>39px</code>, but <code>2.43rem</code> would be <code>38.88px</code>.</p>
+<p>There’s no need to do precise conversion, since browsers employ sub-pixel rendering and/or rounding to even things out automatically. It’s less verbose to use simple fractions like <code>1.25rem</code>, <code>1.5rem</code>, <code>1.75rem</code>, etc — or to let <code>calc()</code> do the heavy lifting in your <a href="https://every-layout.dev/rudiments/modular-scale"><strong>Modular scale</strong></a>.</p>
+</aside>
+<h2 id="proportionality-and-maintainability">Proportionality and maintainability</h2>
+<p>My <code>&lt;h2&gt;</code> is 2.5 times the root/base size. If I enlarge the root size, my <code>&lt;h2&gt;</code>—and all the other dimensions set in <code>rem</code>-based multiples—will be enlarged <em>proportionately</em>. The upshot is that scaling the entire interface is trivial:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 960px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token selector">:root</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token comment">/* ↓ Upscale by 25% at 960px */</span></span><br><span class="highlight-line">    <span class="token property">font-size</span><span class="token punctuation">:</span> 125%<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>If I had instead adopted <code>px</code>, the implications for maintenance would be clear: the lack of relative and proportional sizing would require adjusting individual elements case-by-case.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">h3</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 32px<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"><span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 960px<span class="token punctuation">)</span></span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token selector">h3</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token property">font-size</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span></span><br><span class="highlight-line">  <span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token property">font-size</span><span class="token punctuation">:</span> 48px<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span></span><br><span class="highlight-line">  <span class="token comment">/* etc etc ad nauseum */</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<h2 id="viewport-units">Viewport units</h2>
+<p>In <strong>Every Layout</strong>, we eschew width-based <code>@media</code> queries. They represent the hard coding of layout reconfigurations, and are not sensitive to the immediate available space actually afforded the element or component in question. Scaling the interface at a discrete <em>breakpoint</em>, as in the last example, is arbitrary. What’s so special about <code>960px</code>? Can we really say the smaller size is acceptable at <code>959px</code>?</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/units_width-jump.svg" alt="The 959px version has very small text, and the 960px version (just one pixel different in width) has very large text" loading="lazy"></p>
+<div class="figcaption"><span class="vh">Image caption: </span>A <code>1px</code> disparity represents a significant <em>jump</em> when using a breakpoint.</div>
+</div>
+<p><a href="https://css-tricks.com/fun-viewport-units/">Viewport units</a> are relative to the browser viewport’s size. For example, <code>1vw</code> is equal to 1% of the screen’s width, and <code>1vh</code> is equal to 1% of the screen’s height. Using viewport units and <code>calc()</code> we can create an algorithm whereby dimensions are scaled proportionately, but from a <em>minimum</em> value.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">:root</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>1rem + 0.5vw<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>The <code>1rem</code> part of the equation ensures the <code>font-size</code> never drops <em>below</em> the default (system/browser/user defined) value. That is, <code>1rem + 0vw</code> is <code>1rem</code>.</p>
+<h2 id="the-em-unit">The <code>em</code> unit</h2>
+<p>The <code>em</code> unit is to the <code>rem</code> unit what a <a href="https://ethanmarcotte.com/wrote/on-container-queries/">container query</a> is to a <code>@media</code> query. It pertains to the immediate context rather than the outer document. If I wanted to slightly enlarge a <code>&lt;strong&gt;</code> element’s <code>font-size</code> within my <code>&lt;h2&gt;</code>, I could use <code>em</code> units:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">h2 strong</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.125em<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>The <code>&lt;strong&gt;</code>’s <code>font-size</code> is now <code>1.125 × 2.5rem</code>, or <code>2.53125rem</code>. If I set a <code>rem</code> value for the <code>&lt;strong&gt;</code> instead, it wouldn’t scale with its parent <code>&lt;h2&gt;</code>: if I changed the <code>h2</code> value, I would have to change the <code>h2 strong</code> CSS value as well.</p>
+<p>As a rule of thumb, <code>em</code> units are better for sizing inline elements, and <code>rem</code> units are better for block elements. <a href="https://andy-bell.design/links/121/">SVG icons are perfect candidates</a> for <code>em</code>-based sizing, since they either accompany or supplant text.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/units_metrics.svg" alt="An download icon has a 0.75rem height to match the height of the accompanying text: Download Stack.zip" loading="lazy"></p>
+<div class="figcaption"><span class="vh">Image caption: </span>The actual value, in <code>ems</code>, of the icon height/width must be adapted to the accompanying font’s own metrics, in some cases. The Barlow Condensed font used on this site has a lot of internal space to compensate for — hence the <code>0.75rem</code> value.</div>
+</div>
+<h3 id="the-ch-and-ex-units">The <code>ch</code> and <code>ex</code> units</h3>
+<p>The <code>ch</code> and <code>ex</code> units pertain to the (approximate) width and height of one character respectively. <code>1ch</code> is based on the width of a <code>0</code>, and <code>1ex</code> is equal to the <em>height</em> of your font’s <code>x</code> character—also known as the <a href="https://en.wikipedia.org/wiki/X-height">x height or corpus size</a>.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/units_ch-ex.svg" alt="Shows that the width of one zero is 1ch and the height of one lowercase x is one ex" loading="lazy"></p>
+</div>
+<p>In the <a href="https://every-layout.dev/rudiments/axioms"><strong>Axioms</strong></a> section, the <code>ch</code> unit is used to restrict elements’ <a href="https://en.wikipedia.org/wiki/Line_length">measure</a> for readability. Since measure is a question of characters per line, <code>ch</code> (short for <em>character</em>) is the only appropriate unit for this styling task.</p>
+<p>An <code>&lt;h2&gt;</code> and an <code>&lt;h3&gt;</code> can have different <code>font-size</code> values, but the same (maximum) measure.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">h2,</span><br><span class="highlight-line">h3</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">max-inline-size</span><span class="token punctuation">:</span> 60ch<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">h3</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 2rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"><span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.5rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>The width, in pixels, of one full line of text is <em>extrapolated</em> from the relationship between the <code>rem</code>-based <code>font-size</code> and <code>ch</code>-based <code>max-width</code>. By delegating an algorithm to determine this value—rather than hard coding it as a <code>px</code>-based <code>width</code>—we avoid frequent and serious error. In CSS layout terms, an error is malformed or obscured content: <em>data loss for human beings</em>.</p>
+
+    </main>
+    <box-l borderwidth="0" padding="var(--s3)" data-i="Box-var(--s3)0false">
+  <footer class="text-align:center">
+    <p>
+      <small><strong>Every Layout</strong> is created by<br><a href="https://twitter.com/heydonworks">Heydon Pickering</a> &amp; <a href="https://twitter.com/piccalilli_">Andy Bell</a></small>
+    </p>
+    <p>
+      <small><a href="https://every-layout.dev/privacy-policy">Privacy Policy</a></small> - <small><a href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a></small>
+    </p>
+  </footer>
+</box-l>
+
+  </div>
+</div>
+  <script>
+    !function(){"use strict";class t extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Switcher-${[this.threshold,this.space,this.limit].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n          }\n\n          [data-i="${this.i}"] > * {\n            flex-basis: calc((${this.threshold} - 100%) * 999);\n          }\n\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}),\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}) ~ * {\n            flex-basis: 100%;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get threshold(){return this.getAttribute("threshold")||"var(--measure)"}set threshold(t){return this.setAttribute("threshold",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get limit(){return this.getAttribute("limit")||"5"}set limit(t){return this.setAttribute("limit",t)}static get observedAttributes(){return["threshold","space","limit"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("switcher-l",t);class e extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Center-${[this.max,this.andText,this.gutters,this.intrinsic].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            max-width: ${this.max};\n            ${this.gutters?`\n            padding-inline-start: ${this.gutters};\n            padding-inline-end: ${this.gutters};`:""}\n            ${this.andText?"text-align: center;":""}\n            ${this.intrinsic?"\n            display: flex;\n            flex-direction: column;\n            align-items: center;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get max(){return this.getAttribute("max")||"var(--measure)"}set max(t){return this.setAttribute("max",t)}get andText(){return this.hasAttribute("andText")}set andText(t){return t?this.setAttribute("andText",""):this.removeAttribute("andText")}get gutters(){return this.getAttribute("gutters")||null}set gutters(t){return this.setAttribute("gutters",t)}get intrinsic(){return this.hasAttribute("intrinsic")}set intrinsic(t){return t?this.setAttribute("intrinsic",""):this.removeAttribute("intrinsic")}static get observedAttributes(){return["max","andText","gutters","intrinsic"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("center-l",e);class i extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cover-${[this.centered,this.space,this.minHeight,this.noPad].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            min-height: ${this.minHeight};\n            padding: ${this.noPad?"0":this.space};\n          }\n      \n          [data-i="${this.i}"] > * {\n            margin-block: ${this.space};\n          }\n      \n          [data-i="${this.i}"] > :first-child:not(${this.centered}) {\n            margin-block-start: 0;\n          }\n      \n          [data-i="${this.i}"] > :last-child:not(${this.centered}) {\n            margin-block-end: 0;\n          }\n      \n          [data-i="${this.i}"] > ${this.centered} {\n            margin-block: auto;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get centered(){return this.getAttribute("centered")||"h1"}set centered(t){return this.setAttribute("centered",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get minHeight(){return this.getAttribute("minHeight")||"100vh"}set minHeight(t){return this.setAttribute("minHeight",t)}get noPad(){return this.hasAttribute("noPad")}set noPad(t){return t?this.setAttribute("noPad",""):this.removeAttribute("noPad")}static get observedAttributes(){return["centered","space","minHeight","noPad"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cover-l",i);class s extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Stack-${[this.space,this.recursive,this.splitAfter].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"]${this.recursive?"":" >"} * + * {\n            margin-block-start: ${this.space};\n          }\n      \n          ${this.splitAfter?`\n            [data-i="${this.i}"]:only-child {\n              block-size: 100%;\n            }\n      \n            [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {\n              margin-block-end: auto;\n            }`:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get recursive(){return this.hasAttribute("recursive")}set recursive(t){return this.setAttribute(t?"recursive":"")}get splitAfter(){return this.getAttribute("splitAfter")||null}set splitAfter(t){return this.setAttribute("splitAfter",t)}static get observedAttributes(){return["space","recursive","splitAfter"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("stack-l",s);class n extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Box-${[this.padding,this.borderWidth,this.invert].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            padding: ${this.padding};\n            border: ${this.borderWidth} solid;\n            ${this.invert?"background-color: var(--color-light);\n              filter: invert(100%);":""}\n          }\n      \n          [data-i="${this.i}"] {\n            background-color: inherit;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get padding(){return this.getAttribute("padding")||"var(--s1)"}set padding(t){return this.setAttribute("padding",t)}get borderWidth(){return this.getAttribute("borderWidth")||"var(--border-thin)"}set borderWidth(t){return this.setAttribute("borderWidth",t)}static get observedAttributes(){return["borderWidth","padding","invert"]}get invert(){return this.hasAttribute("invert")}set invert(t){return t?this.setAttribute("invert",""):this.removeAttribute("invert")}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("box-l",n);class r extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cluster-${[this.justify,this.align,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            justify-content: ${this.justify};\n            align-items: ${this.align};\n            gap: ${this.space};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get justify(){return this.getAttribute("justify")||"flex-start"}set justify(t){return this.setAttribute("justify",t)}get align(){return this.getAttribute("align")||"flex-start"}set align(t){return this.setAttribute("align",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["justify","align","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cluster-l",r);class a extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Grid-${[this.min,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            grid-gap: ${this.space};\n          }\n\n          @supports (width: min(${this.min}, 100%)) {\n            [data-i="${this.i}"] {\n              grid-template-columns: repeat(auto-fill, minmax(min(${this.min}, 100%), 1fr));\n            }\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get min(){return this.getAttribute("min")||"250px"}set min(t){return this.setAttribute("min",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["min","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("grid-l",a);class u extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.contentMin.includes("%")||console.warn("The value for each <sidebar-l> `contentMin` property should be a percentage. Otherwise overflow is likely to occur"),this.i=`Sidebar-${[this.side,this.sideWidth,this.contentMin,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n            ${this.noStretch?"align-items: flex-start;":""}\n          }\n      \n          [data-i="${this.i}"] > * {\n            ${this.sideWidth?`flex-basis: ${this.sideWidth};`:""}\n          }\n      \n          [data-i="${this.i}"] > ${"left"!==this.side?":first-child":":last-child"} {\n            flex-basis: 0;\n            flex-grow: 999;\n            min-inline-size: ${this.contentMin};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get side(){return this.getAttribute("side")||"left"}set side(t){return this.setAttribute("side",t)}get sideWidth(){return this.getAttribute("sideWidth")||null}set sideWidth(t){return this.setAttribute("sideWidth",t)}get contentMin(){return this.getAttribute("contentMin")||"50%"}set contentMin(t){return this.setAttribute("contentMin",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get noStretch(){return this.hasAttribute("noStretch")}set noStretch(t){t?this.setAttribute("noStretch",""):this.removeAttribute("noStretch")}static get observedAttributes(){return["side","sideWidth","contentMin","space","noStretch"]}connectedCallback(){this.render()}attributeChangedCallback(t){this.render()}}"customElements"in window&&customElements.define("sidebar-l",u);class h extends HTMLElement{constructor(){super(),this.render=(()=>{if(1!==this.children.length&&console.warn("<frame-l> elements should have just one child element"),this.i=`Frame-${[this.ratio].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=this.ratio.split(":"),e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            aspect-ratio: ${t[0]} / ${t[1]};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get ratio(){return this.getAttribute("ratio")||"16:9"}set ratio(t){return this.setAttribute("ratio",t)}static get observedAttributes(){return["ratio"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("frame-l",h);class d extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Reel-${[this.itemWidth,this.height,this.space,this.noBar].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            height: ${this.height};\n          }\n      \n          [data-i="${this.i}"] > * {\n            flex: 0 0 ${this.itemWidth};\n          }\n      \n          [data-i="${this.i}"] > img {\n            height: 100%;\n            flex-basis: auto;\n            width: auto;\n          }\n      \n          [data-i="${this.i}"] > * + * {\n            margin-inline-start: ${this.space};\n          }\n      \n          [data-i="${this.i}"].overflowing {\n            ${this.noBar?"":`padding-bottom: ${this.space}`}\n          }\n      \n          ${this.noBar?`\n          [data-i="${this.i}"] {\n            scrollbar-width: none;\n          }\n          \n          [data-i="${this.i}"]::-webkit-scrollbar {\n            display: none;\n          }\n          `:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}toggleOverflowClass(t){t.classList.toggle("overflowing",this.scrollWidth>this.clientWidth)}get itemWidth(){return this.getAttribute("itemWidth")||"auto"}set itemWidth(t){return this.setAttribute("itemWidth",t)}get height(){return this.getAttribute("height")||"auto"}set height(t){return this.setAttribute("height",t)}get space(){return this.getAttribute("space")||"var(--s0)"}set space(t){return this.setAttribute("space",t)}get noBar(){return this.hasAttribute("noBar")}set noBar(t){t?this.setAttribute("noBar",""):this.removeAttribute("noBar")}static get observedAttributes(){return["itemWidth","height","space","noBar"]}connectedCallback(){this.render(),"ResizeObserver"in window&&new ResizeObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this),"MutationObserver"in window&&new MutationObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this,{childList:!0})}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("reel-l",d);class c extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Imposter-${[this.breakout,this.fixed,this.margin].join("")}`,this.dataset.i=this.i;let t="0"===this.margin?"0px":this.margin;if(!document.getElementById(this.i)&&(!this.breakout||this.fixed)){let e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            ${this.breakout?"":`\n              max-inline-size: calc(100% - (${t} * 2));\n              max-block-size: calc(100% - (${t} * 2));\n              overflow: auto;`}\n            ${this.fixed?"\n              position: fixed;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get breakout(){return this.hasAttribute("breakout")}set breakout(t){return t?this.setAttribute("breakout",""):this.removeAttribute("breakout")}get fixed(){return this.hasAttribute("fixed")}set fixed(t){return t?this.setAttribute("fixed",""):this.removeAttribute("fixed")}get margin(){return this.getAttribute("margin")||"0px"}set margin(t){return this.setAttribute("margin",t)}static get observedAttributes(){return["breakout","margin","fixed"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("imposter-l",c);class l extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.label&&(this.setAttribute("role","img"),this.setAttribute("aria-label",this.label)),this.space&&(this.i=`Icon-${this.space}`,this.dataset.i=this.i,!document.getElementById(this.i))){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n            [data-i="${this.i}"] {\n              display: inline-flex;\n              align-items: baseline;\n            }\n\n            [data-i="${this.i}"] > svg {\n              margin-inline-end: ${this.space};\n            }\n          `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||null}set space(t){return this.setAttribute("space",t)}get label(){return this.getAttribute("label")||null}set label(t){return this.setAttribute("label",t)}static get observedAttributes(){return["space","label"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}function o(t){if(!t.includes(","))return parseInt(t);const e=t.split(",").map(t=>parseInt(t));return Math.floor(Math.random()*(e[1]-e[0]+1))+e[0]}"customElements"in window&&customElements.define("icon-l",l);class m extends HTMLElement{constructor(){super(),this.render=(()=>{const t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=1;t<=i;t++)s.push(`<span>${e[Math.floor(Math.random()*e.length)]}</span>`);return s.join(" ")}(this.words);this.innerHTML=`<p>${t}</p>`})}static get observedAttributes(){return["words"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get words(){return this.getAttribute("words")||"15,20"}set words(t){return this.setAttribute("words",t)}}"customElements"in window&&customElements.define("text-l",m);class b extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Image-${[this.ratio,this.minWidth,this.maxWidth].join("")}`,this.dataset.i=this.i,document.getElementById(this.i)||(document.head.innerHTML+=`\n        <style id="${this.i}">\n          [data-i="${this.i}"] {\n            max-width: ${this.maxWidth};\n            min-width: ${this.minWidth};            \n          }\n\n          [data-i="${this.i}"]::after {\n            padding-top: ${function(t){const e=t.split(":").map(t=>parseInt(t));return e[0]/e[1]*100}(this.ratio)+"%"};\n          }\n        </style>\n        `)})}static get observedAttributes(){return["ratio","minWidth","maxWidth"]}get ratio(){return this.getAttribute("ratio")||"6:9"}set ratio(t){return this.setAttribute("ratio",t)}get minWidth(){return this.getAttribute("minWidth")||"0"}set minWidth(t){return this.setAttribute("minWidth",t)}get maxWidth(){return this.getAttribute("maxWidth")||"none"}set maxWidth(t){return this.setAttribute("maxWidth",t)}attributeChangedCallback(){this.setAttribute("aria-label",`Image with ${this.ratio} ratio`),this.render()}connectedCallback(){this.setAttribute("role","img"),this.render()}}"customElements"in window&&customElements.define("image-l",b);class g extends HTMLElement{constructor(){super(),this.generate=(()=>{let t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=0;t<i;t++)s.push(e[Math.floor(Math.random()*e.length)]);return s}(this.count);return this.capitalize&&(t=t.map(t=>t.charAt(0).toUpperCase()+t.slice(1))),this.sentence&&(t[0]=t[0].charAt(0).toUpperCase()+t[0].slice(1),t[0].toUpperCase(),t[t.length-1]+=". "),t.join(" ")}),this.render=(()=>{this.innerHTML="";const t=this.repeat?o(this.repeat):1;for(let e=0;e<t;e++)this.innerHTML+=this.generate()})}static get observedAttributes(){return["count","sentence","capitalize","repeat"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get count(){return this.getAttribute("count")||"2,3"}set count(t){return this.setAttribute("count",t)}get sentence(){return this.hasAttribute("sentence")}set sentence(t){t?this.setAttribute("sentence",""):this.removeAttribute("sentence")}get capitalize(){return this.hasAttribute("capitalize")}set capitalize(t){t?this.setAttribute("capitalize",""):this.removeAttribute("capitalize")}get repeat(){this.getAttribute("repeat")}set repeat(t){this.setAttribute("repeat",t)}}"customElements"in window&&customElements.define("words-l",g)}();
+  </script>
+  <script src="../../js/main.js" type="module"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('../../service-worker.js');
+      });
+    }
+  </script>
+
+
+
+</body>
+<!-- Mirrored from every-layout.dev/rudiments/units/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+</html>

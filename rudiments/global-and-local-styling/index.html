@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from every-layout.dev/rudiments/global-and-local-styling/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <link rel="icon" href="../../images/favicon.png" type="image/png">
+  
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Global and local styling">
+  <meta name="twitter:title" content="Global and local styling">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="../../images/card.png">
+  <meta name="twitter:image" content="../../images/card.png">
+  <meta property="og:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  <meta name="twitter:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  
+  <link rel="manifest" href="https://every-layout.dev/manifest.json">
+  
+  
+  
+  <meta name="description" content="Relearn CSS layout">
+  
+  <title>Global and local styling: Every Layout</title>
+  
+  <script>
+    window.API_BASE = 'https://api.every-layout.dev/'; 
+  </script>
+  
+<style id="Box-var(--s3)0false">[data-i="Box-var(--s3)0false"] { padding: var(--s3); border: 0 solid; } [data-i="Box-var(--s3)0false"] { background-color: inherit; }</style></head>
+
+<body>
+  <!--
+                              ...
+           s,                .                    .s
+            ss,              . ..               .ss
+            'SsSs,           ..  .           .sSsS'
+             sSs'sSs,        .   .        .sSs'sSs
+              sSs  'sSs,      ...      .sSs'  sSs
+               sS,    'sSs,         .sSs'    .Ss
+               'Ss       'sSs,   .sSs'       sS'
+      ...       sSs         ' .sSs'         sSs       ...
+     .           sSs       .sSs' ..,       sSs       .
+     . ..         sS,   .sSs'  .  'sSs,   .Ss        . ..
+     ..  .        'Ss .Ss'     .     'sSs. ''        ..  .
+     .   .         sSs '       .        'sSs,        .   .
+      ...      .sS.'sSs        .        .. 'sSs,      ...
+            .sSs'    sS,     .....     .Ss    'sSs,
+         .sSs'       'Ss       .       sS'       'sSs,
+      .sSs'           sSs      .      sSs           'sSs,
+   .sSs'____________________________ sSs ______________'sSs,
+.sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS'.Ss SSSSSSSSSSSSSSSSSSSSSs,
+                        ...         sS'
+                         sSs       sSs
+                          sSs     sSs
+                           sS,   .Ss
+                           'Ss   sS'
+                            sSs sSs
+                             sSsSs
+                              sSs
+                               s
+
+                     YOU ARE YOUR OWN GOD.
+             YOU HAVE THE POWER TO CHANGE THE WORLD.
+                     MAKE THE MOST OF IT.
+  -->
+  <a href="#main">Skip to content</a>
+  
+<div class="docs-page">
+  <header class="docs-header">
+  <a class="docs-logo" href="https://every-layout.dev/">
+    <svg focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#logo"></use>
+    </svg>
+    <span class="vh">Every Layout, Homepage</span>
+  </a>
+  <button class="docs-nav-toggle" aria-expanded="false">
+    <svg class="docs-icon" focusable="false" viewBox="0 0 32 32">
+      <path d="M3,3 29,3 M3,16 29,16 M3,29 29,29"></path>
+    </svg>
+    Menu
+  </button>
+  <nav class="docs-nav" aria-labelledby="nav-label">
+    <span id="nav-label" hidden="">main</span>
+    <h2>Rudiments</h2>
+<ul>
+  
+  <li>
+    <a href="../boxes/index.html">
+      
+      Boxes
+    </a>
+  </li>
+  
+  <li>
+    <a href="../composition/index.html">
+      
+      Composition
+    </a>
+  </li>
+  
+  <li>
+    <a href="../units/index.html">
+      
+      Units
+    </a>
+  </li>
+  
+  <li>
+    <a href="index.html" aria-current="true">
+      
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-triangle-right"></use>
+      </svg>
+      
+      Global and local styling
+    </a>
+  </li>
+  
+  <li>
+    <a href="../modular-scale/index.html">
+      
+      Modular scale
+    </a>
+  </li>
+  
+  <li>
+    <a href="../axioms/index.html">
+      
+      Axioms
+    </a>
+  </li>
+  
+</ul>
+    <h2>Layouts</h2>
+    <a class="docs-index-link" href="https://every-layout.dev/layouts">
+      <svg focusable="false" class="docs-icon">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-eye"></use>
+      </svg>
+      Picture index
+    </a>
+    <ul>
+      
+<li>
+  <a href="../../layouts/stack/index.html">
+    
+    The Stack
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/box/">
+    
+    The Box
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/center/">
+    
+    The Center
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/cluster/">
+    
+    The Cluster
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/sidebar/index.html">
+    
+    The Sidebar
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/switcher/">
+    
+    The Switcher
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/cover/index.html">
+    
+    The Cover
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/grid/">
+    
+    The Grid
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/frame/">
+    
+    The Frame
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/reel/">
+    
+    The Reel
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/imposter/">
+    
+    The Imposter
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/icon/">
+    
+    The Icon
+  </a>
+</li>
+
+    </ul>
+    
+<h2>Blog</h2>
+<ul>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/sidebar-flex-basis-clamp/">
+      
+      Complex conditional width using flex-basis with clamp
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/second-edition/">
+      
+      2nd Edition: Please Mind The Gap
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/css-components/">
+      
+      Dynamic CSS Components Without JavaScript
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/your-boss-pays/">
+      
+      Why you should buy your staff a copy of Every Layout
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/multi-column-manipulation/">
+      
+      Multi-column manipulation
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/you-pay/">
+      
+      You Pay (Or Maybe You Don’t)
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/eschewing-shadow-dom/">
+      
+      Eschewing Shadow DOM
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/algorithmic-design/">
+      
+      Algorithmic Design
+    </a>
+  </li>
+  
+</ul>
+<a class="docs-feed-link" href="https://every-layout.dev/feed.xml">
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-rss"></use>
+  </svg>
+  Feed
+</a>
+
+    <a href="https://every-layout.dev/editions" class="editions-link">editions</a>
+  </nav>
+</header>
+  <div class="docs-main">
+    <main id="main" tabindex="-1">
+      <h1>Global and local styling</h1>
+      <p>In the <a href="https://every-layout.dev/rudiments/composition"><strong>Composition</strong></a> section we covered how small, <em>nonlexical</em> components for layout can be used to create larger composites, but not all styles within an efficient and consistent CSS-based design system should be strictly component based. This section will contextualize layout components in a larger system that includes global styles.</p>
+<h2 id="what-are-global-styles%3F">What are global styles?</h2>
+<p>When people talk about the <em>global</em> nature of CSS, they can mean one of a few different things. They may be referring to rules on the <code>:root</code> or <code>&lt;body&gt;</code> elements that are <em>inherited</em> globally (with just a few exceptions).</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">:root</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Now (almost) all elements display a sans-serif font */</span></span><br><span class="highlight-line">  <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Alternatively, they may mean using the unqualified <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors"><code>*</code> selector</a> to style all elements <em>directly</em>.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">*</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Now literally all elements display a sans-serif font */</span></span><br><span class="highlight-line">  <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Element selectors are more specific, and only target the elements they name. But they are still “global” because they can <em>reach</em> those elements wherever they are situated.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">p</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Wherever you put a paragraph, it’ll be sans-serif */</span></span><br><span class="highlight-line">  <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>A liberal use of element selectors is the hallmark of a comprehensive design system. Element selectors take care of generic <a href="http://bradfrost.com/blog/post/atomic-web-design/#atoms">atoms</a> such as headings, paragraphs, links, and buttons. Unlike when using classes (see below), element selectors can target the arbitrary, unattributed content produced by <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG editors</a> and <a href="https://help.github.com/en/articles/basic-writing-and-formatting-syntax">markdown</a>.</p>
+<p>The <a href="https://every-layout.dev/layouts">layouts</a> of <strong>Every Layout</strong> do not explore or prescribe styles for simple elements; that is for you to decide. It is the imbrication of simple elements into composite layouts that we are interested in here.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/global_layout_recursive.svg" alt="A box labeled layout contains three boxes, each labeled element or layout" loading="lazy"></p>
+<div class="figcaption"><span class="vh">Image caption: </span>Each layout requires a container element which establishes a <em>formatting context</em> for its children. Simple elements, without children for which they establish a context, can be thought of as 'end nodes' in the layout hierarchy.</div>
+</div>
+<p>Finally, class-based styles, once defined, can be adhered to any HTML element, anywhere in a document. These are more portable and composable than element styles, but require the author to affect the markup directly.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.sans-serif</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sans-serif<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>small</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sans-serif<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>small</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sans-serif<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<p>It should be appreciated how important it is to leverage the global reach of CSS rules. CSS itself <em>exists</em> to enable the styling of HTML globally, and by category, rather than element-by-element. When used as intended, it is the most efficient way to create any kind of layout or aesthetic on the web. Where global styling techniques (such as the ones above) are used appropriately, it’s much easier to separate branding/aesthetic from layout, and treat the two as <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">separate concerns</a>.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/global_layers.svg" alt="Two separate layers. The top layer is labeled fonts, colors, shadows, etc. The bottom layer is labeled arrangement of boxes." loading="lazy"></p>
+</div>
+<h3 id="utility-classes">Utility classes</h3>
+<p>As we already stated, classes differ from the other global styling methods in terms of their portability: you can use classes between different HTML elements and their types. This allows us to <em>diverge</em> from inherited, universal, and element styles <em>globally</em>.</p>
+<p>For example, all of our <code>&lt;h2&gt;</code> elements may be styled, by default, with a <code>2.25rem</code> <code>font-size</code>:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.25rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">h3</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.75rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>However, there may be a specific cases where we want that <code>font-size</code> to be diminished slightly (perhaps horizontal space is at a premium, or the heading is somewhere where it should have less visual affordance). If we were to switch to an <code>&lt;h3&gt;</code> element to affect this visual change, we would <a href="https://webaim.org/techniques/semanticstructure/#correctly">make a nonsense of the document structure</a>.</p>
+<p>Instead, we could build a more complex selector pertaining to the smaller <code>&lt;h2&gt;</code>’s context:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.sidebar h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.75rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>While this is better than messing up the document structure, I've made the mistake of not taking the <em>whole</em> emerging system into consideration: We've solved the problem for a specific element, in a specific context, when we should be solving the general problem (needing to adjust <code>font-size</code>) for <em>any</em> element in <em>any</em> context. This is where utility classes come in.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token comment">/* ↓ Backslash to escape the colon */</span></span><br><span class="highlight-line"><span class="token selector">.font-size\:base</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.font-size\:biggish</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.75rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.font-size\:big</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> 2.25rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>We use a very <em>on the nose</em> naming convention, which emulates CSS declaration structure: <code>property-name:value</code>. This helps with recollection of utility class names, especially where the value echos the actual value, like <code>.text-align:center</code>.</p>
+<p>Sharing values between elements and utilities is a job for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*">custom properties</a>. Note that we’ve made the custom properties themselves globally available by attaching them to the <code>:root</code> (<code>&lt;html&gt;</code>) element:</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">:root</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">--font-size-base</span><span class="token punctuation">:</span> 1rem<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">--font-size-biggish</span><span class="token punctuation">:</span> 1.75rem<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">--font-size-big</span><span class="token punctuation">:</span> 2.25rem<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token comment">/* elements */</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">h3</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--font-size-biggish<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"><span class="token selector">h2</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--font-size-big<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token comment">/* utilities */</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.font-size\:base</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--font-size-base<span class="token punctuation">)</span> <span class="token important">!important</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.font-size\:biggish</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--font-size-biggish<span class="token punctuation">)</span> <span class="token important">!important</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">.font-size\:big</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--font-size-big<span class="token punctuation">)</span> <span class="token important">!important</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Each utility class has an <code>!important</code> suffix to max out its specificity. Utility classes are for final adjustments, and should not be overridden by anything that comes before them.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/measure_inverted_triangle.svg" alt="An inverted triangle with reach pointing towards to top edge and specificity reaching towards to bottom point" loading="lazy"></p>
+<div class="figcaption"><span class="vh">Image caption: </span>Sensible CSS architecture has “reach” (how many elements are affected) inversely proportional to specificity (how complex the selectors are). This was formalized by Harry Roberts as ITCSS, with IT standing for Inverted Triangle.</div>
+</div>
+<p>The values in the previous example are just for illustration. For consistency across the design, your sizes should probably be derived from a modular scale. See <a href="https://every-layout.dev/rudiments/modular-scale"><strong>Modular scale</strong></a> for more.</p>
+<aside aria-labelledby="too-many-utility-classes" class="docs-note--warning">
+  <h3 id="too-many-utility-classes" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-warning"></use>
+      false
+    </svg>
+    Too many utility classes
+  </h3>
+<p>One thing we highly recommend is <em>not</em> including utility classes until you need them. You don’t want to send users any unused or redundant data. For this project, we maintain a <code>helpers.css</code> file and add utilities as we find ourselves reaching for them. If we find the <code>text-align:center</code> class isn’t taking effect, we must not have added it in the CSS yet — so we put it in our <code>helpers.css</code> file for present and future use.</p>
+<p>In a <a href="https://tailwindcss.com/docs/utility-first">utility first</a> approach to CSS, inherited, universal, and element styles are not really leveraged at all. Instead, combinations of individual styles are applied on a case-by-case basis to individual and independent elements. Using the <a href="https://tailwindcss.com/">Tailwind utility-first framework</a> this might result—as exemplified by Tailwind's own documentation—in class values like the following:</p>
+<pre><code>class="rounded-lg px-4 md:px-5 xl:px-4 py-3 md:py-4 xl:py-3 bg-teal-500 hover:bg-teal-600 md:text-lg xl:text-base text-white font-semibold leading-tight shadow-md"
+</code></pre>
+<p>There may be reasons, under specific circumstances, why one might want to go this way. Perhaps there is a great deal of detail and disparity in the visual design that benefits from having this kind of granular control, or perhaps you want to prototype something quickly without context switching between CSS and HTML. <strong>Every Layout</strong>'s approach assumes you want to create robustness and consistency with the minimum of manual intervention. Hence, the concepts and techniques laid out here leverage <a href="https://every-layout.dev/rudiments/axioms">axioms</a>, primitives, and the styling algorithms that extrapolate from them instead.</p>
+</aside>
+<h2 id="local-or-'scoped'-styles">Local or 'scoped' styles</h2>
+<p>Notably, the <code>id</code> attribute/property (for <a href="https://www.deque.com/blog/unique-id-attributes-matter/">reasons of accessibility</a>, most importantly) can only be used on one HTML element per document. Styling via the <code>id</code> selector is therefore limited to one instance.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">#unique</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token comment">/* ↓ Only styles id="unique" */</span></span><br><span class="highlight-line">  <span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>The <code>id</code> selector has a very high <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">specificity</a> because it’s assumed unique styles are intended to override competing generic styles in all cases.</p>
+<p>Of course, there’s nothing more “local” or <em>instance specific</em> than applying styles directly to elements using the <code>style</code> attribute/property:</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">font-family</span><span class="token punctuation">:</span> sans-serif</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<p>The only remaining <em>standard</em> for localizing styles is within Shadow DOM. By making an element a <code>shadowRoot</code>, one can use low-specificity selectors that only affect elements inside that parent.</p>
+<pre class="language-js"><code class="language-js"><span class="highlight-line"><span class="token keyword">const</span> elem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token keyword">const</span> shadowRoot <span class="token operator">=</span> elem<span class="token punctuation">.</span><span class="token function">attachShadow</span><span class="token punctuation">(</span><span class="token punctuation">{</span>mode<span class="token punctuation">:</span> <span class="token string">'open'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">shadowRoot<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token template-string"><span class="token string">`</span><br><span class="highlight-line">  &lt;style&gt;</span><br><span class="highlight-line">    p {</span><br><span class="highlight-line">      /* ↓ Only styles &lt;p&gt;s inside the element’s Shadow DOM */</span><br><span class="highlight-line">      font-family: sans-serif;</span><br><span class="highlight-line">    }</span><br><span class="highlight-line">  &lt;/style&gt;</span><br><span class="highlight-line">  &lt;p&gt;A sans-serif paragraph&lt;/p&gt;</span><br><span class="highlight-line">`</span></span><span class="token punctuation">;</span></span></code></pre>
+<h3 id="drawbacks">Drawbacks</h3>
+<p>The <code>id</code> selector, inline styles, and Shadow DOM all have drawbacks:</p>
+<ul>
+<li><strong><code>id</code> selectors:</strong> Many find the high specificity to cause systemic issues. There’s also the necessity of coming up with the <code>id</code>’s name in each case. Dynamically generating a unique string is often preferable.</li>
+<li><strong>Inline styles:</strong> A maintenance nightmare, which is the reason CSS was antidotally conceived in the first place.</li>
+<li><strong>Shadow DOM:</strong> Not only are styles prevented from “leaking out” of the Shadow DOM root, but (most) styles are not permitted to get <em>in</em> either — meaning you can no longer leverage global styling.</li>
+</ul>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/global_shadow.svg" alt="The outer box represents the DOM and the inner box represents the Shadow DOM. Styles from the DOM bounce off the Shadow DOM box, and styles inside the Shadow DOM bounce off its own edges and stay contained." loading="lazy"></p>
+</div>
+<p>What we need is a way to simultaneously leverage global styling, but apply local, <em>instance-specific</em> styles in a controlled fashion.</p>
+<h2 id="primitives-and-props">Primitives and props</h2>
+<p>As set out in <a href="https://every-layout.dev/rudiments/composition"><strong>Composition</strong></a>, the main focus of <strong>Every Layout</strong> is on the simple <a href="https://every-layout.dev/layouts">layout primitives</a> that help to arrange elements/boxes together. These are the primary tools for eliciting layout and take their place between generic global styles and utilities.</p>
+<ol>
+<li>Universal (including inherited) styles</li>
+<li>Layout primitives</li>
+<li>Utility classes</li>
+</ol>
+<p>Manifested as reusable components, using the <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">custom elements specification</a>, these layouts can be used globally. But unique <em>configurations</em> of these layouts are possible using props (properties).</p>
+<aside aria-labelledby="interoperability" class="docs-note">
+  <h3 id="interoperability" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      false
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+    </svg>
+    Interoperability
+  </h3>
+<p>Custom elements are used in place of React, Preact, or Vue components (which all also use props) in <strong>Every Layout</strong> because they are native, and can be used <em>across</em> different web application frameworks. Each <a href="https://every-layout.dev/layouts">layout</a> also comes with a code generator to produce just the CSS code needed to achieve the layout. You can use this to create a Vue-specific layout primitive (for example) instead.</p>
+</aside>
+<h3 id="defaults">Defaults</h3>
+<p>Each layout component has an accompanying stylesheet that defines its basic and default styles. For example, the <a href="https://every-layout.dev/layouts/stack"><strong>Stack</strong></a> stylesheet (<code>Stack.css</code>) looks like the following.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">stack-l</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">stack-l &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s1<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>A few things to note:</p>
+<ul>
+<li>The <code>display: block</code> declaration is necessary since custom elements render as inline elements by default. See <a href="https://every-layout.dev/rudiments/boxes"><strong>Boxes</strong></a> for more information on block and inline element behavior.</li>
+<li>The <code>margin-top</code> value is what makes the <strong>Stack</strong> a <em>stack</em>: it inserts margin between a vertical stack of elements. By default, that margin value matches the first point on our <a href="https://every-layout.dev/rudiments/modular-scale">modular scale</a>: <code>--s1</code>.</li>
+<li>The <code>*</code> selector applies to any element, but our use of <code>*</code> is qualified to match any <em>successive</em> child element of a <code>&lt;stack-l&gt;</code> (note the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator">adjacent sibling combinator</a>). The layout primitive is a composition in abstract, and should not prescribe the content, so I use <code>*</code> to match any child element types given to it.</li>
+</ul>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/global_layout_star.svg" alt="The larger box is labeled layout. The three boxes inside it are each labeled with an asterisk (universal selector) and the text “any element”." loading="lazy"></p>
+</div>
+<p>In the custom element definition itself, we apply the default value to the <code>space</code> property:</p>
+<pre class="language-js"><code class="language-js"><span class="highlight-line"><span class="token keyword">get</span> <span class="token function">space</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getAttribute</span><span class="token punctuation">(</span><span class="token string">'space'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">'var(--s1)'</span><span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>Each <strong>Every Layout</strong> custom element builds an embedded stylesheet based on the instance’s property values. That is, this…</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">space</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>var(--s3)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<p>…would become this…</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>stack-l</span> <span class="token attr-name">data-i</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Stack-var(--s3)<span class="token punctuation">"</span></span> <span class="token attr-name">space</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>var(--s3)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></span><br><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>stack-l</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<p>… and would generate this:</p>
+<pre class="language-html"><code class="language-html"><span class="highlight-line"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Stack-var(--s3)<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token style language-css"></span><br><span class="highlight-line">  <span class="token selector">[data-i='Stack-var(--s3)'] &gt; * + *</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">    <span class="token property">margin-top</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--s3<span class="token punctuation">)</span><span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token punctuation">}</span></span><br><span class="highlight-line"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span></span></code></pre>
+<p>However—and this part is important—the <code>Stack-var(--s3)</code> string only represents a unique <em>configuration</em> for a layout, not a unique instance. One <code>id="Stack-var(--s3)"</code> <code>&lt;style&gt;</code> element is used to serve all instances of <code>&lt;stack-l&gt;</code> sharing the configuration represented by the <code>Stack-var(--s3)</code> string. Between instances of the same configuration, the only thing that <em>really</em> differentiates them is their <em>content</em>.</p>
+<p>While each item of content within a web page should generally offer unique information, the <em>look and feel</em> should be consistent and regular, using familiar and repeated patterns, motifs, and arrangements. Leveraging global styles along with controlled layout configurations results in consistency and cohesion, and with minimal code.</p>
+
+    </main>
+    <box-l borderwidth="0" padding="var(--s3)" data-i="Box-var(--s3)0false">
+  <footer class="text-align:center">
+    <p>
+      <small><strong>Every Layout</strong> is created by<br><a href="https://twitter.com/heydonworks">Heydon Pickering</a> &amp; <a href="https://twitter.com/piccalilli_">Andy Bell</a></small>
+    </p>
+    <p>
+      <small><a href="https://every-layout.dev/privacy-policy">Privacy Policy</a></small> - <small><a href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a></small>
+    </p>
+  </footer>
+</box-l>
+
+  </div>
+</div>
+  <script>
+    !function(){"use strict";class t extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Switcher-${[this.threshold,this.space,this.limit].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n          }\n\n          [data-i="${this.i}"] > * {\n            flex-basis: calc((${this.threshold} - 100%) * 999);\n          }\n\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}),\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}) ~ * {\n            flex-basis: 100%;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get threshold(){return this.getAttribute("threshold")||"var(--measure)"}set threshold(t){return this.setAttribute("threshold",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get limit(){return this.getAttribute("limit")||"5"}set limit(t){return this.setAttribute("limit",t)}static get observedAttributes(){return["threshold","space","limit"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("switcher-l",t);class e extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Center-${[this.max,this.andText,this.gutters,this.intrinsic].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            max-width: ${this.max};\n            ${this.gutters?`\n            padding-inline-start: ${this.gutters};\n            padding-inline-end: ${this.gutters};`:""}\n            ${this.andText?"text-align: center;":""}\n            ${this.intrinsic?"\n            display: flex;\n            flex-direction: column;\n            align-items: center;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get max(){return this.getAttribute("max")||"var(--measure)"}set max(t){return this.setAttribute("max",t)}get andText(){return this.hasAttribute("andText")}set andText(t){return t?this.setAttribute("andText",""):this.removeAttribute("andText")}get gutters(){return this.getAttribute("gutters")||null}set gutters(t){return this.setAttribute("gutters",t)}get intrinsic(){return this.hasAttribute("intrinsic")}set intrinsic(t){return t?this.setAttribute("intrinsic",""):this.removeAttribute("intrinsic")}static get observedAttributes(){return["max","andText","gutters","intrinsic"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("center-l",e);class i extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cover-${[this.centered,this.space,this.minHeight,this.noPad].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            min-height: ${this.minHeight};\n            padding: ${this.noPad?"0":this.space};\n          }\n      \n          [data-i="${this.i}"] > * {\n            margin-block: ${this.space};\n          }\n      \n          [data-i="${this.i}"] > :first-child:not(${this.centered}) {\n            margin-block-start: 0;\n          }\n      \n          [data-i="${this.i}"] > :last-child:not(${this.centered}) {\n            margin-block-end: 0;\n          }\n      \n          [data-i="${this.i}"] > ${this.centered} {\n            margin-block: auto;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get centered(){return this.getAttribute("centered")||"h1"}set centered(t){return this.setAttribute("centered",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get minHeight(){return this.getAttribute("minHeight")||"100vh"}set minHeight(t){return this.setAttribute("minHeight",t)}get noPad(){return this.hasAttribute("noPad")}set noPad(t){return t?this.setAttribute("noPad",""):this.removeAttribute("noPad")}static get observedAttributes(){return["centered","space","minHeight","noPad"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cover-l",i);class s extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Stack-${[this.space,this.recursive,this.splitAfter].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"]${this.recursive?"":" >"} * + * {\n            margin-block-start: ${this.space};\n          }\n      \n          ${this.splitAfter?`\n            [data-i="${this.i}"]:only-child {\n              block-size: 100%;\n            }\n      \n            [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {\n              margin-block-end: auto;\n            }`:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get recursive(){return this.hasAttribute("recursive")}set recursive(t){return this.setAttribute(t?"recursive":"")}get splitAfter(){return this.getAttribute("splitAfter")||null}set splitAfter(t){return this.setAttribute("splitAfter",t)}static get observedAttributes(){return["space","recursive","splitAfter"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("stack-l",s);class n extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Box-${[this.padding,this.borderWidth,this.invert].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            padding: ${this.padding};\n            border: ${this.borderWidth} solid;\n            ${this.invert?"background-color: var(--color-light);\n              filter: invert(100%);":""}\n          }\n      \n          [data-i="${this.i}"] {\n            background-color: inherit;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get padding(){return this.getAttribute("padding")||"var(--s1)"}set padding(t){return this.setAttribute("padding",t)}get borderWidth(){return this.getAttribute("borderWidth")||"var(--border-thin)"}set borderWidth(t){return this.setAttribute("borderWidth",t)}static get observedAttributes(){return["borderWidth","padding","invert"]}get invert(){return this.hasAttribute("invert")}set invert(t){return t?this.setAttribute("invert",""):this.removeAttribute("invert")}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("box-l",n);class r extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cluster-${[this.justify,this.align,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            justify-content: ${this.justify};\n            align-items: ${this.align};\n            gap: ${this.space};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get justify(){return this.getAttribute("justify")||"flex-start"}set justify(t){return this.setAttribute("justify",t)}get align(){return this.getAttribute("align")||"flex-start"}set align(t){return this.setAttribute("align",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["justify","align","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cluster-l",r);class a extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Grid-${[this.min,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            grid-gap: ${this.space};\n          }\n\n          @supports (width: min(${this.min}, 100%)) {\n            [data-i="${this.i}"] {\n              grid-template-columns: repeat(auto-fill, minmax(min(${this.min}, 100%), 1fr));\n            }\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get min(){return this.getAttribute("min")||"250px"}set min(t){return this.setAttribute("min",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["min","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("grid-l",a);class u extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.contentMin.includes("%")||console.warn("The value for each <sidebar-l> `contentMin` property should be a percentage. Otherwise overflow is likely to occur"),this.i=`Sidebar-${[this.side,this.sideWidth,this.contentMin,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n            ${this.noStretch?"align-items: flex-start;":""}\n          }\n      \n          [data-i="${this.i}"] > * {\n            ${this.sideWidth?`flex-basis: ${this.sideWidth};`:""}\n          }\n      \n          [data-i="${this.i}"] > ${"left"!==this.side?":first-child":":last-child"} {\n            flex-basis: 0;\n            flex-grow: 999;\n            min-inline-size: ${this.contentMin};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get side(){return this.getAttribute("side")||"left"}set side(t){return this.setAttribute("side",t)}get sideWidth(){return this.getAttribute("sideWidth")||null}set sideWidth(t){return this.setAttribute("sideWidth",t)}get contentMin(){return this.getAttribute("contentMin")||"50%"}set contentMin(t){return this.setAttribute("contentMin",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get noStretch(){return this.hasAttribute("noStretch")}set noStretch(t){t?this.setAttribute("noStretch",""):this.removeAttribute("noStretch")}static get observedAttributes(){return["side","sideWidth","contentMin","space","noStretch"]}connectedCallback(){this.render()}attributeChangedCallback(t){this.render()}}"customElements"in window&&customElements.define("sidebar-l",u);class h extends HTMLElement{constructor(){super(),this.render=(()=>{if(1!==this.children.length&&console.warn("<frame-l> elements should have just one child element"),this.i=`Frame-${[this.ratio].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=this.ratio.split(":"),e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            aspect-ratio: ${t[0]} / ${t[1]};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get ratio(){return this.getAttribute("ratio")||"16:9"}set ratio(t){return this.setAttribute("ratio",t)}static get observedAttributes(){return["ratio"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("frame-l",h);class d extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Reel-${[this.itemWidth,this.height,this.space,this.noBar].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            height: ${this.height};\n          }\n      \n          [data-i="${this.i}"] > * {\n            flex: 0 0 ${this.itemWidth};\n          }\n      \n          [data-i="${this.i}"] > img {\n            height: 100%;\n            flex-basis: auto;\n            width: auto;\n          }\n      \n          [data-i="${this.i}"] > * + * {\n            margin-inline-start: ${this.space};\n          }\n      \n          [data-i="${this.i}"].overflowing {\n            ${this.noBar?"":`padding-bottom: ${this.space}`}\n          }\n      \n          ${this.noBar?`\n          [data-i="${this.i}"] {\n            scrollbar-width: none;\n          }\n          \n          [data-i="${this.i}"]::-webkit-scrollbar {\n            display: none;\n          }\n          `:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}toggleOverflowClass(t){t.classList.toggle("overflowing",this.scrollWidth>this.clientWidth)}get itemWidth(){return this.getAttribute("itemWidth")||"auto"}set itemWidth(t){return this.setAttribute("itemWidth",t)}get height(){return this.getAttribute("height")||"auto"}set height(t){return this.setAttribute("height",t)}get space(){return this.getAttribute("space")||"var(--s0)"}set space(t){return this.setAttribute("space",t)}get noBar(){return this.hasAttribute("noBar")}set noBar(t){t?this.setAttribute("noBar",""):this.removeAttribute("noBar")}static get observedAttributes(){return["itemWidth","height","space","noBar"]}connectedCallback(){this.render(),"ResizeObserver"in window&&new ResizeObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this),"MutationObserver"in window&&new MutationObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this,{childList:!0})}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("reel-l",d);class c extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Imposter-${[this.breakout,this.fixed,this.margin].join("")}`,this.dataset.i=this.i;let t="0"===this.margin?"0px":this.margin;if(!document.getElementById(this.i)&&(!this.breakout||this.fixed)){let e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            ${this.breakout?"":`\n              max-inline-size: calc(100% - (${t} * 2));\n              max-block-size: calc(100% - (${t} * 2));\n              overflow: auto;`}\n            ${this.fixed?"\n              position: fixed;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get breakout(){return this.hasAttribute("breakout")}set breakout(t){return t?this.setAttribute("breakout",""):this.removeAttribute("breakout")}get fixed(){return this.hasAttribute("fixed")}set fixed(t){return t?this.setAttribute("fixed",""):this.removeAttribute("fixed")}get margin(){return this.getAttribute("margin")||"0px"}set margin(t){return this.setAttribute("margin",t)}static get observedAttributes(){return["breakout","margin","fixed"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("imposter-l",c);class l extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.label&&(this.setAttribute("role","img"),this.setAttribute("aria-label",this.label)),this.space&&(this.i=`Icon-${this.space}`,this.dataset.i=this.i,!document.getElementById(this.i))){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n            [data-i="${this.i}"] {\n              display: inline-flex;\n              align-items: baseline;\n            }\n\n            [data-i="${this.i}"] > svg {\n              margin-inline-end: ${this.space};\n            }\n          `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||null}set space(t){return this.setAttribute("space",t)}get label(){return this.getAttribute("label")||null}set label(t){return this.setAttribute("label",t)}static get observedAttributes(){return["space","label"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}function o(t){if(!t.includes(","))return parseInt(t);const e=t.split(",").map(t=>parseInt(t));return Math.floor(Math.random()*(e[1]-e[0]+1))+e[0]}"customElements"in window&&customElements.define("icon-l",l);class m extends HTMLElement{constructor(){super(),this.render=(()=>{const t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=1;t<=i;t++)s.push(`<span>${e[Math.floor(Math.random()*e.length)]}</span>`);return s.join(" ")}(this.words);this.innerHTML=`<p>${t}</p>`})}static get observedAttributes(){return["words"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get words(){return this.getAttribute("words")||"15,20"}set words(t){return this.setAttribute("words",t)}}"customElements"in window&&customElements.define("text-l",m);class b extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Image-${[this.ratio,this.minWidth,this.maxWidth].join("")}`,this.dataset.i=this.i,document.getElementById(this.i)||(document.head.innerHTML+=`\n        <style id="${this.i}">\n          [data-i="${this.i}"] {\n            max-width: ${this.maxWidth};\n            min-width: ${this.minWidth};            \n          }\n\n          [data-i="${this.i}"]::after {\n            padding-top: ${function(t){const e=t.split(":").map(t=>parseInt(t));return e[0]/e[1]*100}(this.ratio)+"%"};\n          }\n        </style>\n        `)})}static get observedAttributes(){return["ratio","minWidth","maxWidth"]}get ratio(){return this.getAttribute("ratio")||"6:9"}set ratio(t){return this.setAttribute("ratio",t)}get minWidth(){return this.getAttribute("minWidth")||"0"}set minWidth(t){return this.setAttribute("minWidth",t)}get maxWidth(){return this.getAttribute("maxWidth")||"none"}set maxWidth(t){return this.setAttribute("maxWidth",t)}attributeChangedCallback(){this.setAttribute("aria-label",`Image with ${this.ratio} ratio`),this.render()}connectedCallback(){this.setAttribute("role","img"),this.render()}}"customElements"in window&&customElements.define("image-l",b);class g extends HTMLElement{constructor(){super(),this.generate=(()=>{let t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=0;t<i;t++)s.push(e[Math.floor(Math.random()*e.length)]);return s}(this.count);return this.capitalize&&(t=t.map(t=>t.charAt(0).toUpperCase()+t.slice(1))),this.sentence&&(t[0]=t[0].charAt(0).toUpperCase()+t[0].slice(1),t[0].toUpperCase(),t[t.length-1]+=". "),t.join(" ")}),this.render=(()=>{this.innerHTML="";const t=this.repeat?o(this.repeat):1;for(let e=0;e<t;e++)this.innerHTML+=this.generate()})}static get observedAttributes(){return["count","sentence","capitalize","repeat"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get count(){return this.getAttribute("count")||"2,3"}set count(t){return this.setAttribute("count",t)}get sentence(){return this.hasAttribute("sentence")}set sentence(t){t?this.setAttribute("sentence",""):this.removeAttribute("sentence")}get capitalize(){return this.hasAttribute("capitalize")}set capitalize(t){t?this.setAttribute("capitalize",""):this.removeAttribute("capitalize")}get repeat(){this.getAttribute("repeat")}set repeat(t){this.setAttribute("repeat",t)}}"customElements"in window&&customElements.define("words-l",g)}();
+  </script>
+  <script src="../../js/main.js" type="module"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('../../service-worker.js');
+      });
+    }
+  </script>
+
+
+
+</body>
+<!-- Mirrored from every-layout.dev/rudiments/global-and-local-styling/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+</html>

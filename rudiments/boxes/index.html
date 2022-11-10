@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from every-layout.dev/rudiments/boxes/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  <link rel="icon" href="../../images/favicon.png" type="image/png">
+  
+  <meta name="twitter:card" content="summary">
+  <meta property="og:title" content="Boxes">
+  <meta name="twitter:title" content="Boxes">
+  <meta property="og:url" content="index.html">
+  <meta property="og:image" content="../../images/card.png">
+  <meta name="twitter:image" content="../../images/card.png">
+  <meta property="og:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  <meta name="twitter:image:alt" content="Logo for Every Layout: A CSS layout resource">
+  
+  <link rel="manifest" href="https://every-layout.dev/manifest.json">
+  
+  
+  
+  <meta name="description" content="Relearn CSS layout">
+  
+  <title>Boxes: Every Layout</title>
+  
+  <script>
+    window.API_BASE = 'https://api.every-layout.dev/'; 
+  </script>
+  
+<style id="Box-var(--s3)0false">[data-i="Box-var(--s3)0false"] { padding: var(--s3); border: 0 solid; } [data-i="Box-var(--s3)0false"] { background-color: inherit; }</style></head>
+
+<body>
+  <!--
+                              ...
+           s,                .                    .s
+            ss,              . ..               .ss
+            'SsSs,           ..  .           .sSsS'
+             sSs'sSs,        .   .        .sSs'sSs
+              sSs  'sSs,      ...      .sSs'  sSs
+               sS,    'sSs,         .sSs'    .Ss
+               'Ss       'sSs,   .sSs'       sS'
+      ...       sSs         ' .sSs'         sSs       ...
+     .           sSs       .sSs' ..,       sSs       .
+     . ..         sS,   .sSs'  .  'sSs,   .Ss        . ..
+     ..  .        'Ss .Ss'     .     'sSs. ''        ..  .
+     .   .         sSs '       .        'sSs,        .   .
+      ...      .sS.'sSs        .        .. 'sSs,      ...
+            .sSs'    sS,     .....     .Ss    'sSs,
+         .sSs'       'Ss       .       sS'       'sSs,
+      .sSs'           sSs      .      sSs           'sSs,
+   .sSs'____________________________ sSs ______________'sSs,
+.sSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS'.Ss SSSSSSSSSSSSSSSSSSSSSs,
+                        ...         sS'
+                         sSs       sSs
+                          sSs     sSs
+                           sS,   .Ss
+                           'Ss   sS'
+                            sSs sSs
+                             sSsSs
+                              sSs
+                               s
+
+                     YOU ARE YOUR OWN GOD.
+             YOU HAVE THE POWER TO CHANGE THE WORLD.
+                     MAKE THE MOST OF IT.
+  -->
+  <a href="#main">Skip to content</a>
+  
+<div class="docs-page">
+  <header class="docs-header">
+  <a class="docs-logo" href="https://every-layout.dev/">
+    <svg focusable="false">
+      <use xlink:href="https://every-layout.dev/images/all.svg#logo"></use>
+    </svg>
+    <span class="vh">Every Layout, Homepage</span>
+  </a>
+  <button class="docs-nav-toggle" aria-expanded="false">
+    <svg class="docs-icon" focusable="false" viewBox="0 0 32 32">
+      <path d="M3,3 29,3 M3,16 29,16 M3,29 29,29"></path>
+    </svg>
+    Menu
+  </button>
+  <nav class="docs-nav" aria-labelledby="nav-label">
+    <span id="nav-label" hidden="">main</span>
+    <h2>Rudiments</h2>
+<ul>
+  
+  <li>
+    <a href="index.html" aria-current="true">
+      
+      <svg class="docs-icon" focusable="false">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-triangle-right"></use>
+      </svg>
+      
+      Boxes
+    </a>
+  </li>
+  
+  <li>
+    <a href="../composition/index.html">
+      
+      Composition
+    </a>
+  </li>
+  
+  <li>
+    <a href="../units/index.html">
+      
+      Units
+    </a>
+  </li>
+  
+  <li>
+    <a href="../global-and-local-styling/index.html">
+      
+      Global and local styling
+    </a>
+  </li>
+  
+  <li>
+    <a href="../modular-scale/index.html">
+      
+      Modular scale
+    </a>
+  </li>
+  
+  <li>
+    <a href="../axioms/index.html">
+      
+      Axioms
+    </a>
+  </li>
+  
+</ul>
+    <h2>Layouts</h2>
+    <a class="docs-index-link" href="https://every-layout.dev/layouts">
+      <svg focusable="false" class="docs-icon">
+        <use xlink:href="https://every-layout.dev/images/all.svg#icon-eye"></use>
+      </svg>
+      Picture index
+    </a>
+    <ul>
+      
+<li>
+  <a href="../../layouts/stack/index.html">
+    
+    The Stack
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/box/">
+    
+    The Box
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/center/">
+    
+    The Center
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/cluster/">
+    
+    The Cluster
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/sidebar/index.html">
+    
+    The Sidebar
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/switcher/">
+    
+    The Switcher
+  </a>
+</li>
+
+<li>
+  <a href="../../layouts/cover/index.html">
+    
+    The Cover
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/grid/">
+    
+    The Grid
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/frame/">
+    
+    The Frame
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/reel/">
+    
+    The Reel
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/imposter/">
+    
+    The Imposter
+  </a>
+</li>
+
+<li>
+  <a href="https://every-layout.dev/layouts/icon/">
+    
+    The Icon
+  </a>
+</li>
+
+    </ul>
+    
+<h2>Blog</h2>
+<ul>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/sidebar-flex-basis-clamp/">
+      
+      Complex conditional width using flex-basis with clamp
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/second-edition/">
+      
+      2nd Edition: Please Mind The Gap
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/css-components/">
+      
+      Dynamic CSS Components Without JavaScript
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/your-boss-pays/">
+      
+      Why you should buy your staff a copy of Every Layout
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/multi-column-manipulation/">
+      
+      Multi-column manipulation
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/you-pay/">
+      
+      You Pay (Or Maybe You Don’t)
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/eschewing-shadow-dom/">
+      
+      Eschewing Shadow DOM
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://every-layout.dev/blog/algorithmic-design/">
+      
+      Algorithmic Design
+    </a>
+  </li>
+  
+</ul>
+<a class="docs-feed-link" href="https://every-layout.dev/feed.xml">
+  <svg class="docs-icon" focusable="false">
+    <use xlink:href="https://every-layout.dev/images/all.svg#icon-rss"></use>
+  </svg>
+  Feed
+</a>
+
+    <a href="https://every-layout.dev/editions" class="editions-link">editions</a>
+  </nav>
+</header>
+  <div class="docs-main">
+    <main id="main" tabindex="-1">
+      <h1>Boxes</h1>
+      <p>As <a href="https://rachelandrew.co.uk/">Rachel Andrew</a> has reminded us, <a href="https://www.smashingmagazine.com/2019/05/display-box-generation/">everything in web design is a box</a>, or the absence of a box. Not everything necessarily <em>looks</em> like a box—<code>border-radius</code>, <code>clip-path</code>, and <code>transforms</code> can be deceptive, but everything takes up a box-like space. Layout is inevitably, therefore, the arrangement of boxes.</p>
+<p>Before one can embark on combining boxes to make <a href="https://every-layout.dev/rudiments/composition">composite layouts</a>, it is important to be familiar with how boxes themselves are designed to behave as standard.</p>
+<h2 id="the-box-model">The box model</h2>
+<p>The <a href="https://www.w3.org/TR/CSS2/box.html#box-dimensions">box model</a> is the formula upon which layout boxes are based, and comprises content, padding, border, and margin. CSS lets us alter these values to change the overall size and shape of elements’ display.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_box-model.svg" alt="Concentric rectangles reading, from the center, content, padding, border, and margin" loading="lazy"></p>
+</div>
+<p>Web browsers helpfully apply default CSS styles to some elements, meaning they are laid out in a reasonably readable fashion: even where author CSS has not been applied.</p>
+<p>In Chrome, the default user agent styles for paragraphs (<code>&lt;p&gt;</code>) look like…</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">p</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-block-end</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-inline-start</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-inline-end</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>… and unordered list (<code>&lt;ul&gt;</code>) styles look like…</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">ul</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">list-style-type</span><span class="token punctuation">:</span> disc<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-block-start</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-block-end</span><span class="token punctuation">:</span> 1em<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-inline-start</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">margin-inline-end</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span></span><br><span class="highlight-line">  <span class="token property">padding-inline-start</span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<h3 id="the-display-property">The <code>display</code> property</h3>
+<p>In both the above examples, the element's <code>display</code> property is set to <code>block</code>. Block elements assume all of the available space in one dimension. Typically, this is the horizontal dimension, because the <code>writing-mode</code> is set to <code>horizontal-tb</code> (horizontal; with a top to bottom flow direction). In some cases, and for some languages (<a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index.en">like Mongolian</a>), <code>vertical-lr</code> is the appropriate writing mode.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_writing-modes.svg" alt="The first example shows block elements laid out from top to bottom (horizontal-tb writing mode). The second shows them laid out from left to right (vertical-lr writing mode)" loading="lazy"></p>
+</div>
+<p>Inline elements (with the <code>display</code> value <code>inline</code>) behave differently. They are laid out <em>in line</em> with the current context, writing mode, and direction. They are only as wide as their content, and are placed adjacently wherever there is space to do so. Block elements follow flow direction, and inline elements follow writing direction.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_inline_and_block.svg" alt="A vertical stack of block elements, with one block element containing (wrapping) inline elements. The horizontal axis is labeled writing direction and the vertical axis is labeled flow direction" loading="lazy"></p>
+</div>
+<p>Thinking typographically, it could be said that block elements are like paragraphs, and inline elements are like words.</p>
+<p>Block elements (also called <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements">block-level</a> elements) afford you control over both the horizontal and vertical dimensions of the box. That is, you can apply width, height, margin, and padding to a block element and it will take effect. On the other hand, inline elements are sized <em>intrinsically</em> (prescribed <code>width</code> and <code>height</code> values do not take effect) and only <em>horizontal</em> margin and padding values are permitted. Inline elements are designed to conform to the flow of horizontal placement among other inline elements.</p>
+<p>A relatively new display property, <code>inline-block</code>, is a hybrid of <code>block</code> and <code>inline</code>. You <em>can</em> set vertical properties on <code>inline-block</code> elements, although this is not always desirable—as the proceeding illustration demonstrates.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_inline_and_inline-block.svg" alt="On the left, an inline element’s vertical margins are ignored, meaning line height of rows is undisrupted. On the right, an inline-block element’s margins have prised the line height open." loading="lazy"></p>
+</div>
+<p>Of the basic <code>display</code> types, only <code>none</code> remains. This value removes the element from the layout entirely. It has no visual presence, and no impact on the layout of surrounding elements. It is as if the element itself has been removed from the HTML. Accordingly, browsers do not communicate the presence or content of <code>display: none</code> elements to assistive technologies like <a href="https://en.wikipedia.org/wiki/Screen_reader">screen reader software</a>.</p>
+<h2 id="logical-properties">Logical properties</h2>
+<p>What are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties">logical properties</a> and does their existence imply the existence of <em>illogical</em> properties? English speakers accustomed to reading left to right (<code>direction: ltr</code>) and top to bottom (<code>writing-mode: horizontal-tb</code>) find it logical to use properties that include the words “left”, “right”, “top”, and “bottom” when applying styles like margin and padding.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.icon</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-right</span><span class="token punctuation">:</span> 0.5em<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>It’s when the direction or writing mode changes that this becomes illogical, because left and right (and/or top and bottom) are flipped. Now the margin you put on the right you really need on the left.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_icon-wrong.svg" alt="On the left of the image, for left to right writing direction, the margin is correctly between the icon and text. On the right of the image, for right to left writing direction, the margin is incorrectly on the right hand side. There is no margin between the icon and text." loading="lazy"></p>
+</div>
+<p>Logical properties eschew terminology like “left” and “right” because we know they can be reversed, making the terms a nonsense. Instead, we apply styles like margin, padding, and border according to the block and inline direction.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">.icon</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">margin-inline-end</span><span class="token punctuation">:</span> 0.5em<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<p>In a <code>ltr</code> direction, <code>margin-inline-end</code> applies margin to the right. In a <code>rtl</code> direction, <code>margin-inline-end</code> applies margin to the left. In both cases, it is applied where it is needed: at the end of the inline dimension.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_icon-right.svg" alt="On the left, for left to right writing direction, the margin is correctly between the icon and text. The same is true for right to left direction, as seen on the right of the image." loading="lazy"></p>
+</div>
+<h2 id="formatting-contexts">Formatting contexts</h2>
+<p>When you apply <code>display: flex</code> or <code>display: grid</code> to a <code>&lt;div&gt;</code>, it continues to behave like a block element, using <code>display: block</code>. However, it changes the way its <em>child</em> elements behave. For example, with just <code>display: flex</code> (and no other Flexbox-related properties) applied to the parent, its children will distribute themselves horizontally. Or, to put it another way, the <em>flow direction</em> is switched from vertical to horizontal.</p>
+<p>Formatting contexts are the basis of many of the layouts documented in this project. They turn elements into layout components. In <a href="https://every-layout.dev/rudiments/composition"><strong>Composition</strong></a>, we'll explore how different formatting contexts can be nested, to create <em>composite</em> layouts.</p>
+<h2 id="content-in-boxes">Content in boxes</h2>
+<p>The web is a conduit for primarily textual information supplemented by media such as images and videos, often referred to collectively as <em>content</em>. Browsers incorporate line wrapping and scrolling algorithms to make sure content is transmitted to the user in its entirety, irrespective of their screen sizes and dimensions, and settings such as zoom level. The web is <a href="https://alistapart.com/article/responsive-web-design/"><em>responsive</em></a> largely by default.</p>
+<p>Without intervention, it is the contents of an element that determines its size and shape. Content makes <code>inline</code> elements grow horizontally, and <code>block</code> elements grow vertically. Left to its own devices, the <em>area</em> of a box is determined by the area of the content it contains. Because web content is <em>dynamic</em> (subject to change), static representations of web layouts are extremely misleading. Working directly with CSS and its flexibility from the outset, as we are here, is highly recommended.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_n_2n.svg" alt="On the left is a wide box containing some text content. On the right is the same box but narrowed. It is taller to compensate for having the same amount of content inside it." loading="lazy"></p>
+  <div class="figcaption"><span class="vh">Image caption: </span>If you halve the width of an element, it will have to be twice as tall to contain the same amount of content</div>
+</div>
+<h3 id="the-box-sizing-property">The <code>box-sizing</code> property</h3>
+<p>By default, the dimensions of a box are the dimensions of the box’s content <em>plus</em> its padding and border values (implicitly: <code>box-sizing: content-box</code>). That is, if you set an element to be <code>10rem</code> wide, then add padding on both sides of <code>1rem</code>, it will be <code>12rem</code> wide: <code>10rem</code> plus <code>1rem</code> of left padding and <code>1rem</code> of right padding. If you opt for <code>box-sizing: border-box</code>, the content area is reduced to accommodate the padding and the total width equals the prescribed <code>width</code> of <code>10rem</code>.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_border_box.svg" alt="Two boxes, both with padding on all sides. The left one is taller and wider with box-sizing content-box. The right one has box-sizing border-box." loading="lazy"></p>
+</div>
+<p>Generally, it is considered preferable to use the <code>border-box</code> model for all boxes. It makes calculating/anticipating box dimensions easier.</p>
+<p>Any styles, like <code>box-sizing: border-box</code>, that are applicable to all elements are best applied using the <code>*</code> (“universal” or “wildcard”) selector. As covered in detail in <a href="https://every-layout.dev/rudiments/global-and-local-styling"><strong>Global and local styling</strong></a>, being able to affect the layout of multiple elements (in this case, <em>all</em> elements) simultaneously is how CSS brings efficiency to layout design.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">*</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+<aside aria-labelledby="exceptions" class="docs-note">
+  <h3 id="exceptions" aria-hidden="true">
+    <svg class="docs-icon" focusable="false">
+      false
+      <use xlink:href="https://every-layout.dev/images/all.svg#icon-info"></use>
+    </svg>
+    Exceptions
+  </h3>
+<p>There are exceptions to the <code>border-box</code> rule-of-thumb, such as in the <a href="https://every-layout.dev/layouts/center"><strong>Center</strong> layout</a> where measurement of the <em>content</em> is critical. CSS's <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade">cascade</a> is designed to accommodate exceptions to general rules.</p>
+<pre class="language-css"><code class="language-css"><span class="highlight-line"><span class="token selector">*</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span><br><span class="highlight-line"></span><br><span class="highlight-line"><span class="token selector">center-l</span> <span class="token punctuation">{</span></span><br><span class="highlight-line">  <span class="token property">box-sizing</span><span class="token punctuation">:</span> content-box<span class="token punctuation">;</span></span><br><span class="highlight-line"><span class="token punctuation">}</span></span></code></pre>
+</aside>
+<p>Only where the height or width of a box is constrained does the difference between <code>content-box</code> and <code>border-box</code> come into play. For illustration, consider a block element placed inside another block element. Using the <code>content-box</code> model and a padding of <code>1rem</code>, the child element will overflow by <code>2rem</code> when <code>inline-size: 100%</code> (equivalent to <code>width: 100%</code> in a <code>horizontal-tb</code> writing mode) is applied.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_100pc.svg" alt="The child element is boxing out over the parent element’s right edge" loading="lazy"></p>
+</div>
+<p>Why? Because <code>inline-size: 100%</code> means <em>“make the width of this element the same as the parent element”</em>. Since we are using the <code>content-box</code> model, the <em>content</em> is made <code>100%</code> wide, then the padding is added on to this value.</p>
+<p>But if we use <code>inline-size: auto</code> (we can just remove <code>inline-size: 100%</code>, since <code>auto</code> is the default value) the child box fits within the parent box perfectly. And that’s <em>regardless</em> of the <code>box-sizing</code> value.</p>
+<div role="figure">
+<p><img src="https://every-layout.dev/images/illustrations/boxes_auto.svg" alt="The child element fits exactly within the parent element’s width" loading="lazy"></p>
+</div>
+<p>Implicitly, the <code>height</code> is also set to <code>auto</code>, meaning it is derived from the content. Again, <code>box-sizing</code> has no effect.</p>
+<p>The lesson here is the dimensions of our elements should be largely <em>derived</em> from their inner content and outer context. When we try to <em>prescribe</em> dimensions, things tend to go amiss. All we should be doing as visual designers is making <em>suggestions</em> as to how the layout should take shape. We might, for instance, apply a <code>min-height</code> (as in the <a href="https://every-layout.dev/layouts/cover"><strong>Cover</strong> layout</a>) or proffer a <code>flex-basis</code> (as in the <a href="https://every-layout.dev/layouts/sidebar"><strong>Sidebar</strong></a>).</p>
+<p>The CSS of suggestion is at the heart of algorithmic layout design. Instead of telling browsers what to do, we allow browsers to make their own calculations, and draw their own conclusions, to best suit the user, their screen, and device. Nobody should experience obscured content under any circumstances.</p>
+
+    </main>
+    <box-l borderwidth="0" padding="var(--s3)" data-i="Box-var(--s3)0false">
+  <footer class="text-align:center">
+    <p>
+      <small><strong>Every Layout</strong> is created by<br><a href="https://twitter.com/heydonworks">Heydon Pickering</a> &amp; <a href="https://twitter.com/piccalilli_">Andy Bell</a></small>
+    </p>
+    <p>
+      <small><a href="https://every-layout.dev/privacy-policy">Privacy Policy</a></small> - <small><a href="https://every-layout.dev/terms-and-conditions">Terms and conditions</a></small>
+    </p>
+  </footer>
+</box-l>
+
+  </div>
+</div>
+  <script>
+    !function(){"use strict";class t extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Switcher-${[this.threshold,this.space,this.limit].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n          }\n\n          [data-i="${this.i}"] > * {\n            flex-basis: calc((${this.threshold} - 100%) * 999);\n          }\n\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}),\n          [data-i="${this.i}"] > :nth-last-child(n+${parseInt(this.limit)+1}) ~ * {\n            flex-basis: 100%;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get threshold(){return this.getAttribute("threshold")||"var(--measure)"}set threshold(t){return this.setAttribute("threshold",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get limit(){return this.getAttribute("limit")||"5"}set limit(t){return this.setAttribute("limit",t)}static get observedAttributes(){return["threshold","space","limit"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("switcher-l",t);class e extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Center-${[this.max,this.andText,this.gutters,this.intrinsic].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            max-width: ${this.max};\n            ${this.gutters?`\n            padding-inline-start: ${this.gutters};\n            padding-inline-end: ${this.gutters};`:""}\n            ${this.andText?"text-align: center;":""}\n            ${this.intrinsic?"\n            display: flex;\n            flex-direction: column;\n            align-items: center;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get max(){return this.getAttribute("max")||"var(--measure)"}set max(t){return this.setAttribute("max",t)}get andText(){return this.hasAttribute("andText")}set andText(t){return t?this.setAttribute("andText",""):this.removeAttribute("andText")}get gutters(){return this.getAttribute("gutters")||null}set gutters(t){return this.setAttribute("gutters",t)}get intrinsic(){return this.hasAttribute("intrinsic")}set intrinsic(t){return t?this.setAttribute("intrinsic",""):this.removeAttribute("intrinsic")}static get observedAttributes(){return["max","andText","gutters","intrinsic"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("center-l",e);class i extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cover-${[this.centered,this.space,this.minHeight,this.noPad].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            min-height: ${this.minHeight};\n            padding: ${this.noPad?"0":this.space};\n          }\n      \n          [data-i="${this.i}"] > * {\n            margin-block: ${this.space};\n          }\n      \n          [data-i="${this.i}"] > :first-child:not(${this.centered}) {\n            margin-block-start: 0;\n          }\n      \n          [data-i="${this.i}"] > :last-child:not(${this.centered}) {\n            margin-block-end: 0;\n          }\n      \n          [data-i="${this.i}"] > ${this.centered} {\n            margin-block: auto;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get centered(){return this.getAttribute("centered")||"h1"}set centered(t){return this.setAttribute("centered",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get minHeight(){return this.getAttribute("minHeight")||"100vh"}set minHeight(t){return this.setAttribute("minHeight",t)}get noPad(){return this.hasAttribute("noPad")}set noPad(t){return t?this.setAttribute("noPad",""):this.removeAttribute("noPad")}static get observedAttributes(){return["centered","space","minHeight","noPad"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cover-l",i);class s extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Stack-${[this.space,this.recursive,this.splitAfter].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"]${this.recursive?"":" >"} * + * {\n            margin-block-start: ${this.space};\n          }\n      \n          ${this.splitAfter?`\n            [data-i="${this.i}"]:only-child {\n              block-size: 100%;\n            }\n      \n            [data-i="${this.i}"] > :nth-child(${this.splitAfter}) {\n              margin-block-end: auto;\n            }`:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get recursive(){return this.hasAttribute("recursive")}set recursive(t){return this.setAttribute(t?"recursive":"")}get splitAfter(){return this.getAttribute("splitAfter")||null}set splitAfter(t){return this.setAttribute("splitAfter",t)}static get observedAttributes(){return["space","recursive","splitAfter"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("stack-l",s);class n extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Box-${[this.padding,this.borderWidth,this.invert].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            padding: ${this.padding};\n            border: ${this.borderWidth} solid;\n            ${this.invert?"background-color: var(--color-light);\n              filter: invert(100%);":""}\n          }\n      \n          [data-i="${this.i}"] {\n            background-color: inherit;\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get padding(){return this.getAttribute("padding")||"var(--s1)"}set padding(t){return this.setAttribute("padding",t)}get borderWidth(){return this.getAttribute("borderWidth")||"var(--border-thin)"}set borderWidth(t){return this.setAttribute("borderWidth",t)}static get observedAttributes(){return["borderWidth","padding","invert"]}get invert(){return this.hasAttribute("invert")}set invert(t){return t?this.setAttribute("invert",""):this.removeAttribute("invert")}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("box-l",n);class r extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Cluster-${[this.justify,this.align,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            justify-content: ${this.justify};\n            align-items: ${this.align};\n            gap: ${this.space};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get justify(){return this.getAttribute("justify")||"flex-start"}set justify(t){return this.setAttribute("justify",t)}get align(){return this.getAttribute("align")||"flex-start"}set align(t){return this.setAttribute("align",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["justify","align","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("cluster-l",r);class a extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Grid-${[this.min,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            grid-gap: ${this.space};\n          }\n\n          @supports (width: min(${this.min}, 100%)) {\n            [data-i="${this.i}"] {\n              grid-template-columns: repeat(auto-fill, minmax(min(${this.min}, 100%), 1fr));\n            }\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get min(){return this.getAttribute("min")||"250px"}set min(t){return this.setAttribute("min",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}static get observedAttributes(){return["min","space"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("grid-l",a);class u extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.contentMin.includes("%")||console.warn("The value for each <sidebar-l> `contentMin` property should be a percentage. Otherwise overflow is likely to occur"),this.i=`Sidebar-${[this.side,this.sideWidth,this.contentMin,this.space].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            gap: ${this.space};\n            ${this.noStretch?"align-items: flex-start;":""}\n          }\n      \n          [data-i="${this.i}"] > * {\n            ${this.sideWidth?`flex-basis: ${this.sideWidth};`:""}\n          }\n      \n          [data-i="${this.i}"] > ${"left"!==this.side?":first-child":":last-child"} {\n            flex-basis: 0;\n            flex-grow: 999;\n            min-inline-size: ${this.contentMin};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get side(){return this.getAttribute("side")||"left"}set side(t){return this.setAttribute("side",t)}get sideWidth(){return this.getAttribute("sideWidth")||null}set sideWidth(t){return this.setAttribute("sideWidth",t)}get contentMin(){return this.getAttribute("contentMin")||"50%"}set contentMin(t){return this.setAttribute("contentMin",t)}get space(){return this.getAttribute("space")||"var(--s1)"}set space(t){return this.setAttribute("space",t)}get noStretch(){return this.hasAttribute("noStretch")}set noStretch(t){t?this.setAttribute("noStretch",""):this.removeAttribute("noStretch")}static get observedAttributes(){return["side","sideWidth","contentMin","space","noStretch"]}connectedCallback(){this.render()}attributeChangedCallback(t){this.render()}}"customElements"in window&&customElements.define("sidebar-l",u);class h extends HTMLElement{constructor(){super(),this.render=(()=>{if(1!==this.children.length&&console.warn("<frame-l> elements should have just one child element"),this.i=`Frame-${[this.ratio].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=this.ratio.split(":"),e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            aspect-ratio: ${t[0]} / ${t[1]};\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get ratio(){return this.getAttribute("ratio")||"16:9"}set ratio(t){return this.setAttribute("ratio",t)}static get observedAttributes(){return["ratio"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("frame-l",h);class d extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.i=`Reel-${[this.itemWidth,this.height,this.space,this.noBar].join("")}`,this.dataset.i=this.i,!document.getElementById(this.i)){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n          [data-i="${this.i}"] {\n            height: ${this.height};\n          }\n      \n          [data-i="${this.i}"] > * {\n            flex: 0 0 ${this.itemWidth};\n          }\n      \n          [data-i="${this.i}"] > img {\n            height: 100%;\n            flex-basis: auto;\n            width: auto;\n          }\n      \n          [data-i="${this.i}"] > * + * {\n            margin-inline-start: ${this.space};\n          }\n      \n          [data-i="${this.i}"].overflowing {\n            ${this.noBar?"":`padding-bottom: ${this.space}`}\n          }\n      \n          ${this.noBar?`\n          [data-i="${this.i}"] {\n            scrollbar-width: none;\n          }\n          \n          [data-i="${this.i}"]::-webkit-scrollbar {\n            display: none;\n          }\n          `:""}\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}toggleOverflowClass(t){t.classList.toggle("overflowing",this.scrollWidth>this.clientWidth)}get itemWidth(){return this.getAttribute("itemWidth")||"auto"}set itemWidth(t){return this.setAttribute("itemWidth",t)}get height(){return this.getAttribute("height")||"auto"}set height(t){return this.setAttribute("height",t)}get space(){return this.getAttribute("space")||"var(--s0)"}set space(t){return this.setAttribute("space",t)}get noBar(){return this.hasAttribute("noBar")}set noBar(t){t?this.setAttribute("noBar",""):this.removeAttribute("noBar")}static get observedAttributes(){return["itemWidth","height","space","noBar"]}connectedCallback(){this.render(),"ResizeObserver"in window&&new ResizeObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this),"MutationObserver"in window&&new MutationObserver(t=>{this.toggleOverflowClass(t[0].target)}).observe(this,{childList:!0})}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("reel-l",d);class c extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Imposter-${[this.breakout,this.fixed,this.margin].join("")}`,this.dataset.i=this.i;let t="0"===this.margin?"0px":this.margin;if(!document.getElementById(this.i)&&(!this.breakout||this.fixed)){let e=document.createElement("style");e.id=this.i,e.innerHTML=`\n          [data-i="${this.i}"] {\n            ${this.breakout?"":`\n              max-inline-size: calc(100% - (${t} * 2));\n              max-block-size: calc(100% - (${t} * 2));\n              overflow: auto;`}\n            ${this.fixed?"\n              position: fixed;":""}\n          }\n        `.replace(/\s\s+/g," ").trim(),document.head.appendChild(e)}})}get breakout(){return this.hasAttribute("breakout")}set breakout(t){return t?this.setAttribute("breakout",""):this.removeAttribute("breakout")}get fixed(){return this.hasAttribute("fixed")}set fixed(t){return t?this.setAttribute("fixed",""):this.removeAttribute("fixed")}get margin(){return this.getAttribute("margin")||"0px"}set margin(t){return this.setAttribute("margin",t)}static get observedAttributes(){return["breakout","margin","fixed"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}"customElements"in window&&customElements.define("imposter-l",c);class l extends HTMLElement{constructor(){super(),this.render=(()=>{if(this.label&&(this.setAttribute("role","img"),this.setAttribute("aria-label",this.label)),this.space&&(this.i=`Icon-${this.space}`,this.dataset.i=this.i,!document.getElementById(this.i))){let t=document.createElement("style");t.id=this.i,t.innerHTML=`\n            [data-i="${this.i}"] {\n              display: inline-flex;\n              align-items: baseline;\n            }\n\n            [data-i="${this.i}"] > svg {\n              margin-inline-end: ${this.space};\n            }\n          `.replace(/\s\s+/g," ").trim(),document.head.appendChild(t)}})}get space(){return this.getAttribute("space")||null}set space(t){return this.setAttribute("space",t)}get label(){return this.getAttribute("label")||null}set label(t){return this.setAttribute("label",t)}static get observedAttributes(){return["space","label"]}connectedCallback(){this.render()}attributeChangedCallback(){this.render()}}function o(t){if(!t.includes(","))return parseInt(t);const e=t.split(",").map(t=>parseInt(t));return Math.floor(Math.random()*(e[1]-e[0]+1))+e[0]}"customElements"in window&&customElements.define("icon-l",l);class m extends HTMLElement{constructor(){super(),this.render=(()=>{const t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=1;t<=i;t++)s.push(`<span>${e[Math.floor(Math.random()*e.length)]}</span>`);return s.join(" ")}(this.words);this.innerHTML=`<p>${t}</p>`})}static get observedAttributes(){return["words"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get words(){return this.getAttribute("words")||"15,20"}set words(t){return this.setAttribute("words",t)}}"customElements"in window&&customElements.define("text-l",m);class b extends HTMLElement{constructor(){super(),this.render=(()=>{this.i=`Image-${[this.ratio,this.minWidth,this.maxWidth].join("")}`,this.dataset.i=this.i,document.getElementById(this.i)||(document.head.innerHTML+=`\n        <style id="${this.i}">\n          [data-i="${this.i}"] {\n            max-width: ${this.maxWidth};\n            min-width: ${this.minWidth};            \n          }\n\n          [data-i="${this.i}"]::after {\n            padding-top: ${function(t){const e=t.split(":").map(t=>parseInt(t));return e[0]/e[1]*100}(this.ratio)+"%"};\n          }\n        </style>\n        `)})}static get observedAttributes(){return["ratio","minWidth","maxWidth"]}get ratio(){return this.getAttribute("ratio")||"6:9"}set ratio(t){return this.setAttribute("ratio",t)}get minWidth(){return this.getAttribute("minWidth")||"0"}set minWidth(t){return this.setAttribute("minWidth",t)}get maxWidth(){return this.getAttribute("maxWidth")||"none"}set maxWidth(t){return this.setAttribute("maxWidth",t)}attributeChangedCallback(){this.setAttribute("aria-label",`Image with ${this.ratio} ratio`),this.render()}connectedCallback(){this.setAttribute("role","img"),this.render()}}"customElements"in window&&customElements.define("image-l",b);class g extends HTMLElement{constructor(){super(),this.generate=(()=>{let t=function(t){const e=["morbi","in","ex","sit","amet","quam","bibendum","semper","donec","accumsan","enim","nibh","vel","laoreet","eros","feugiat","sodales","nullam","feugiat","mi","vitae","tincidunt","iaculis","vestibulum","ante","ipsum","primis","in","faucibus","orci","luctus","et","ultrices","posuere","cubilia","curae","quisque","vulputate","nisi","eu","imperdiet","venenatis","lacus","sapien","tempus","nibh","ac","pretium","quam","dolor","nec","tellus","sed","a","mauris","efficitur","vehicula","lacus","non","varius","arcu","proin","consequat","quam","eu","vulputate","tincidunt","dolor","leo","pretium","arcu","ut","euismod","nisl","sapien","nec","lorem","fusce","nec","orci","in","enim","commodo","tristique","mauris","ornare","ante","vitae","sapien","tempus","sit","amet","porttitor","ante","egestas","in","malesuada","tellus","orci","eget","ultricies","ipsum","ultrices","ac","phasellus","nec","felis","nibh","morbi","convallis","luctus","ipsum","nec","interdum","pellentesque","ultrices","ligula","erat","non","sollicitudin","odio","auctor","at","duis","ac","diam","id","dui","blandit","tempus","eget","sed","erat","curabitur","euismod","varius","neque","cras","ac","justo","congue","mattis","urna","ornare","semper","mi"],i=o(t),s=[];for(let t=0;t<i;t++)s.push(e[Math.floor(Math.random()*e.length)]);return s}(this.count);return this.capitalize&&(t=t.map(t=>t.charAt(0).toUpperCase()+t.slice(1))),this.sentence&&(t[0]=t[0].charAt(0).toUpperCase()+t[0].slice(1),t[0].toUpperCase(),t[t.length-1]+=". "),t.join(" ")}),this.render=(()=>{this.innerHTML="";const t=this.repeat?o(this.repeat):1;for(let e=0;e<t;e++)this.innerHTML+=this.generate()})}static get observedAttributes(){return["count","sentence","capitalize","repeat"]}attributeChangedCallback(){this.render()}connectedCallback(){this.render()}get count(){return this.getAttribute("count")||"2,3"}set count(t){return this.setAttribute("count",t)}get sentence(){return this.hasAttribute("sentence")}set sentence(t){t?this.setAttribute("sentence",""):this.removeAttribute("sentence")}get capitalize(){return this.hasAttribute("capitalize")}set capitalize(t){t?this.setAttribute("capitalize",""):this.removeAttribute("capitalize")}get repeat(){this.getAttribute("repeat")}set repeat(t){this.setAttribute("repeat",t)}}"customElements"in window&&customElements.define("words-l",g)}();
+  </script>
+  <script src="../../js/main.js" type="module"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('../../service-worker.js');
+      });
+    }
+  </script>
+
+
+
+</body>
+<!-- Mirrored from every-layout.dev/rudiments/boxes/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Nov 2022 21:36:29 GMT -->
+</html>
