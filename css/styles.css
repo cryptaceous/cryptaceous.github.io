@@ -4,10 +4,16 @@
     font-weight: 700;
     font-style: normal;
 }
+@font-face {
+    font-family: Staatliches;
+    src: url(lib/fonts/Staatliches-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 :root {
     --font-plain: Helvetica Neue, Helvetica, Arial, sans-serif;
     --font-serif: Georgia, serif;
-    --font-special: Barlow Condensed, Helvetica, sans-serif;
+    --font-special: Staatliches;
     --font-mono: Menlo, Courier, Courier New, Andale Mono, monospace;
     --color-dark: #27272E;
     --color-darkish: #404040;
@@ -191,10 +197,11 @@ h4 {
     font-family: var(--font-special);
     font-weight: 700;
     hyphens: auto;
+    padding: 15px 0 0 15px;
 }
 .h1,
 h1 {
-    font-size: var(--s4);
+    font-size: var(--s5);
 }
 .h2,
 h2 {
@@ -997,7 +1004,7 @@ icon-l svg {
 .headline {
     position: relative;
 bottom: 90px; 
- 
+ margin-top: 230px;
 }
 
 .headline--text{
